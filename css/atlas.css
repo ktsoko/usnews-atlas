@@ -1,0 +1,644 @@
+/*=====================
+** USN Atlas Styles
+** ====================
+** 01 -- Base Styles
+** 02 -- Font Family Styles
+** 03 -- Link Colors
+** 04 -- Heading Sizes (Small Breakpoint)
+** 05 -- Heading Sizes (Large Breakpoint)
+** 06 -- Heading Small Segment (Small Breakpoint)
+** 07 -- Heading Small Segment (Large Breakpoint)
+** 08 -- Text Sizes (All Breakpoints)
+** 09 -- Font Weights
+** 10 -- Text Styles: All Caps, Tracking, Accents
+** 11 -- Colors
+** 12 -- Icons
+=====================*/
+
+/* 
+** 01 -- Base Styles
+*/
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,400i,500,500i,600,600i,700,700i,800,800i');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900,900i');
+
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6 {
+  font-family: "Montserrat";
+  color: #111;
+}
+body {
+  font-family: Roboto;
+  color: #111;
+}
+.row {
+  max-width: 75rem;
+}
+
+/*
+** 02 -- Font Family Styles
+*/
+header.top-bar, 
+.sticky-nav, 
+p.montserrat-override, 
+.tabs-title a {
+  font-family: "Montserrat";
+}
+h1.roboto-override, 
+h2.roboto-override, 
+h3.roboto-override, 
+h4.roboto-override, 
+h5.roboto-override, 
+h6.roboto-override{
+  font-family: "Roboto";
+}
+
+/* 
+** 03 -- Link Colors
+*/
+body a, 
+body p > a, 
+body table a, 
+body ul li a, 
+body ol li a {
+  color: #115abf;
+}
+body a:hover, 
+body a:active, 
+body a:focus, 
+body p > a:hover, 
+body p > a:active, 
+body p > a:focus, 
+body table a:hover, 
+body table a:active, 
+body ul li a:hover, 
+body ul li a:active, 
+body ol li a:hover, 
+body ol li a:active {
+  text-decoration: underline;
+  color: #115abf;
+}
+.sticky-nav a, 
+.sticky-nav > li > a, 
+a.link-black {
+  color:#111;
+}
+.sticky-nav a:hover, 
+.sticky-nav a:active, 
+.sticky-nav a:focus, 
+.sticky-nav > li > a:hover, 
+.sticky-nav > li > a:active, 
+.sticky-nav > li > a:focus, 
+a.link-black:hover, 
+a.link-black:active, 
+a.link-black:focus, 
+a.link-black:hover svg.icon, 
+a.link-black:active svg.icon, 
+a.link-black:focus svg.icon {
+  color: #666;
+  fill: #666;
+  text-decoration: none;
+}
+
+/* 
+** 04 -- Heading Sizes (Small Breakpoint)
+*/
+.heading-largest {
+  font-size: 2.0em;           /* 32 / 40px */
+  line-height: 1.25;        
+  margin-bottom: 0;   
+}
+.heading-larger {
+  font-size: 1.5em;           /* 24 / 32px */
+  line-height: 1.33;        
+  margin-bottom: 0;  
+}
+.heading-large { 
+  font-size: 1.25rem;         /* 20 / 24px */
+  line-height: 1.2;        
+  margin-bottom: 0;    
+}
+.heading-normal { 
+  font-size: 1.125rem;        /* 18 / 24px */
+  line-height: 1.33;        
+  margin-bottom: 0;
+}
+.heading-small { 
+  font-size: 1rem;            /* 16 / 20px */
+  line-height: 1.25;        
+  margin-bottom: 0;
+} 
+.heading-smaller,
+.heading-smallest,
+.heading-tiny {
+  font-size: 0.875rem;        /* 14px 20px */
+  line-height: 1.42;        
+  margin-bottom: 0;
+}
+
+/* 
+** 05 -- Heading Sizes (Large Breakpoint)
+*/
+@media screen and (min-width: 40em) {
+  .heading-largest {
+    font-size: 3.125rem;        /* 50 / 56px */
+    line-height: 1.12;           
+    margin-bottom: 0;   
+  }
+  .heading-larger {
+    font-size: 2.625rem;        /* 42 / 48px */
+    line-height: 1.14;         
+    margin-bottom: 0;    
+  }
+  .heading-large { 
+    font-size: 2.0em;           /* 32 / 40px */
+    line-height: 1.25;        
+    margin-bottom: 0;  
+  }
+  .heading-normal { 
+    font-size: 1.5em;           /* 24 / 32px */
+    line-height: 1.33;        
+    margin-bottom: 0;  
+  }
+  .heading-small { 
+    font-size: 1.25rem;         /* 20 / 24px */
+    line-height: 1.2;        
+    margin-bottom: 0;    
+  }
+  .heading-smaller {
+    font-size: 1.125rem;        /* 18 / 24px */
+    line-height: 1.33;        
+    margin-bottom: 0;
+  }
+  .heading-smallest {
+    font-size: 1rem;            /* 16 / 20px */
+    line-height: 1.25;        
+    margin-bottom: 0;
+  } 
+  .heading-tiny {
+    font-size: 0.875rem;        /* 14px 20px */
+    line-height: 1.42;        
+    margin-bottom: 0;
+  }
+}
+
+/*
+** 06 -- Heading Small Segment (Small Breakpoint)
+*/
+.heading-largest .small, 
+.heading-larger .small,
+.heading-large .small, 
+.heading-normal .small,
+.heading-small .small, 
+.heading-smaller .small, 
+.heading-smallest .small, 
+.heading-tiny .small {
+  color: #666;  
+}
+.heading-largest .small,
+.heading-larger .small {
+  font-size: 75%;
+} 
+.heading-large .small,
+.heading-normal .small,
+.heading-small .small,
+.heading-smaller .small, 
+.heading-smallest .small, 
+.heading-tiny .small {
+  font-size: 90%;    
+}
+
+/*
+** 07 -- Heading Small Segment (Large Breakpoint)
+*/
+@media screen and (min-width: 40em) {
+  .heading-largest .small, 
+  .heading-larger .small {
+    font-size: 58%;
+  }
+  .heading-large .small, 
+  .heading-normal .small {
+    font-size: 75%;
+  }
+  .heading-small .small, 
+  .heading-smaller .small, 
+  .heading-smallest .small, 
+  .heading-tiny .small {
+    font-size: 90%;
+  }
+}
+
+/*
+** 08 -- Text Sizes (All Breakpoints)
+*/
+.text-largest {  
+  font-size: 2.0rem;        /* 32 / 40px */
+  line-height: 1.25;       
+  margin-bottom: 0;   
+}
+.text-larger {  
+  font-size: 1.5rem;        /* 24 / 32px */
+  line-height: 1.33;     
+  margin-bottom: 0;   
+}
+.text-large {  
+  font-size: 1.25rem;       /* 20 / 28px  */
+  line-height: 1.4;        
+  margin-bottom: 0;   
+}
+.text-normal {
+  font-size: 1.125rem;      /* 18 / 28px */
+  line-height: 1.5;        
+  margin-bottom: 0;   
+}
+.text-small {
+  font-size: 1rem;          /*  16 / 24px */
+  line-height: 1.5;       
+  margin-bottom: 0;    
+}
+.text-smaller {
+  font-size: .875rem;       /* 14 / 20px */
+  line-height: 1.4;        
+  margin-bottom: 0;    
+}
+.text-smallest {
+  font-size: .75rem;        /* 12 / 16px */
+  line-height: 1.33;       
+  margin-bottom: 0;    
+}
+.text-tiny { 
+  font-size: 0.625em;       /* 10 / 12px */
+  line-height: 1.2;        
+  margin-bottom: 0;   
+}
+
+/*
+** 09 -- Font Weights
+*/
+.heading-largest, 
+.heading-larger, 
+.heading-large, 
+.heading-normal, 
+.heading-small, 
+.heading-smaller, 
+.heading-smallest, 
+.heading-tiny {
+  font-weight: 700;
+}
+.type-bold {
+  font-weight: 700;
+}
+.type-normal {
+  font-weight: 400;
+}
+.type-thin {
+  font-weight: 300;
+}
+
+/*
+** 10 -- Text Styles: All Caps, Tracking, Accents
+*/
+.type-tracking {
+  letter-spacing: 0.075rem;
+}
+.type-caps {
+  text-transform: uppercase;
+  letter-spacing: 0.125rem;
+  /*line-height needs to change*/
+}
+.heading-caps {
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.075rem;
+}
+.heading-caps:before {
+  content: '';
+  width: 3.438em;
+  height: 0.188em;
+  background-color: #c4212a;
+  position: absolute;
+  top: -5px;
+}
+
+/*
+** 11 -- Colors
+*/
+.text-black-90 {
+  color: #111;
+}
+.black-90,
+div.black-90, 
+td.black-90 {
+  background-color: #111;
+}
+.black-70,
+div.black-70,
+td.black-70 {
+  background-color: #333;
+}
+.text-muted,
+.text-gray-50 {
+  color: #666;
+}
+.gray-50,
+div.gray-50,
+td.gray-50 {
+  background-color: #666;
+}
+.gray-30,
+div.gray-30,
+td.gray-30 {
+  background-color: #888;
+  color: #111;
+}
+.gray-20,
+div.gray-20,
+td.gray-20 {
+  background-color: #aaa;
+  color: #111;
+}
+.text-gray-15 {
+  color: #ccc;
+}
+.gray-15,
+div.gray-15,
+td.gray-15 {
+  background-color: #ccc;
+  color: #111;
+}
+.gray-10,
+div.gray-10,
+td.gray-10 {
+  background-color: #eee;
+  border: 1px #ccc solid;
+  color: #111;
+}
+.gray-05,
+div.gray-05,
+td.gray-05 {
+  background-color: #f7f7f7;
+  border: 1px #ccc solid;
+  border-top: none;
+  color: #111;
+}
+.text-white-00 {
+  color: #fff;
+}
+.white-00,
+div.white-00,
+td.white-00 {
+  background-color: #fff;
+  border: 1px #ccc solid;
+  border-top: none;
+  color: #111;
+}
+.red-90,
+div.red-90,
+td.red-90 {
+  background-color: #871415;
+}
+.red-60,
+div.red-60,
+td.red-60 {
+  background-color: #a61c1e;
+}
+.text-red-50{
+  color: #c4212a;
+}
+.red-50,
+div.red-50,
+td.red-50 {
+  background-color: #c4212a;
+}
+.red-15,
+div.red-15,
+td.red-15 {
+  background-color: #f9c1c4;
+  color: #111;
+}
+.text-blue-90 {
+  color: #0c3b7d;
+}
+.blue-90,
+div.blue-90,
+td.blue-90 {
+  background-color: #0c3b7d;
+}
+.blue-60,
+div.blue-60,
+td.blue-60 {
+  background-color: #0d489a;
+}
+.text-blue-50 {
+  color: #115abf;
+}
+.blue-50,
+div.blue-50,
+td.blue-50 {
+  background-color: #115abf;
+}
+.blue-30,
+div.blue-30,
+td.blue-30 {
+  background-color: #629be9;
+  color: #111;
+}
+.blue-15,
+div.blue-15,
+td.blue-15 {
+  background-color: #b2dcff;
+  color: #111;
+}
+.blue-05,
+div.blue-05,
+td.blue-05 {
+  background-color: #daeeff;
+  color: #111;
+}
+.green-90,
+div.green-90,
+td.green-90 {
+  background-color: #0f5236;
+}
+.green-70,
+div.green-70,
+td.green-70 {
+  background-color: #00875a;
+}
+.green-50,
+div.green-50,
+td.green-50 {
+  background-color: #2da471;
+  color: #111;
+}
+.text-green-50 {
+  color: #2da471;
+}
+.green-30,
+div.green-30,
+td.green-30 {
+  background-color: #60c09c;
+  color: #111;
+}
+.green-15,
+div.green-15,
+td.green-15 {
+  background-color: #b3e6d3;
+  color: #111;
+}
+.text-orange-90 {
+  color: #c55205;
+}
+.orange-90,
+div.orange-90,
+td.orange-90 {
+  background-color: #c55205;
+}
+.orange-70,
+div.orange-70,
+td.orange-70 {
+  background-color: #df8b1e;
+  color: #111;
+}
+.yellow-50,
+div.yellow-50,
+td.yellow-50 {
+  background-color: #efbc22;
+  color: #111;
+}
+.yellow-15,
+div.yellow-15,
+td.yellow-15 {
+  background-color: #fee8a6;
+  color: #111;
+}
+.color-brandfuse,
+div.color-brandfuse,
+td.color-brandfuse {
+  background-color: #2E7CCC;
+}
+.color-facebook,
+div.color-facebook,
+td.color-facebook {
+  background-color: #3C5A99;
+}
+.color-twitter,
+div.color-twitter,
+td.color-twitter {
+  background-color: #1DA1F2;
+}
+.color-googleplus,
+div.color-googleplus,
+td.color-googleplus {
+  background-color: #DD4B39;
+}
+.color-reddit,
+div.color-reddit,
+td.color-reddit {
+  background-color: #FF4500;
+}
+.color-linkedin,
+div.color-linkedin,
+td.color-linkedin {
+  background-color: #0077B5;
+}
+.color-stumbleupon,
+div.color-stumbleupon,
+td.color-stumbleupon {
+  background-color: #EB4924;
+}
+
+/* 
+** 12 -- Icons
+*/
+.icon {
+  display: inline-block;
+  width: 3rem;
+  height: 3rem;
+  fill: #111;
+  vertical-align: middle;
+}
+.icon.link {
+  fill: #115abf;
+}
+.icon.muted {
+  fill: #666666;
+}
+.icon.pro {
+  fill: #0abba4;
+}
+.icon.con {
+  fill: #f06e65;
+}
+.icon.badge {
+  fill: #ffc14e;
+}
+.icon.white {
+  fill: #fff;
+}
+.icon.white:hover {
+  opacity: .75;
+  transition: .5s;
+  cursor: pointer;
+}
+.icon.coal {
+  fill: #888888;
+}
+.icon.iron {
+  fill: #cccccc;
+}
+.icon.steel {
+  fill: #c0cadd;
+}
+.icon.tiny {
+  width: 0.625rem;
+  height: 0.625rem;
+}
+.icon.smallest {
+  width: 0.75rem;
+  height: 0.75;
+}
+.icon.smaller {
+  width: 0.875rem;
+  height: 0.875rem;
+}
+.icon.small {
+  width: 1rem;
+  height: 1rem;
+}
+.icon.medium {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+.icon.large {
+  width: 2rem;
+  height: 2rem;
+}
+.icon.larger {
+  width: 3rem;
+  height: 3rem;
+}
+.icon.largest {
+  width: 4rem;
+  height: 4rem;
+}
+.icon.x-large {
+  width: 5rem;
+  height: 5rem;
+}
+.icon.xlarger {
+  width: 6rem;
+  height: 6rem;
+}
+.icon.x-largest {
+  width: 7rem;
+  height: 7rem;
+}
+svg.icon.centered {
+  position: relative;
+  top: -1px;
+  margin-right: 5px;
+}

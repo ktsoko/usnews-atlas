@@ -4,15 +4,17 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>U.S. News Atlas: Design</title>
-    <link rel="stylesheet" href="css/foundation.css">
-    <link rel="stylesheet" href="css/styleguide.css">
-    <link rel="stylesheet" href="css/fonts.css">
-    <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
     <link rel='shortcut icon' href='favicon.ico' type='image/x-icon'/>
+
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/atlas.css">
+    <link rel="stylesheet" href="css/atlas-components.css">
+    <link rel="stylesheet" href="css/styleguide-layout.css">
+
     <script src="https://use.fontawesome.com/676aa66d08.js"></script>
     <script src="js/prism.js"></script>
-    <script src="plugins/line-numbers/prism-line-numbers.js"></script>
   </head>
   <body>
   <div class="off-canvas-wrapper">
@@ -25,78 +27,62 @@
           </svg>
         </span>
       </button>
-      <h3 class="heading-smallest">Atlas</h3>
-      <input type="text" placeholder="Search">
+      <h3 class="heading-smallest type-caps">Design</h3>
       <div data-magellan>
         <ul class="vertical menu" data-accordion-menu>
-          <li class="text-small"><a href="">Typography</a>
+          <li class="text-smaller"><a href="">Typography</a>
             <ul class="menu vertical nested">
               <li ><a href="#fonts">Fonts</a></li>
               <li ><a href="#heading-sizes">Heading Sizes</a></li>
               <li ><a href="#text-sizes">Text Sizes</a></li>
             </ul>
           </li>
-          <li class="text-small"><a href="">Colors</a>
+          <li class="text-smaller"><a href="#spacing">Spacing</a>
+            <ul class="menu vertical nested">
+              <li ><a href="#spacing-system">Spacing System</a></li>
+              <li><a href="#inset">Container Insets</a></li>
+            </ul>
+          </li>
+          <li class="text-smaller"><a href="">Colors</a>
             <ul class="menu vertical nested">
               <li ><a href="#brand-colors">Brand Colors</a></li>
               <li ><a href="#color-palette">Color Palette</a></li>
-<!--               <li ><a href="#color-sets">Color Sets</a></li>
+              <!--<li ><a href="#color-sets">Color Sets</a></li>
               <li ><a href="#gradients">Gradients</a></li>
               <li ><a href="#themes">Themes</a></li>              
               <li ><a href="#colors-accessibility">Accessibility</a></li> -->
             </ul>
           </li>
-          <li class="text-small"><a href="">Icons &amp; Images</a>
+          <li class="text-smaller"><a href="">Icons &amp; Images</a>
             <ul class="menu vertical nested">
               <li ><a href="#flat-icons">Flat Icons</a></li> 
               <li ><a href="#blog-icons">Blog Icons</a></li>
               <li ><a href="#badges">Badges</a></li>
             </ul>
           </li>
-          <li class="text-small"><a href="">Atoms</a>
+          <li class="text-smaller"><a href="">Atoms</a>
             <ul class="menu vertical nested">
               <li ><a href="#buttons">Buttons</a></li>
-              <!-- <li ><a href="#links">Links</a></li> -->
               <li ><a href="#forms">Forms</a></li>
-              <!-- <li ><a href="#tabs">Tabs</a></li> -->
-              <!-- <li ><a href="#social-media">Social Media</a></li> -->
-              <!-- <li ><a href="#tags-labels">Tags &amp; Labels</a></li> -->
             </ul>
           </li>
+          <li class="text-smaller"><a href="">Components</a>
+              <ul class="menu vertical nested">
+                <li><a href="#inventory">Inventory</a></li>
+              </ul>
+          </li> 
         </ul>
       </div>
       <hr>
-      <h3 class="heading-smallest more">More from U.S. News</h3>
+      <h3 class="heading-smallest type-caps more">More Atlas</h3>
       <ul>
-        <li class="menu-text text-small"><a href="index.html">Design</a></li>
-        <li class="menu-text text-small"><a href="#">Development</a></li>
-        <li class="menu-text text-small"><a href="#">Templates</a></li>
-        <li class="menu-text text-small"><a href="logos.html">Logos</a></li>
-        <li class="menu-text text-small"><a href="badges.html">Badges</a></li>
+        <li class="menu-text text-smaller"><a href="index.html">Design</a></li>
+        <li class="menu-text text-smaller"><a href="#">Development</a></li>
+        <li class="menu-text text-smaller"><a href="#">Templates</a></li>
+        <li class="menu-text text-smaller"><a href="logos.html">Logos</a></li>
+        <li class="menu-text text-smaller"><a href="badges.html">Badges</a></li>
       </ul>
-      <ul>
-        <li class="menu-text text-smallest lineheight-loose type-bold"><a href="">Contact</a></li>
-        <li class="menu-text text-smallest lineheight-loose type-bold"><a href="">Employment</a></li>
-        <li class="menu-text text-smallest lineheight-loose type-bold"><a href="">Advertising</a></li>
-        <li class="menu-text text-smallest lineheight-loose type-bold"><a href="">Terms &amp; Conditions / Privacy Policy</a></li>
-      </ul>
-      <ul class="menu icons">
-        <li>
-          <svg class="icon iron large" alt="facebook">
-            <use xlink:href="img/sprite.svg#facebook"></use>
-          </svg>
-        </li>
-        <li>
-          <svg class="icon iron large twitter" alt="twitter">
-            <use xlink:href="img/sprite.svg#twitter"></use>
-          </svg>
-        </li>
-        <li>
-          <svg class="icon iron large" alt="google plus">
-            <use xlink:href="img/sprite.svg#google-plus"></use>
-          </svg>
-        </li>
-      </ul>
+      
     </div>
 <!--End Off Canvas -->
     <div class="off-canvas-content" data-off-canvas-content>
@@ -117,16 +103,16 @@
       </div> 
       <div class="top-bar-right">
         <ul class="menu icons">
-          <li>
+          <!-- <li>
             <svg class="icon white large main-nav__icons-search hide-for-small-only" alt="search">
               <use xlink:href="img/sprite.svg#search"></use>
             </svg>
-          </li>
-          <li class="login-dropdown">
+          </li> -->
+          <!-- <li class="login-dropdown">
             <svg class="icon white large main-nav__icons-login hide-for-small-only" alt="user login">
               <use xlink:href="img/sprite.svg#login"></use>
             </svg>
-          </li>
+          </li> -->
           <li>
             <svg class="icon white large main-nav__icons-hamburger" alt="menu" data-toggle="offCanvasRight">
               <use xlink:href="img/sprite.svg#hamburger"></use>
@@ -144,16 +130,22 @@
         <nav class="sticky" data-sticky data-anchor="content">
           <div data-magellan>
             <ul class="sticky-nav vertical menu" data-accordion-menu>
-              <li class="text-small type-display-caps">Design</li>
+              <li class="text-normal heading-caps">Design</li>
               <li class="text-smaller"><a href="">Typography</a>
                 <ul class="menu vertical nested">
                   <li><a href="#fonts">Fonts</a></li>
                   <li><a href="#heading-sizes">Heading Sizes</a></li>
                   <li><a href="#text-sizes">Text Sizes</a></li>
                   <li><a href="#font-weights">Font Weights</a></li>
-                  <li><a href="#style-helpers">Style Helpers</a></li>
+<!--                   <li><a href="#style-helpers">Style Helpers</a></li>
                   <li><a href="#display-classes">Display Type</a></li>
-                  <li><a href="#breakpoint-helpers">Breakpoint Helpers</a></li>
+                  <li><a href="#breakpoint-helpers">Breakpoint Helpers</a></li> -->
+                </ul>
+              </li>
+              <li class="text-smaller"><a href="">Spacing</a>
+                <ul class="menu vertical nested">
+                  <li><a href="#spacing-system">Spacing System</a></li>
+                  <li><a href="#inset">Container Insets</a></li>
                 </ul>
               </li>
               <li class="text-smaller"><a href="">Colors</a>
@@ -176,11 +168,12 @@
               <li class="text-smaller"><a href="">Atoms</a>
                 <ul class="menu vertical nested">
                   <li><a href="#buttons">Buttons</a></li>
-                  <!-- <li><a href="#links">Links</a></li> -->
                   <li><a href="#forms">Forms</a></li>
-                  <!-- <li><a href="#tabs">Tabs</a></li> -->
-                  <!-- <li><a href="#social-media">Social Media</a></li> -->
-                  <!-- <li><a href="#tags-labels">Tags &amp; Labels</a></li> -->
+                </ul>
+              </li>
+              <li class="text-smaller"><a href="">Components</a>
+                <ul class="menu vertical nested">
+                  <li><a href="#inventory">Inventory</a></li>
                 </ul>
               </li>          
                 <li class="text-smaller"><a href="#first">Back to top</a></li>
@@ -192,7 +185,7 @@
 <!--Start Main Content-->
       <div class="small-12 medium-9 large-10 column main-well">
 
-        <section id="first"  data-magellan-target="first" class="typography">
+        <section id="first"  data-magellan-target="first">
           <h2 id="typography" data-magellan-target="typography" class="heading-larger">Typography</h2>
 
           <article>
@@ -213,8 +206,8 @@
                       <p class="text-small">Typeface for headings, navigation, and display text.</p>
                     </div>
                     <div class="card-section bottom" data-equalizer-watch>
-                      <h3 class="heading-largest">AaBb <span class="type-thin type-muted">AaBb</span></h3>
-                      <h3 class="heading-small type-muted">The quick brown fox jumps over the lazy dog.</h3>
+                      <h3 class="heading-largest">AaBb <span class="type-thin text-muted">AaBb</span></h3>
+                      <h3 class="heading-small text-muted">The quick brown fox jumps over the lazy dog.</h3>
                     </div>
                     <div class="card-section button-bar">
                       <a href="https://fonts.google.com/specimen/Montserrat?selection.family=Montserrat" target="_blank" class="download type-bold text-smaller link-black">Download Montserrat</a>
@@ -229,11 +222,11 @@
                     <p class="text-small">Typeface for paragraph text.</p>
                   </div>
                   <div class="card-section bottom" data-equalizer-watch>
-                    <h3 class="roboto-override heading-largest">AaBb <span class="type-thin type-muted">AaBb</span></h3>
-                    <h3 class="roboto-override heading-small type-muted">The quick brown fox jumps over the lazy dog.</h3>
+                    <h3 class="roboto-override heading-largest">AaBb <span class="type-thin text-muted">AaBb</span></h3>
+                    <h3 class="roboto-override heading-small text-muted">The quick brown fox jumps over the lazy dog.</h3>
                   </div>
                   <div class="card-section button-bar">
-                    <a href="https://fonts.google.com/specimen/Montserrat?selection.family=Montserrat" target="_blank" class="download type-bold text-smaller link-black">Download Roboto</a>
+                    <a href="https://fonts.google.com/specimen/Roboto" target="_blank" class="download type-bold text-smaller link-black">Download Roboto</a>
                   </div>                  
                 </div>
               </div>
@@ -245,25 +238,30 @@
           <h2  id="heading-sizes" data-magellan-target="heading-sizes" class="heading-large">Heading Sizes</h2>
           <div class="details-bar">
             <p class="text-smaller"><span class="styleguide__label stable has-tip right" data-tooltip aria-haspopup="true" data-disable-hover="true" tabindex="2">Stable</span>
-               <span class="styleguide__date">Last updated <span class="type-bold">07.21.17</span> <span class="styleguide__user">by <span class="type-bold">Katie Sokolosky</span></span></span></p>
+               <span class="styleguide__date">Last updated <span class="type-bold">09.09.17</span> <span class="styleguide__user">by <span class="type-bold">Katie Sokolosky</span></span></span></p>
           </div>
-          <p class="text-normal">For consistent typography throughout the site, apply these classes to headings to manipulate the sizes. All headings <code class="styleguide">h2, h2, h3, h4, h5, h6</code> should have a <code class="styleguide">.heading-*</code> class attached.</p>
           <p class="text-normal">All headings have a font-weight of <code class="styleguide">700/bold</code> and their default color is <code class="styleguide">$classname/#222</code>. The default color for the <code class="styleguide">small</code> segment is set to <code class="styleguide">$classname/#555</code>.
+          <a href="line-height-test.html" target="_blank">View line-height sample &raquo;</a>
 
           <div class="row">
             <div class="column">
+
               <ul class="tabs" data-tabs id="heading-size-tabs">
                 <li class="tabs-title is-active"><a href="#panel1" aria-selected="true">CSS</a></li>
-                <li class="tabs-title"><a href="#panel2">Photoshop</a></li>
-                <li class="tabs-title"><a href="#panel3">Show HTML</a></li>
+                <li class="tabs-title"><a href="#panel2" aria-selected="true">CSS Mobile</a></li>
+                <li class="tabs-title"><a href="#panel3">Photoshop</a></li>
+                <li class="tabs-title"><a href="#panel4">Photoshop Mobile</a></li>
+                <li class="tabs-title"><a href="#panel5">Show HTML</a></li>
               </ul>
-              <div class="tabs-content" data-tabs-content="heading-size-tabs">
-                <div class="tabs-panel is-active" id="panel1">
 
+              <div class="tabs-content" data-tabs-content="heading-size-tabs">
+              
+                <div class="tabs-panel is-active" id="panel1">
+                  
                   <div class="row faux-table">
                     <div class="small-12 large-9 column">
                       <code class="styleguide label-top">.heading-largest</code>
-                      <h3 class="heading-largest">Heading 3.125rem, Lh 1.1</h3>
+                      <h3 class="heading-largest">Heading 3.125rem, Lh 1.12</h3>
                     </div>
                     <div class="small-12 large-3 column">
                       <code class="styleguide label-top">.heading-largest .small</code>
@@ -274,7 +272,7 @@
                   <div class="row faux-table">
                     <div class="small-12 large-9 column">
                       <code class="styleguide label-top">.heading-larger</code>
-                      <h3 class="heading-larger">Heading 2.625rem, Lh 1.2</h3>
+                      <h3 class="heading-larger">Heading 2.625rem, Lh 1.14</h3>
                     </div>
                     <div class="small-12 large-3 column">
                       <code class="styleguide label-top">.heading-larger .small</code>
@@ -296,7 +294,7 @@
                   <div class="row faux-table">
                     <div class="small-12 large-9 column">
                       <code class="styleguide label-top">.heading-normal</code>
-                      <h3 class="heading-normal">Heading 1.5rem, Lh 1.25</h3>
+                      <h3 class="heading-normal">Heading 1.5rem, Lh 1.33</h3>
                     </div>
                     <div class="small-12 large-3 column">
                       <code class="styleguide label-top">.heading-normal .small</code>
@@ -307,7 +305,7 @@
                   <div class="row faux-table">
                     <div class="small-12 large-9 column">
                       <code class="styleguide label-top">.heading-small</code>
-                      <h3 class="heading-small">Heading 1.25rem, Lh 1.25</h3>
+                      <h3 class="heading-small">Heading 1.25rem, Lh 1.2</h3>
                     </div>
                     <div class="small-12 large-3 column">
                       <code class="styleguide label-top">.heading-small .small</code>
@@ -318,7 +316,7 @@
                   <div class="row faux-table">
                     <div class="small-12 large-9 column">
                       <code class="styleguide label-top">.heading-smaller</code>
-                      <h3 class="heading-smaller">Heading 1.125rem, Lh 1.25</h3>
+                      <h3 class="heading-smaller">Heading 1.125rem, Lh 1.33</h3>
                     </div>
                     <div class="small-12 large-3 column">
                       <code class="styleguide label-top">.heading-smaller .small</code>
@@ -336,10 +334,103 @@
                       <h3 class="heading-smallest"><span class="small">small is 90%</span></h3>
                     </div>
                   </div>
+
                   <div class="row faux-table">
                     <div class="small-12 large-9 column">
                       <code class="styleguide label-top">.heading-tiny</code>
-                      <h3 class="heading-tiny">Heading .875rem, Lh x</h3>
+                      <h3 class="heading-tiny">Heading .875rem, Lh 1.42</h3>
+                    </div>
+                    <div class="small-12 large-3  column">
+                      <code class="styleguide label-top">.heading-tiny .small</code>
+                      <h3 class="heading-tiny"><span class="small">small 90%</span></h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="tabs-content" data-tabs-content="heading-size-tabs">
+                <div class="tabs-panel" id="panel2">
+
+                  <div class="row faux-table">
+                    <div class="small-12 large-9 column">
+                      <code class="styleguide label-top">.heading-largest</code>
+                      <h3 class="heading-largest">Heading 2.0rem, Lh 1.25</h3>
+                    </div>
+                    <div class="small-12 large-3 column">
+                      <code class="styleguide label-top">.heading-largest .small</code>
+                      <h3 class="heading-largest"><span class="small">small is 75%</span></h3>
+                    </div>
+                  </div>
+
+                  <div class="row faux-table">
+                    <div class="small-12 large-9 column">
+                      <code class="styleguide label-top">.heading-larger</code>
+                      <h3 class="heading-larger">Heading 1.5rem, Lh 1.33</h3>
+                    </div>
+                    <div class="small-12 large-3 column">
+                      <code class="styleguide label-top">.heading-larger .small</code>
+                      <h3 class="heading-larger"><span class="small">small is 75%</span></h3>
+                    </div>
+                  </div>
+
+                  <div class="row faux-table">
+                    <div class="small-12 large-9 column">
+                      <code class="styleguide label-top">.heading-large</code>
+                      <h3 class="heading-large">Heading 1.25rem, Lh 1.2</h3>
+                    </div>
+                    <div class="small-12 large-3 column">
+                      <code class="styleguide label-top">.heading-large .small</code>
+                      <h3 class="heading-large"><span class="small">small is 90%</span></h3>
+                    </div>
+                  </div>
+
+                  <div class="row faux-table">
+                    <div class="small-12 large-9 column">
+                      <code class="styleguide label-top">.heading-normal</code>
+                      <h3 class="heading-normal">Heading 1.125rem, Lh 1.33</h3>
+                    </div>
+                    <div class="small-12 large-3 column">
+                      <code class="styleguide label-top">.heading-normal .small</code>
+                      <h3 class="heading-normal"><span class="small">small is 90%</span></h3>
+                    </div>
+                  </div>
+
+                  <div class="row faux-table">
+                    <div class="small-12 large-9 column">
+                      <code class="styleguide label-top">.heading-small</code>
+                      <h3 class="heading-small">Heading 1rem, Lh 1.25</h3>
+                    </div>
+                    <div class="small-12 large-3 column">
+                      <code class="styleguide label-top">.heading-small .small</code>
+                      <h3 class="heading-small"><span class="small">small is 90%</span></h3>
+                    </div>
+                  </div>
+
+                  <div class="row faux-table">
+                    <div class="small-12 large-9 column">
+                      <code class="styleguide label-top">.heading-smaller</code>
+                      <h3 class="heading-smaller">Heading 0.875rem, Lh 1.42</h3>
+                    </div>
+                    <div class="small-12 large-3 column">
+                      <code class="styleguide label-top">.heading-smaller .small</code>
+                      <h3 class="heading-smaller"><span class="small">small is 90%</span></h3>
+                    </div>
+                  </div>
+
+                  <div class="row faux-table">
+                    <div class="small-12 large-9 column">
+                      <code class="styleguide label-top">.heading-smallest</code>
+                      <h3 class="heading-smallest">Heading 0.875rem, Lh 1.42</h3>
+                    </div>
+                    <div class="small-12 large-3 column">
+                      <code class="styleguide label-top">.heading-smallest .small</code>
+                      <h3 class="heading-smallest"><span class="small">small is 90%</span></h3>
+                    </div>
+                  </div>
+                  <div class="row faux-table">
+                    <div class="small-12 large-9 column">
+                      <code class="styleguide label-top">.heading-tiny</code>
+                      <h3 class="heading-tiny">Heading 0.875rem, Lh 1.42</h3>
                     </div>
                     <div class="small-12 large-3  column">
                       <code class="styleguide label-top">.heading-tiny .small</code>
@@ -348,11 +439,11 @@
                   </div>
                 </div>
 
-                <div class="tabs-panel" id="panel2">
+                <div class="tabs-panel" id="panel3">
                   <div class="row faux-table">
                     <div class="small-12 large-9 column">
                       <code class="styleguide label-top">.heading-largest</code>
-                      <h3 class="heading-largest">Heading 50px / 55px</h3>
+                      <h3 class="heading-largest">Heading 50px / 56px </h3>
                     </div>
                     <div class="small-12 large-3 column">
                       <code class="styleguide label-top">.heading-largest .small</code>
@@ -363,7 +454,7 @@
                   <div class="row faux-table">
                     <div class="small-12 large-9 column">
                       <code class="styleguide label-top">.heading-larger</code>
-                      <h3 class="heading-larger">Heading 42px / 50px</h3>
+                      <h3 class="heading-larger">Heading 42px / 48px</h3>
                     </div>
                     <div class="small-12 large-3 column">
                       <code class="styleguide label-top">.heading-larger .small</code>
@@ -385,7 +476,7 @@
                   <div class="row faux-table">
                     <div class="small-12 large-9 column">
                       <code class="styleguide label-top">.heading-normal</code>
-                      <h3 class="heading-normal">Heading 24px / 30px</h3>
+                      <h3 class="heading-normal">Heading 24px / 32px</h3>
                     </div>
                     <div class="small-12 large-3 column">
                       <code class="styleguide label-top">.heading-normal .small</code>
@@ -396,7 +487,7 @@
                   <div class="row faux-table">
                     <div class="small-12 large-9 column">
                       <code class="styleguide label-top">.heading-small</code>
-                      <h3 class="heading-small">Heading 20px /25px</h3>
+                      <h3 class="heading-small">Heading 20px / 24px</h3>
                     </div>
                     <div class="small-12 large-3 column">
                       <code class="styleguide label-top">.heading-small .small</code>
@@ -407,7 +498,7 @@
                   <div class="row faux-table">
                     <div class="small-12 large-9 column">
                       <code class="styleguide label-top">.heading-smaller</code>
-                      <h3 class="heading-smaller">Heading 18px / 25px</h3>
+                      <h3 class="heading-smaller">Heading 18px / 24px</h3>
                     </div>
                     <div class="small-12 large-3 column">
                       <code class="styleguide label-top">.heading-smaller .small</code>
@@ -436,7 +527,99 @@
                     </div>
                   </div>
                 </div>
-                <div class="tabs-panel" id="panel3"> 
+                <div class="tabs-panel" id="panel4">
+                  <div class="row faux-table">
+                    <div class="small-12 large-9 column">
+                      <code class="styleguide label-top">.heading-largest</code>
+                      <h3 class="heading-largest">Heading 32px / 40px </h3>
+                    </div>
+                    <div class="small-12 large-3 column">
+                      <code class="styleguide label-top">.heading-largest .small</code>
+                      <h3 class="heading-largest"><span class="small">small 24px</span></h3>
+                    </div>
+                  </div>
+
+                  <div class="row faux-table">
+                    <div class="small-12 large-9 column">
+                      <code class="styleguide label-top">.heading-larger</code>
+                      <h3 class="heading-larger">Heading 24px / 32px</h3>
+                    </div>
+                    <div class="small-12 large-3 column">
+                      <code class="styleguide label-top">.heading-larger .small</code>
+                      <h3 class="heading-larger"><span class="small">small 18px</span></h3>
+                    </div>
+                  </div>
+
+                  <div class="row faux-table">
+                    <div class="small-12 large-9 column">
+                      <code class="styleguide label-top">.heading-large</code>
+                      <h3 class="heading-large">Heading 20px / 24px</h3>
+                    </div>
+                    <div class="small-12 large-3 column">
+                      <code class="styleguide label-top">.heading-large .small</code>
+                      <h3 class="heading-large"><span class="small">small 18px</span></h3>
+                    </div>                    
+                  </div>
+
+                  <div class="row faux-table">
+                    <div class="small-12 large-9 column">
+                      <code class="styleguide label-top">.heading-normal</code>
+                      <h3 class="heading-normal">Heading 18px / 24px</h3>
+                    </div>
+                    <div class="small-12 large-3 column">
+                      <code class="styleguide label-top">.heading-normal .small</code>
+                      <h3 class="heading-normal"><span class="small">small 16px</span></h3>
+                    </div>
+                  </div>
+
+                  <div class="row faux-table">
+                    <div class="small-12 large-9 column">
+                      <code class="styleguide label-top">.heading-small</code>
+                      <h3 class="heading-small">Heading 16px / 20px</h3>
+                    </div>
+                    <div class="small-12 large-3 column">
+                      <code class="styleguide label-top">.heading-small .small</code>
+                      <h3 class="heading-small"><span class="small">small 14px</span></h3>
+                    </div>                
+                  </div>
+
+                  <div class="row faux-table">
+                    <div class="small-12 large-9 column">
+                      <code class="styleguide label-top">.heading-smaller</code>
+                      <h3 class="heading-smaller">Heading 14px / 20px</h3>
+                    </div>
+                    <div class="small-12 large-3 column">
+                      <code class="styleguide label-top">.heading-smaller .small</code>
+                      <h3 class="heading-smaller"><span class="small">small 12px</span></h3>
+                    </div> 
+                  </div>
+
+                  <div class="row faux-table">
+                    <div class="small-12 large-9 column">
+                      <code class="styleguide label-top">.heading-smallest</code>
+                      <h3 class="heading-smallest">Heading 14px / 20px</h3>
+                    </div>
+                    <div class="small-12 large-3  column">
+                      <code class="styleguide label-top">.heading-smallest .small</code>
+                      <h3 class="heading-smallest"><span class="small">small 12px</span></h3>
+                    </div>
+                  </div>
+                  <div class="row faux-table">
+                    <div class="small-12 large-9 column">
+                      <code class="styleguide label-top">.heading-tiny</code>
+                      <h3 class="heading-tiny">Heading 14px / 20px</h3>
+                    </div>
+                    <div class="small-12 large-3  column">
+                      <code class="styleguide label-top">.heading-tiny .small</code>
+                      <h3 class="heading-tiny"><span class="small">small 12px</span></h3>
+                    </div>
+                  </div>
+                </div>
+
+
+
+
+                <div class="tabs-panel" id="panel5"> 
                   <div class="row container">
                     <div class="small-12 column">
                       <pre class="line-numbers" data-start="1">
@@ -464,7 +647,8 @@
                <span class="styleguide__date">Last updated <span class="type-bold">08.21.17</span> <span class="styleguide__user">by <span class="type-bold">Katie Sokolosky</span></span></span></p>
             </div>
             <p class="text-normal" data-magellan>To modify font size, apply these classes. Do not use these classes on headings. Headings have their own sizing classes, documented <a href="#heading-sizes">here</a>.</p>
-            <p class="text-normal">Use class <code class="styleguide">.text-normal</code> for standard paragraph text. It is sized at <code class="styleguide">1.125rem/18px</code> with a line-height of <code class="styleguide">1.7/30px</code>.</p>
+            <p class="text-normal">Use class <code class="styleguide">.text-normal</code> for standard paragraph text. It is sized at <code class="styleguide">1.125rem/18px</code> with a line-height of <code class="styleguide">1.125/28px</code>.</p>
+            <a href="line-height-test.html" target="_blank">View line-height sample &raquo;</a>
             <div class="row">
             <div class="column">
               <ul class="tabs" data-tabs id="text-size-tabs">
@@ -485,48 +669,48 @@
                   <div class="row faux-table">
                     <div class="small-12 column">
                       <code class="styleguide label-top">.text-larger</code>
-                      <p class="text-larger">Paragraph text 1.5rem, Lh 1.475</p>
+                      <p class="text-larger">Paragraph text 1.5rem, Lh 1.33</p>
                     </div>
                   </div>
 
                   <div class="row faux-table">
                     <div class="small-12 column">
                       <code class="styleguide label-top">.text-large</code>
-                      <p class="text-large">Paragraph text 1.25rem, Lh 1.5</p>
+                      <p class="text-large">Paragraph text 1.25rem, Lh 1.4</p>
                     </div>
                   </div>
 
                   <div class="row faux-table">
                     <div class="small-12 column">
                       <code class="styleguide label-top">.text-normal</code>
-                      <p class="text-normal">Paragraph text 1.125rem, Lh 1.7</p>
+                      <p class="text-normal">Paragraph text 1.125rem, Lh 1.5</p>
                     </div>
                   </div>
 
                   <div class="row faux-table">
                     <div class="small-12 column">
                       <code class="styleguide label-top">.text-small</code>
-                      <p class="text-small">Paragraph text 1rem, Lh 1.6</p>
+                      <p class="text-small">Paragraph text 1rem, Lh 1.5</p>
                     </div>
                   </div>
 
                   <div class="row faux-table">
                     <div class="small-12 column">
                       <code class="styleguide label-top">.text-smaller</code>
-                      <p class="text-smaller">Paragraph text 0.875rem, Lh 1.45</p>
+                      <p class="text-smaller">Paragraph text 0.875rem, Lh 1.4</p>
                     </div>
                   </div>
 
                   <div class="row faux-table">
                     <div class="small-12 column">
                       <code class="styleguide label-top">.text-smallest</code>
-                      <p class="text-smallest">Paragraph text 0.75rem, Lh 1.3</p>
+                      <p class="text-smallest">Paragraph text 0.75rem, Lh 1.33</p>
                     </div>
                   </div>
                   <div class="row faux-table">
                     <div class="small-12 column">
                       <code class="styleguide label-top">.text-tiny</code>
-                      <p class="text-tiny">Paragraph text 0.625rem, Lh 1.5</p>
+                      <p class="text-tiny">Paragraph text 0.625rem, Lh 1.2</p>
                     </div>
                   </div>
 
@@ -543,27 +727,27 @@
                   <div class="row faux-table">
                     <div class="small-12 column">
                       <code class="styleguide label-top">.text-larger</code>
-                      <p class="text-larger">Paragraph text 24px / 35px</p>
+                      <p class="text-larger">Paragraph text 24px / 32px</p>
                     </div>
                   </div>
 
                   <div class="row faux-table">
                     <div class="small-12 column">
                       <code class="styleguide label-top">.text-large</code>
-                      <p class="text-large">Paragraph text 20px / 30px</p>
+                      <p class="text-large">Paragraph text 20px / 28px</p>
                     </div>
                   </div>
 
                   <div class="row faux-table">
                     <div class="small-12 column">
                       <code class="styleguide label-top">.text-normal</code>
-                      <p class="text-normal">Paragraph text 18px / 30px</p>
+                      <p class="text-normal">Paragraph text 18px / 28px</p>
                     </div>
                   </div>
                   <div class="row faux-table">
                     <div class="small-12 column">
                       <code class="styleguide label-top">.text-small</code>
-                      <p class="text-small">Paragraph text 16px / 25px</p>
+                      <p class="text-small">Paragraph text 16px / 24px</p>
                     </div>
                   </div>
 
@@ -577,13 +761,13 @@
                   <div class="row faux-table">
                     <div class="small-12 column">
                       <code class="styleguide label-top">.text-smallest</code>
-                      <p class="text-smallest">Paragraph text 12px / 15px</p>
+                      <p class="text-smallest">Paragraph text 12px / 16px</p>
                     </div>
                   </div>
                   <div class="row faux-table">
                     <div class="small-12 column">
                       <code class="styleguide label-top">.text-tiny</code>
-                      <p class="text-tiny">Paragraph text 10px / 15px</p>
+                      <p class="text-tiny">Paragraph text 10px / 12px</p>
                     </div>
                   </div>                
                 </div>
@@ -612,7 +796,7 @@
           <article>
             <h2  id="font-weights" data-magellan-target="font-weights" class="heading-large">Font Weights</h2>
             <div class="details-bar">
-              <p class="text-smaller"><span class="styleguide__label in-draft has-tip right" data-tooltip aria-haspopup="" data-disable-hover="true" tabindex="2" title="">In-draft</span>
+              <p class="text-smaller"><span class="styleguide__label stable has-tip right" data-tooltip aria-haspopup="" data-disable-hover="true" tabindex="2" title="">Stable</span>
                <span class="styleguide__date">Last updated <span class="type-bold">08.21.17</span> <span class="styleguide__user">by <span class="type-bold">Katie Sokolosky</span></span></span></p>
             </div>
             <p class="text-normal">The default font weight for headings in Montserrat is <code class="styleguide">700/bold</code>. The default font weight for paragraph text in Roboto is <code class="styleguide">400/normal</code>. To modify the font-weight, use the classes listed below.</p> 
@@ -706,8 +890,75 @@
             </div>
           </article>
         </section>
+        <section>
+          <h2 id="spacing" data-magellan-target="spacing" class="heading-larger">Spacing</h2>
+          <article>
+            <h2 id="spacing-system" data-magellan-target="spacing-system" class="heading-large">Spacing System</h2>
+            <div class="details-bar">
+              <p class="text-smaller"><span class="styleguide__label stable has-tip right" data-tooltip aria-haspopup="" data-disable-hover="true" tabindex="2" title="">Stable</span>
+               <span class="styleguide__date">Last updated <span class="type-bold">09.10.17</span> <span class="styleguide__user">by <span class="type-bold">Katie Sokolosky</span></span></span></p>
+            </div>
+            <p class="text-normal">The spacing system is derived from a 4px baseline grid and limited to a set of numbers using geometric progression.</p>
+                <div class="spacing-wrapper">
+                  <div class="spacing-column">
+                    <div class="spacing spacing-two"></div>
+                    <p class="text-normal type-bold">2 px</p>
+                  </div>
+                  <div class="spacing-column">
+                    <div class="spacing spacing-four"></div>
+                    <p class="text-normal type-bold">4 px</p>
+                  </div>
+                  <div class="spacing-column">
+                    <div class="spacing spacing-eight"></div>
+                    <p class="text-normal type-bold">8 px</p>
+                  </div>
+                  <div class="spacing-column">
+                    <div class="spacing spacing-sixteen"></div>
+                    <p class="text-normal type-bold">16 px</p>
+                  </div>
+                  <div class="spacing-column">
+                    <div class="spacing spacing-thirtytwo"></div>
+                    <p class="text-normal type-bold">32 px</p>
+                  </div>
+                  <div class="spacing-column">
+                    <div class="spacing spacing-sixtyfour"></div>
+                    <p class="text-normal type-bold">64 px</p>
+                  </div>
+                  <div class="spacing-column">
+                    <div class="spacing spacing-onetwentyeight"></div>
+                    <p class="text-normal type-bold">128 px</p>
+                  </div>
+                </div>
+            </article>
 
-        <section class="colors">
+            <article>
+            <h2 id="inset" data-magellan-target="inset" class="heading-large">Container Inset</h2>
+            <div class="details-bar">
+              <p class="text-smaller"><span class="styleguide__label stable has-tip right" data-tooltip aria-haspopup="" data-disable-hover="true" tabindex="2" title="">Stable</span>
+               <span class="styleguide__date">Last updated <span class="type-bold">09.11.17</span> <span class="styleguide__user">by <span class="type-bold">Katie Sokolosky</span></span></span></p>
+            </div>
+            <p class="text-normal">For all containers, use one of the following options for space between content and the edge of the container.</p>
+              <div class="spacing-wrapper">
+                <div class="spacing-column">
+                  <div class="container-inset inset-eight"></div>
+                  <p class="text-normal type-bold">8 px</p>
+                  
+                </div>
+                <div class="spacing-column">
+                  <div class="container-inset inset-sixteen"></div>
+                  <p class="text-normal type-bold">16 px</p>
+                  
+                </div>
+                <div class="spacing-column">
+                  <div class="container-inset inset-thirtytwo"></div>
+                  <p class="text-normal type-bold">32 px</p>
+                  
+                </div>
+              </div>
+          </article>
+        </section>
+
+        <section>
           <h2 id="colors" data-magellan-target="colors" class="heading-larger">Colors</h2>
 
           <article>
@@ -718,7 +969,7 @@
             </div>
             <div class="row small-up-1 large-up-3">
               <div class="column">
-                <div class="card color-stack">
+                <div class="card rounded color-stack">
                   <div class="color-bar red-50 main" data-clipboard-text="c4212a">
                     <p class="text-smallest type-caps type-bold">Primary</p>
                     <p class="type text-small type-bold">Red-50</p>
@@ -746,7 +997,7 @@
               </div>
 
               <div class="column">
-                <div class="card color-stack">
+                <div class="card rounded color-stack">
                   <div class="color-bar blue-50 main" data-clipboard-text="115abf">
                     <p class="text-smallest type-caps type-bold">Secondary</p>
                     <p class="type text-small type-bold">Blue-50</p>
@@ -773,7 +1024,7 @@
               </div>
 
               <div class="column">
-                <div class="card color-stack">
+                <div class="card rounded color-stack">
                   <div class="color-bar black-90 main" data-clipboard-text="111111">
                     <p class="text-smallest type-caps type-bold">Tertiary</p>
                     <p class="type text-small type-bold">Black-90</p>
@@ -3269,12 +3520,12 @@
             </div>
             <br>
             <h3 class="heading-normal" id="icon-guidelines" data-magellan-target="icon-guidelines">Flat Icon Guidelines</h3>
-            <p class="text-normal type-muted">You can import and use the Icon Macro described below: <code class="styleguide">svgIcon(iconName, color='')</code></p>
-            <p class="text-normal type-muted" >The generated markup looks like<br>
+            <p class="text-normal text-muted">You can import and use the Icon Macro described below: <code class="styleguide">svgIcon(iconName, color='')</code></p>
+            <p class="text-normal text-muted" >The generated markup looks like<br>
               <code class="styleguide">&lt;svg class="icon"&gt;&lt;use xlink:href="static/sprites/svg/sprite.symbol.svg#NAME"/&gt;&lt;/svg&gt;</code></p>
-            <p class="text-normal type-muted" data-magellan>It will make a call to an <em>external svg sprite file</em> on static and return the icon that matches the hashmark fragment id appeneded to the url, i.e <code class="styleguide">#NAME</code> above. To see a list of icons we can use, take a look at the <a href="#flat-icons">Flat Icon Library</a> above.</p>
-            <p class="text-normal type-muted">Note: Internet Explorer doesn't support <code class="styleguide">&lt;use&gt;</code> with an <a>external source at all</a>, so we are running the <a>"svg4everybody" JS tool</a> that inlines external SVG content with ajax in browsers that need it.</p>
-              <p class="text-normal type-muted">A basic svg icon with a class of <code class="styleguide">.icon</code> will default to <code class="styleguide">black</code> and <code class="styleguide">1.5rem</code> square.</p>
+            <p class="text-normal text-muted" data-magellan>It will make a call to an <em>external svg sprite file</em> on static and return the icon that matches the hashmark fragment id appeneded to the url, i.e <code class="styleguide">#NAME</code> above. To see a list of icons we can use, take a look at the <a href="#flat-icons">Flat Icon Library</a> above.</p>
+            <p class="text-normal text-muted">Note: Internet Explorer doesn't support <code class="styleguide">&lt;use&gt;</code> with an <a>external source at all</a>, so we are running the <a>"svg4everybody" JS tool</a> that inlines external SVG content with ajax in browsers that need it.</p>
+              <p class="text-normal text-muted">A basic svg icon with a class of <code class="styleguide">.icon</code> will default to <code class="styleguide">black</code> and <code class="styleguide">1.5rem</code> <!-- square.</p>
             <h4 class="heading-normal">SVG Icon Rating</h4>
               <p class="text-normal">TO DO: Figure out this section.</p>
               <h4 class="heading-normal">Icon Container Styling</h4>
@@ -3284,7 +3535,7 @@
                         <ul>
                           <li>library of icons and names</li>
                           <li>include sizing, hover states, and accessibility</li>
-                        </ul>
+                        </ul> -->
           </article>
 
           <article>
@@ -4704,7 +4955,7 @@
         </section> 
 
         <section>
-          <h2 id="patterns" data-magellan-target="elements" class="heading-larger">Atoms</h2>
+          <h2 id="atoms" data-magellan-target="elements" class="heading-larger">Atoms</h2>
           
           <article>
             <h2  id="buttons" data-magellan-target="buttons" class="heading-large">Buttons</h2>
@@ -4791,15 +5042,6 @@
                 </li>
             </ul>
           </article>
-
-<!--           <article>
-            <h2  id="links" data-magellan-target="links" class="heading-large">Links</h2>
-            <div class="details-bar">
-              <p class="text-smaller"><span class="styleguide__label new has-tip right" data-tooltip aria-haspopup="" data-disable-hover="true" tabindex="2" title="">new</span>
-               <span class="styleguide__date">Last updated <span class="type-bold">07.10.17</span> <span class="styleguide__user">by <span class="type-bold">Katie Sokolosky</span></span></span></p>
-            </div>
-          </article> -->
-
           <article>
             <h2  id="forms" data-magellan-target="forms" class="heading-large">Forms</h2>
             <div class="details-bar">
@@ -4870,337 +5112,387 @@
             </ul>
           </article>
 
-<!--           <article>
-            <h2  id="tabs" data-magellan-target="tabs" class="heading-large">Tabs</h2>
-            <div class="details-bar">
-              <p class="text-smaller"><span class="styleguide__label new has-tip right" data-tooltip aria-haspopup="" data-disable-hover="true" tabindex="2" title="">new</span>
-               <span class="styleguide__date">Last updated <span class="type-bold">07.10.17</span> <span class="styleguide__user">by <span class="type-bold">Katie Sokolosky</span></span></span></p>
-            </div>
-          </article> -->
-          
-<!--           <article>
-            <h2  id="social-media" data-magellan-target="social-media" class="heading-large">Social Media</h2>
-            <div class="details-bar">
-              <p class="text-smaller"><span class="styleguide__label new has-tip right" data-tooltip aria-haspopup="" data-disable-hover="true" tabindex="2" title="">new</span>
-               <span class="styleguide__date">Last updated <span class="type-bold">07.10.17</span> <span class="styleguide__user">by <span class="type-bold">Katie Sokolosky</span></span></span></p>
-            </div>
-          </article> -->
-<!-- 
-          <article>
-            <h2  id="tags-labels" data-magellan-target="tags-labels" class="heading-large">Tags &amp; Labels</h2>
-            <div class="details-bar">
-              <p class="text-smaller"><span class="styleguide__label new has-tip right" data-tooltip aria-haspopup="" data-disable-hover="true" tabindex="2" title="">new</span>
-               <span class="styleguide__date">Last updated <span class="type-bold">07.10.17</span> <span class="styleguide__user">by <span class="type-bold">Katie Sokolosky</span></span></span></p>
-            </div>
-            <p class="text-normal">Tags &amp; labels should include all the elements that look like filter tags at different sizes. E.g., "Good Deal" tag or "Best Time to Visit" label.</p>
-          </article> -->
 
         </section>
-
+        <section>
+          <h2 class="heading-larger">Components</h2>
           
+          <article>
+            <h2  id="inventory" data-magellan-target="inventory" class="heading-large">Inventory</h2>
+            <div class="details-bar">
+              <p class="text-smaller"><span class="styleguide__label in-draft has-tip right" data-tooltip aria-haspopup="" data-disable-hover="true" tabindex="2" title="">In-draft</span>
+               <span class="styleguide__date">Last updated <span class="type-bold">09.18.17</span> <span class="styleguide__user">by <span class="type-bold">Katie Sokolosky</span></span></span></p>
+            </div>
+            <div class="row">
+              <div class="small-12 column end">
+
+              <!-- <h3 class="heading-normal inventory-section">Content</h3>
+              <ul class="accordion inventory" data-accordion data-multi-expand="true" data-allow-all-closed="true">
+                <li class="accordion-item" data-accordion-item>                
+                  <a href="#" class="accordion-title">ContentBox</a>
+                  <div class="accordion-content" data-tab-content>
+                    <ul>
+                      <li class="master">ContentBox <span class="small">Master</span></li>
+                      <li><a data-open="ContentBox_Master">Preview</a></li>
+                      <li><a href="">Sketch Component</a></li>
+                      <li><a href="https://jira.usnews.com/browse/GI-112">Dev Ticket</a></li>
+                      <li><a href="">Style Guide</a></li>
+                    </ul>
+                    <ul>
+                      <li>&#8627; ContentBox_Centered</li>
+                      <li><a data-open="ContentBox_Centered">Preview</a></li>
+                      <li><a href="">Sketch Component</a></li>
+                    </ul>
+                  </div>
+                </li>
+
+              </ul>
+
+              <h3 class="heading-normal inventory-section">Feature</h3>
+              <ul class="accordion inventory" data-accordion data-multi-expand="true" data-allow-all-closed="true">
+                <li class="accordion-item" data-accordion-item>                
+                  <a href="#" class="accordion-title">FeatureBox</a>
+                  <div class="accordion-content" data-tab-content>
+                    <ul>
+                      <li class="master">FeatureBox <span class="small">Master</span></li>
+                      <li><a data-open="FeatureBox_Master">Preview</a></li>
+                      <li><a href="">Sketch Component</a></li>
+                      <li><a href="https://jira.usnews.com/browse/GI-120">Dev Ticket</a></li>
+                      <li><a href="">Style Guide</a></li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+
+              <h3 class="heading-normal inventory-section">Media</h3>
+              <ul class="accordion inventory" data-accordion data-multi-expand="true" data-allow-all-closed="true">
+                <li class="accordion-item" data-accordion-item>                
+                  <a href="#" class="accordion-title">MediaLink</a>
+                  <div class="accordion-content" data-tab-content>
+                    <ul>
+                      <li class="master">MediaLink</li>
+                      <li><a></a></li>
+                      <li><a href=""></a></li>
+                      <li><a href="https://jira.usnews.com/browse/GI-110">Dev Ticket</a></li>
+                      <li><a href="">Style Guide</a></li>
+                    </ul>
+                    <ul> 
+                      <li>&#9675; MediaLink_BigThumbnail</li>
+                      <li><a data-open="MediaLink_BigThumbnail">Preview</a></li>
+                      <li><a href="">Sketch Component</a></li>
+                    </ul>
+                    <ul> 
+                      <li>&#9675; MediaLink_SmallThumbnail</li>
+                      <li><a data-open="MediaLink_SmallThumbnail">Preview</a></li>
+                      <li><a href="">Sketch Component</a></li>
+                    </ul>
+                    <ul>
+                      <li>&#9675; MediaLink_Stack_BigThumbnail</li>
+                      <li><a data-open="MediaLink_Stack_BigThumbnail">Preview</a></li>
+                      <li><a href="">Sketch Component</a></li>
+                    </ul>
+                    <ul>
+                      <li>&#9675; MediaLink_Stack_SmallThumbnail</li>
+                      <li><a data-open="MediaLink_Stack_SmallThumbnail">Preview</a></li>
+                      <li><a href="">Sketch Component</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="accordion-item" data-accordion-item>                
+                  <a href="#" class="accordion-title">MediaObject</a>
+                  <div class="accordion-content" data-tab-content>
+                    <ul>
+                      <li class="master">MediaObject <span class="small">Master</span></li>
+                      <li><a data-open="MediaObject_Master">Preview</a></li>
+                      <li><a href="">Sketch Component</a></li>
+                      <li><a href="https://jira.usnews.com/browse/GI-114">Dev Ticket</a></li>
+                      <li><a href="">Style Guide</a></li>
+                    </ul>
+                    <ul>
+                      <li>&#8627; MediaObject_BrandFuse</li>
+                      <li><a data-open="MediaObject_BrandFuse">Preview</a></li>
+                      <li><a href="">Sketch Component</a></li>
+                    </ul>
+                    <ul>
+                      <li>&#8627; MediaObject_GrayTag</li>
+                      <li><a data-open="MediaObject_GrayTag">Preview</a></li>
+                      <li><a href="">Sketch Component</a></li>
+                    </ul>
+
+                    <ul>
+                      <li>&#8627; MediaObject_NoTag</li>
+                      <li><a data-open="MediaObject_NoTag">Preview</a></li>
+                      <li><a href="">Sketch Component</a></li>
+                    </ul>
+                    <ul>
+                      <li>&#8627; MediaObject_RelatedHeadline</li>
+                      <li><a data-open="MediaObject_RelatedHeadline">Preview</a></li>
+                      <li><a href="">Sketch Component</a></li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+
+              <h3 class="heading-normal inventory-section">Typography</h3>
+              <ul class="accordion inventory" data-accordion data-multi-expand="true" data-allow-all-closed="true">
+                <li class="accordion-item" data-accordion-item>                
+                  <a href="#" class="accordion-title">SuperHeading</a>
+                  <div class="accordion-content" data-tab-content>
+                    <ul>
+                      <li class="master">SuperHeading</li>
+                    </ul>
+                    <ul>
+                      <li>SuperHeading_Normal</li>
+                      <li><a data-open="SuperHeading_Normal">Preview</a></li>
+                      <li><a href="">Sketch Component</a></li>
+                      <li><a href=""></a></li>
+                      <li><a href="">Style Guide</a></li>
+                    </ul>
+                    <ul>
+                      <li>SuperHeading_Smaller</li>
+                      <li><a data-open="SuperHeading_Smaller">Preview</a></li>
+                      <li><a href="">Sketch Component</a></li>
+                      <li><a href=""></a></li>
+                      <li><a href="">Style Guide</a></li>
+                    </ul>
+                  </div>
+                </li>
+            </ul> -->
+<!-- Inventory Orbit Slider + Reveal -->        
+
+            <div  class="reveal" data-reveal data id="ContentBox_Master">
+              <div class="orbit-controls">
+                <button class="orbit-previous" data-open="SuperHeading_Smaller">&#9664;&#xFE0E;</button>
+                <button class="orbit-next" data-open="ContentBox_Centered">&#9654;&#xFE0E;</button>
+              </div>
+              <h4 class="heading-smaller">ContentBox<span class="type-normal">_Master</span></h4>
+              <img src="http://via.placeholder.com/500x300">
+              <p class="code">sketch/path/<span class="label">ContentBox_Master</span></p>
+              <p class="text-smaller text-muted"><span class="type-bold">Notes</span> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                  tempor incididunt ut labore et dolore magna aliqua.</p>
+              <button class="close-button" data-close aria-label="Close modal" type="button">
+                <span aria-hidden="true">&times;</span>
+              </button>              
+            </div>
+
+            <div  class="reveal" data-reveal data id="ContentBox_Centered">
+              <div class="orbit-controls">
+                <button class="orbit-previous" data-open="ContentBox_Master">&#9664;&#xFE0E;</button>
+                <button class="orbit-next" data-open="FeatureBox_Master">&#9654;&#xFE0E;</button>
+              </div>
+              <h4 class="heading-smaller">ContentBox<span class="type-normal">_Centered</span></h4>
+              <img src="http://via.placeholder.com/500x300">
+              <p class="code">sketch/path/<span class="label">ContentBox_Centered</span></p>
+              <p class="text-smaller text-muted"><span class="type-bold">Notes</span> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                  tempor incididunt ut labore et dolore magna aliqua.</p>
+              <button class="close-button" data-close aria-label="Close modal" type="button">
+                <span aria-hidden="true">&times;</span>
+              </button>              
+            </div>
+
+            <div  class="reveal" data-reveal data id="FeatureBox_Master">
+              <div class="orbit-controls">
+                <button class="orbit-previous" data-open="ContentBox_Centered">&#9664;&#xFE0E;</button>
+                <button class="orbit-next" data-open="MediaLink_BigThumbnail">&#9654;&#xFE0E;</button>
+              </div>
+              <h4 class="heading-smaller">FeatureBox<span class="type-normal">_Master</span></h4>
+              <img src="http://via.placeholder.com/500x300">
+              <p class="code">sketch/path/<span class="label">FeatureBox_Master</span></p>
+              <p class="text-smaller text-muted"><span class="type-bold">Notes</span> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                  tempor incididunt ut labore et dolore magna aliqua.</p>
+              <button class="close-button" data-close aria-label="Close modal" type="button">
+                <span aria-hidden="true">&times;</span>
+              </button>              
+            </div>
+
+            <div  class="reveal" data-reveal data id="MediaLink_BigThumbnail">
+              <div class="orbit-controls">
+                <button class="orbit-previous" data-open="FeatureBox_Master">&#9664;&#xFE0E;</button>
+                <button class="orbit-next" data-open="MediaLink_SmallThumbnail">&#9654;&#xFE0E;</button>
+              </div>
+              <h4 class="heading-smaller">MediaLink<span class="type-normal">_BigThumbnail</span></h4>
+              <img src="http://via.placeholder.com/500x300">
+              <p class="code">media/media-link/<span class="label">MediaLink_BigThumbnail</span></p>
+              <p class="text-smaller text-muted"><span class="type-bold">Notes</span> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                  tempor incididunt ut labore et dolore magna aliqua.</p>
+              <button class="close-button" data-close aria-label="Close modal" type="button">
+                <span aria-hidden="true">&times;</span>
+              </button>              
+            </div>
+
+            <div  class="reveal" data-reveal data id="MediaLink_SmallThumbnail">
+              <div class="orbit-controls">
+                <button class="orbit-previous" data-open="MediaLink_BigThumbnail">&#9664;&#xFE0E;</button>
+                <button class="orbit-next" data-open="MediaLink_Stack_BigThumbnail">&#9654;&#xFE0E;</button>
+              </div>
+              <h4 class="heading-smaller">MediaLink<span class="type-normal">_SmallThumbnail</span></h4>
+              <img src="img/inventory/MediaLink_SmallThumbnail.png">
+              <p class="code">media/media-link/<span class="label">MediaLink_SmallThumbnail</span></p>
+              <p class="text-smaller text-muted"><span class="type-bold">Notes</span>  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                  tempor incididunt ut labore et dolore magna aliqua.</p>
+              <button class="close-button" data-close aria-label="Close modal" type="button">
+                <span aria-hidden="true">&times;</span>
+              </button>              
+            </div>
+
+            <div  class="reveal" data-reveal data id="MediaLink_Stack_BigThumbnail">
+              <div class="orbit-controls">
+                <button class="orbit-previous" data-open="MediaLink_SmallThumbnail">&#9664;&#xFE0E;</button>
+                <button class="orbit-next" data-open="MediaLink_Stack_SmallThumbnail">&#9654;&#xFE0E;</button>
+              </div>
+              <h4 class="heading-smaller">MediaLink<span class="type-normal">_Stack_BigThumbnail</span></h4>
+              <img src="http://via.placeholder.com/500x300">
+              <p class="code">sketch/path/<span class="label">MediaLink_Stack_BigThumbnail</span></p>
+              <p class="text-smaller text-muted"><span class="type-bold">Notes</span> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                  tempor incididunt ut labore et dolore magna aliqua.</p>
+              <button class="close-button" data-close aria-label="Close modal" type="button">
+                <span aria-hidden="true">&times;</span>
+              </button>              
+            </div>
+
+            <div  class="reveal" data-reveal data id="MediaLink_Stack_SmallThumbnail">
+              <div class="orbit-controls">
+                <button class="orbit-previous" data-open="MediaLink_Stack_BigThumbnail">&#9664;&#xFE0E;</button>
+                <button class="orbit-next" data-open="MediaObject_Master">&#9654;&#xFE0E;</button>
+              </div>
+              <h4 class="heading-smaller">MediaLink<span class="type-normal">_Stack_SmallThumbnail</span></h4>
+              <img src="http://via.placeholder.com/500x300">
+              <p class="code">sketch/path/<span class="label">MediaLink_Stack_SmallThumbnail</span></p>
+              <p class="text-smaller text-muted"><span class="type-bold">Notes</span> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                  tempor incididunt ut labore et dolore magna aliqua.</p>
+              <button class="close-button" data-close aria-label="Close modal" type="button">
+                <span aria-hidden="true">&times;</span>
+              </button>              
+            </div>
+
+            <div  class="reveal" data-reveal data id="MediaObject_Master">
+              <div class="orbit-controls">
+                <button class="orbit-previous" data-open="MediaLink_Stack_SmallThumbnail">&#9664;&#xFE0E;</button>
+                <button class="orbit-next" data-open="MediaObject_BrandFuse">&#9654;&#xFE0E;</button>
+              </div>
+              <h4 class="heading-smaller">MediaObject<span class="type-normal">_Master</span></h4>
+              <img src="http://via.placeholder.com/500x300">
+              <p class="code">sketch/path/<span class="label">MediaObject_Master</span></p>
+              <p class="text-smaller text-muted"><span class="type-bold">Notes</span> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                  tempor incididunt ut labore et dolore magna aliqua.</p>
+              <button class="close-button" data-close aria-label="Close modal" type="button">
+                <span aria-hidden="true">&times;</span>
+              </button>              
+            </div>
+
+            <div  class="reveal" data-reveal data id="MediaObject_BrandFuse">
+              <div class="orbit-controls">
+                <button class="orbit-previous" data-open="MediaObject_Master">&#9664;&#xFE0E;</button>
+                <button class="orbit-next" data-open="MediaObject_GrayTag">&#9654;&#xFE0E;</button>
+              </div>
+              <h4 class="heading-smaller">MediaObject<span class="type-normal">_BrandFuse</span></h4>
+              <img src="http://via.placeholder.com/500x300">
+              <p class="code">sketch/path/<span class="label">MediaObject_BrandFuse</span></p>
+              <p class="text-smaller text-muted"><span class="type-bold">Notes</span> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                  tempor incididunt ut labore et dolore magna aliqua.</p>
+              <button class="close-button" data-close aria-label="Close modal" type="button">
+                <span aria-hidden="true">&times;</span>
+              </button>              
+            </div>
+
+            <div  class="reveal" data-reveal data id="MediaObject_GrayTag">
+              <div class="orbit-controls">
+                <button class="orbit-previous" data-open="MediaObject_BrandFuse">&#9664;&#xFE0E;</button>
+                <button class="orbit-next" data-open="MediaObject_NoTag">&#9654;&#xFE0E;</button>
+              </div>
+              <h4 class="heading-smaller">MediaObject<span class="type-normal">_GrayTag</span></h4>
+              <img src="http://via.placeholder.com/500x300">
+              <p class="code">sketch/path/<span class="label">MediaObject_GrayTag</span></p>
+              <p class="text-smaller text-muted"><span class="type-bold">Notes</span> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                  tempor incididunt ut labore et dolore magna aliqua.</p>
+              <button class="close-button" data-close aria-label="Close modal" type="button">
+                <span aria-hidden="true">&times;</span>
+              </button>              
+            </div>
+
+            <div  class="reveal" data-reveal data id="MediaObject_NoTag">
+              <div class="orbit-controls">
+                <button class="orbit-previous" data-open="MediaObject_GrayTag">&#9664;&#xFE0E;</button>
+                <button class="orbit-next" data-open="MediaObject_RelatedHeadline">&#9654;&#xFE0E;</button>
+              </div>
+              <h4 class="heading-smaller">MediaObject<span class="type-normal">_NoTag</span></h4>
+              <img src="http://via.placeholder.com/500x300">
+              <p class="code">sketch/path/<span class="label">MediaObject_NoTag</span></p>
+              <p class="text-smaller text-muted"><span class="type-bold">Notes</span> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                  tempor incididunt ut labore et dolore magna aliqua.</p>
+              <button class="close-button" data-close aria-label="Close modal" type="button">
+                <span aria-hidden="true">&times;</span>
+              </button>              
+            </div>   
+
+            <div  class="reveal" data-reveal data id="MediaObject_RelatedHeadline">
+              <div class="orbit-controls">
+                <button class="orbit-previous" data-open="MediaObject_NoTag">&#9664;&#xFE0E;</button>
+                <button class="orbit-next" data-open="SuperHeading_Normal">&#9654;&#xFE0E;</button>
+              </div>
+              <h4 class="heading-smaller">MediaObject<span class="type-normal">_RelatedHeadline</span></h4>
+              <img src="http://via.placeholder.com/500x300">
+              <p class="code">sketch/path/<span class="label">MediaObject_RelatedHeadline</span></p>
+              <p class="text-smaller text-muted"><span class="type-bold">Notes</span> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                  tempor incididunt ut labore et dolore magna aliqua.</p>
+              <button class="close-button" data-close aria-label="Close modal" type="button">
+                <span aria-hidden="true">&times;</span>
+              </button>              
+            </div>   
+
+            <div  class="reveal" data-reveal data id="SuperHeading_Normal">
+              <div class="orbit-controls">
+                <button class="orbit-previous" data-open="MediaObject_RelatedHeadline">&#9664;&#xFE0E;</button>
+                <button class="orbit-next" data-open="SuperHeading_Smaller">&#9654;&#xFE0E;</button>
+              </div>
+              <h4 class="heading-smaller">SuperHeading<span class="type-normal">_Normal</span></h4>
+              <img src="http://via.placeholder.com/500x300">
+              <p class="code">sketch/path/<span class="label">SuperHeading_Normal</span></p>
+              <p class="text-smaller text-muted"><span class="type-bold">Notes</span> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                  tempor incididunt ut labore et dolore magna aliqua.</p>
+              <button class="close-button" data-close aria-label="Close modal" type="button">
+                <span aria-hidden="true">&times;</span>
+              </button>              
+            </div>  
+
+            <div  class="reveal" data-reveal data id="SuperHeading_Smaller">
+              <div class="orbit-controls">
+                <button class="orbit-previous" data-open="SuperHeading_Normal">&#9664;&#xFE0E;</button>
+                <button class="orbit-next" data-open="ContentBox_Master">&#9654;&#xFE0E;</button>
+              </div>
+              <h4 class="heading-smaller">SuperHeading<span class="type-normal">_Smaller</span></h4>
+              <img src="http://via.placeholder.com/500x300">
+              <p class="code">sketch/path/<span class="label">SuperHeading_Smaller</span></p>
+              <p class="text-smaller text-muted"><span class="type-bold">Notes</span> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                  tempor incididunt ut labore et dolore magna aliqua.</p>
+              <button class="close-button" data-close aria-label="Close modal" type="button">
+                <span aria-hidden="true">&times;</span>
+              </button>              
+            </div>                
+
+<!-- http://via.placeholder.com/500x300 -->
+   
+              </div>
+            </div>
+          </article>
+        </section> 
+
+        <p class="text-smallest">version 3.0 09.11.17</p>
       </div>
       <!-- End Main Well-->
 </div>
+</div>
 <!--End Page Content-->
-    </div>
-  </div>
-  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+</div>
+</div>
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
     <script src="js/vendor/foundation.min.js"></script>
+    <script src="js/kts-accordion.js"></script>
+    <script src="js/icon-switcher.js"></script>    
+    <script src="js/clipboard.min.js"></script>
+    <script src="js/leahs-clipboard.js"></script>
     <script>
       $(document).foundation();
-    </script>
-    <script type="text/javascript">
-      $('#color').change(function(){
-        if($(this).val() == 'colors'){ 
-          $(".card-section .icon").css('fill', '#111111');
-          $(".card-section.top.flush.text-center").css('background-color', '#fff');
-          $(".card-section .icon").css('transition', '300ms linear all');
-          $(".card-section .icon").css('-webkit-transition', '300ms linear all');
-          $(".card-section .icon").css('-m-transition', '300ms linear all');
-        }
-        if($(this).val() == 'link'){ 
-          $(".card-section .icon").css('fill', '#115abf');
-          $(".card-section.top.flush.text-center").css('background-color', '#fff');
-          $(".card-section .icon").css('transition', '300ms linear all');
-          $(".card-section .icon").css('-webkit-transition', '300ms linear all');
-          $(".card-section .icon").css('-m-transition', '300ms linear all');
-        }
-        if($(this).val() == 'muted'){
-          $(".card-section .icon").css('fill', '#666666');
-          $(".card-section.top.flush.text-center").css('background-color', '#fff');
-          $(".card-section .icon").css('transition', '300ms linear all');
-          $(".card-section .icon").css('-webkit-transition', '300ms linear all');
-          $(".card-section .icon").css('-m-transition', '300ms linear all');
-        }
-        if($(this).val() == 'pro'){
-          $(".card-section .icon").css('fill', '#0abba4');
-          $(".card-section.top.flush.text-center").css('background-color', '#fff');
-          $(".card-section .icon").css('transition', '300ms linear all');
-          $(".card-section .icon").css('-webkit-transition', '300ms linear all');
-          $(".card-section .icon").css('-m-transition', '300ms linear all');
-        }
-        if($(this).val() == 'con'){
-          $(".card-section .icon").css('fill', '#f06e65');
-          $(".card-section.top.flush.text-center").css('background-color', '#fff');
-          $(".card-section .icon").css('transition', '300ms linear all');
-          $(".card-section .icon").css('-webkit-transition', '300ms linear all');
-          $(".card-section .icon").css('-m-transition', '300ms linear all');
-        }
-        if($(this).val() == 'badge'){
-          $(".card-section .icon").css('fill', '#ffc14e');
-          $(".card-section.top.flush.text-center").css('background-color', '#13325d');
-          $(".card-section .icon").css('transition', '300ms linear all');
-          $(".card-section .icon").css('-webkit-transition', '300ms linear all');
-          $(".card-section .icon").css('-m-transition', '300ms linear all');
-        }
-        if($(this).val() == 'white'){
-          $(".card-section .icon").css('fill', '#fff');
-          $(".card-section.top.flush.text-center").css('background-color', '#13325d');
-          $(".card-section .icon").css('transition', '300ms linear all');
-          $(".card-section .icon").css('-webkit-transition', '300ms linear all');
-          $(".card-section .icon").css('-m-transition', '300ms linear all');
-        }
-        if($(this).val() == 'coal'){
-          $(".card-section .icon").css('fill', '#888888');
-          $(".card-section.top.flush.text-center").css('background-color', '#fff');
-          $(".card-section .icon").css('transition', '300ms linear all');
-          $(".card-section .icon").css('-webkit-transition', '300ms linear all');
-          $(".card-section .icon").css('-m-transition', '300ms linear all');
-        }
-        if($(this).val() == 'iron'){
-          $(".card-section .icon").css('fill', '#cccccc');
-          $(".card-section.top.flush.text-center").css('background-color', '#13325d');
-          $(".card-section .icon").css('transition', '300ms linear all');
-          $(".card-section .icon").css('-webkit-transition', '300ms linear all');
-          $(".card-section .icon").css('-m-transition', '300ms linear all');
-        }
-        if($(this).val() == 'steel'){
-          $(".card-section .icon").css('fill', '#c0cadd');
-          $(".card-section.top.flush.text-center").css('background-color', '#13325d');
-          $(".card-section .icon").css('transition', '300ms linear all');
-          $(".card-section .icon").css('-webkit-transition', '300ms linear all');
-          $(".card-section .icon").css('-m-transition', '300ms linear all');
-        }
-      });
-      $('#sizes').change(function(){
-        if($(this).val() == 'sizes'){ 
-          $(".card-section .icon").css('width', '3rem');
-          $(".card-section .icon").css('height', '3rem');
-          $(".icon-row").removeClass('large-up-4').addClass('large-up-8');
-          $(".icon-row").removeClass('small-up-2').addClass('small-up-4');
-          $(".card-section .icon").css('transition', '300ms linear all');
-          $(".card-section .icon").css('-webkit-transition', '300ms linear all');
-          $(".card-section .icon").css('-m-transition', '300ms linear all');
-        }
-        if($(this).val() == 'tiny'){ 
-          $(".card-section .icon").css('width', '0.625rem');
-          $(".card-section .icon").css('height', '0.625rem');
-          $(".icon-row").removeClass('large-up-4').addClass('large-up-8');
-          $(".icon-row").removeClass('small-up-2').addClass('small-up-4');
-          $(".card-section .icon").css('transition', '300ms linear all');
-          $(".card-section .icon").css('-webkit-transition', '300ms linear all');
-          $(".card-section .icon").css('-m-transition', '300ms linear all');
-        }
-        if($(this).val() == 'smallest'){
-          $(".card-section .icon").css('width', '0.75rem');
-          $(".card-section .icon").css('height', '0.75rem');
-          $(".icon-row").removeClass('large-up-4').addClass('large-up-8');
-          $(".icon-row").removeClass('small-up-2').addClass('small-up-4');
-          $(".card-section .icon").css('transition', '300ms linear all');
-          $(".card-section .icon").css('-webkit-transition', '300ms linear all');
-          $(".card-section .icon").css('-m-transition', '300ms linear all');
-        }
-        if($(this).val() == 'smaller'){
-          $(".card-section .icon").css('width', '0.875rem');
-          $(".card-section .icon").css('height', '0.875rem');
-          $(".icon-row").removeClass('large-up-4').addClass('large-up-8');
-          $(".icon-row").removeClass('small-up-2').addClass('small-up-4');
-          $(".card-section .icon").css('transition', '300ms linear all');
-          $(".card-section .icon").css('-webkit-transition', '300ms linear all');
-          $(".card-section .icon").css('-m-transition', '300ms linear all');
-        }
-        if($(this).val() == 'small'){
-          $(".icon").css('width', '1rem');
-          $(".icon").css('height', '1rem');
-          $(".icon-row").removeClass('large-up-4').addClass('large-up-8');
-          $(".icon-row").removeClass('small-up-2').addClass('small-up-4');
-          $(".card-section .icon").css('transition', '300ms linear all');
-          $(".card-section .icon").css('-webkit-transition', '300ms linear all');
-          $(".card-section .icon").css('-m-transition', '300ms linear all');
-        }
-        if($(this).val() == 'medium'){
-          $(".card-section .icon").css('width', '1.5rem');
-          $(".card-section .icon").css('height', '1.5rem');
-          $(".icon-row").removeClass('large-up-4').addClass('large-up-8');
-          $(".icon-row").removeClass('small-up-2').addClass('small-up-4');
-          $(".card-section .icon").css('transition', '300ms linear all');
-          $(".card-section .icon").css('-webkit-transition', '300ms linear all');
-          $(".card-section .icon").css('-m-transition', '300ms linear all');
-        }
-        if($(this).val() == 'large'){
-          $(".card-section .icon").css('width', '2rem');
-          $(".card-section .icon").css('height', '2rem');
-          $(".icon-row").removeClass('large-up-4').addClass('large-up-8');
-          $(".icon-row").removeClass('small-up-2').addClass('small-up-4');
-          $(".card-section .icon").css('transition', '300ms linear all');
-          $(".card-section .icon").css('-webkit-transition', '300ms linear all');
-          $(".card-section .icon").css('-m-transition', '300ms linear all');
-        }
-        if($(this).val() == 'larger'){
-          $(".card-section .icon").css('width', '3rem');
-          $(".card-section .icon").css('height', '3rem');
-          $(".icon-row").removeClass('large-up-4').addClass('large-up-8');
-          $(".icon-row").removeClass('small-up-2').addClass('small-up-4');
-          $(".card-section .icon").css('transition', '300ms linear all');
-          $(".card-section .icon").css('-webkit-transition', '300ms linear all');
-          $(".card-section .icon").css('-m-transition', '300ms linear all');
-        }
-        if($(this).val() == 'largest'){
-          $(".card-section .icon").css('width', '4rem');
-          $(".card-section .icon").css('height', '4rem');
-          $(".icon-row").removeClass('large-up-8').addClass('large-up-4');
-          $(".icon-row").removeClass('small-up-4').addClass('small-up-2');
-          $(".card-section .icon").css('transition', '300ms linear all');
-          $(".card-section .icon").css('-webkit-transition', '300ms linear all');
-          $(".card-section .icon").css('-m-transition', '300ms linear all');
-        }
-        if($(this).val() == 'x-large'){
-          $(".card-section .icon").css('width', '5rem');
-          $(".card-section .icon").css('height', '5rem');
-          $(".icon-row").removeClass('large-up-8').addClass('large-up-4');
-          $(".icon-row").removeClass('small-up-4').addClass('small-up-2');
-          $(".card-section .icon").css('transition', '300ms linear all');
-          $(".card-section .icon").css('-webkit-transition', '300ms linear all');
-          $(".card-section .icon").css('-m-transition', '300ms linear all');
-        }
-        if($(this).val() == 'x-larger'){
-          $(".card-section .icon").css('width', '6rem');
-          $(".card-section .icon").css('height', '6rem');
-          $(".icon-row").removeClass('large-up-8').addClass('large-up-4');
-          $(".icon-row").removeClass('small-up-4').addClass('small-up-2');
-          $(".card-section .icon").css('transition', '300ms linear all');
-          $(".card-section .icon").css('-webkit-transition', '300ms linear all');
-          $(".card-section .icon").css('-m-transition', '300ms linear all');
-        }
-        if($(this).val() == 'x-largest'){
-          $(".card-section .icon").css('width', '7rem');
-          $(".card-section .icon").css('height', '7rem');
-          $(".icon-row").removeClass('large-up-8').addClass('large-up-4');
-          $(".icon-row").removeClass('small-up-4').addClass('small-up-2');
-          $(".card-section .icon").css('transition', '300ms linear all');
-          $(".card-section .icon").css('-webkit-transition', '300ms linear all');
-          $(".card-section .icon").css('-m-transition', '300ms linear all');
-        }
-      });
-      $('#rotation').change(function(){
-        if($(this).val() == 'rotation'){ 
-          $(".card-section .icon").css('transform', 'rotate(360deg)');
-          $(".card-section .icon").css('-webkit-transform', 'rotate(360deg)');
-          $(".card-section .icon").css('-m-transform', 'rotate(360deg)');
-          $(".card-section .icon").css('transform', 'scale(1,1)');
-          $(".card-section .icon").css('-webkit-transform', 'scale(1,1)');
-          $(".card-section .icon").css('-m-transform', 'scale(1,1)');
-          $(".card-section .icon").css('transition', '300ms linear all');
-          $(".card-section .icon").css('-webkit-transition', '300ms linear all');
-          $(".card-section .icon").css('-m-transition', '300ms linear all');
-        }
-        if($(this).val() == 'rotate-45'){ 
-          $(".card-section .icon").css('transform', 'rotate(45deg)');
-          $(".card-section .icon").css('-webkit-transform', 'rotate(45deg)');
-          $(".card-section .icon").css('-m-transform', 'rotate(45deg)');
-          $(".card-section .icon").css('transition', '300ms linear all');
-          $(".card-section .icon").css('-webkit-transition', '300ms linear all');
-          $(".card-section .icon").css('-m-transition', '300ms linear all');
-        }
-        if($(this).val() == 'rotate-90'){
-          $(".card-section .icon").css('transform', 'rotate(90deg)');
-          $(".card-section .icon").css('-webkit-transform', 'rotate(90deg)');
-          $(".card-section .icon").css('-m-transform', 'rotate(90deg)');
-          $(".card-section .icon").css('transition', '300ms linear all');
-          $(".card-section .icon").css('-webkit-transition', '300ms linear all');
-          $(".card-section .icon").css('-m-transition', '300ms linear all');
-        }
-        if($(this).val() == 'rotate-135'){
-          $(".card-section .icon").css('transform', 'rotate(135deg)');
-          $(".card-section .icon").css('-webkit-transform', 'rotate(135deg)');
-          $(".card-section .icon").css('-m-transform', 'rotate(135deg)');
-          $(".card-section .icon").css('transition', '300ms linear all');
-          $(".card-section .icon").css('-webkit-transition', '300ms linear all');
-          $(".card-section .icon").css('-m-transition', '300ms linear all');
-        }
-        if($(this).val() == 'rotate-180'){
-          $(".card-section .icon").css('transform', 'rotate(180deg)');
-          $(".card-section .icon").css('-webkit-transform', 'rotate(180deg)');
-          $(".card-section .icon").css('-m-transform', 'rotate(180deg)');
-          $(".card-section .icon").css('transition', '300ms linear all');
-          $(".card-section .icon").css('-webkit-transition', '300ms linear all');
-          $(".card-section .icon").css('-m-transition', '300ms linear all');
-        }
-        if($(this).val() == 'rotate-225'){
-          $(".card-section .icon").css('transform', 'rotate(225deg)');
-          $(".card-section .icon").css('-webkit-transform', 'rotate(225deg)');
-          $(".card-section .icon").css('-m-transform', 'rotate(225deg)');
-          $(".card-section .icon").css('transition', '300ms linear all');
-          $(".card-section .icon").css('-webkit-transition', '300ms linear all');
-          $(".card-section .icon").css('-m-transition', '300ms linear all');
-        }
-        if($(this).val() == 'rotate-270'){
-          $(".card-section .icon").css('transform', 'rotate(270deg)');
-          $(".card-section .icon").css('-webkit-transform', 'rotate(270deg)');
-          $(".card-section .icon").css('-m-transform', 'rotate(270deg)');
-          $(".card-section .icon").css('transition', '300ms linear all');
-          $(".card-section .icon").css('-webkit-transition', '300ms linear all');
-          $(".card-section .icon").css('-m-transition', '300ms linear all');
-        }
-        if($(this).val() == 'rotate-315'){
-          $(".card-section .icon").css('transform', 'rotate(315deg)');
-          $(".card-section .icon").css('-webkit-transform', 'rotate(315deg)');
-          $(".card-section .icon").css('-m-transform', 'rotate(315deg)');
-          $(".card-section .icon").css('transition', '300ms linear all');
-          $(".card-section .icon").css('-webkit-transition', '300ms linear all');
-          $(".card-section .icon").css('-m-transition', '300ms linear all');
-        }
-        if($(this).val() == 'flip-horizontal'){
-          $(".card-section .icon").css('transform', 'scale(-1,1)');
-          $(".card-section .icon").css('-webkit-transform', 'scale(-1,1)');
-          $(".card-section .icon").css('-m-transform', 'scale(-1,1)');
-          $(".card-section .icon").css('transition', '300ms linear all');
-          $(".card-section .icon").css('-webkit-transition', '300ms linear all');
-          $(".card-section .icon").css('-m-transition', '300ms linear all');
-        }
-        if($(this).val() == 'flip-vertical'){
-          $(".card-section .icon").css('transform', 'scale(1,-1)');
-          $(".card-section .icon").css('-webkit-transform', 'scale(1,-1)');
-          $(".card-section .icon").css('-m-transform', 'scale(1,-1)');
-          $(".card-section .icon").css('transition', '300ms linear all');
-          $(".card-section .icon").css('-webkit-transition', '300ms linear all');
-          $(".card-section .icon").css('-m-transition', '300ms linear all');
-        }
-      });
-    </script>
-    <script src="js/clipboard.min.js"></script>
-    <script>
-    var clipboard = new Clipboard('.color-bar');
-    clipboard.on('success', function(e) {
-        console.info('Action:', e.action);
-        console.info('Text:', e.text);
-        console.info('Trigger:', e.trigger);
-
-        $(".notification").html("Copied");
-        $(".color-bar").mouseout(function(){
-          $(".notification").html("Copy");
-        });
-        e.clearSelection();
-    });
-    clipboard.on('error', function(e) {
-        console.error('Action:', e.action);
-        console.error('Trigger:', e.trigger);
-
-        $(".notification").html('Press "Ctrl + C" to copy');
-        $(".color-bar").mouseout(function(){
-          $(".notification").html("Copy");
-        });
-    });
     </script>
 </body>
 </html>

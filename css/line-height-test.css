@@ -1,0 +1,28 @@
+div {
+	margin-bottom: 3rem;
+}
+.heading-largest,
+.heading-larger,
+.heading-large,
+.heading-normal,
+.heading-small,
+.heading-smaller,
+.heading-smallest,
+.heading-tiny  {
+	margin-bottom: 1.5rem;
+}
+
+.text-largest,
+.text-larger,
+.text-large,
+.text-normal,
+.text-small,
+.text-smaller,
+.text-smallest,
+.text-tiny  {
+	margin-bottom: 1.5rem;
+}
+
+.heading-tiny {
+	font-weight: 400;
+}
