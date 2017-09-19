@@ -1,0 +1,88 @@
+/**
+* Styles specific to the Logos and Badges pages
+*/
+/*** TABLE ***/
+
+table tbody tr td{
+  text-align:right;
+  font-weight:400;
+}
+table tbody tr td:first-child{
+  text-align:left;
+  width:50%;
+  font-weight:700;
+}
+table.logo-specs tbody tr td:first-child{
+  width:33.33%;
+  border-right:1px solid #ccc;
+}
+table tbody tr td h5, table tbody tr td p{
+  text-align:left;
+  margin-bottom:0rem!important;
+}
+table tbody tr td span{
+  margin-left:5px;
+  margin-right:5px;
+}
+table.logo-specs tbody tr{
+  background-color:#f7f7f7;
+}
+table.logo-specs tbody tr:first-child{
+  background-color:#ffffff;
+}
+table tbody tr td:last-child{
+  width:35%;
+}
+table.logo-specs tbody tr td.logo-background {
+  background-color:#ccc;
+  text-align:center;
+}
+table.logo-specs tbody tr td img {
+  height:100px;
+}
+/* Change padding and borders on tables for small */
+@media screen and (min-width: 20em) and (max-width: 39.9375em){
+  table tbody tr, table tbody tr td{
+    display:block;
+    float:left;
+    text-align:left;
+  }
+  table tbody tr td:last-child,table tbody tr td:first-child{
+    width:100%;
+  }
+  table thead tr, table tbody tr, table tbody tr:nth-child(even){
+    border-left:none;
+    border-right:none;
+    border-top:none;
+    border-bottom:1px solid #ccc;
+  }
+  table thead tr:last-child, table tbody tr:last-child{
+    border-bottom:none;
+  }
+  table tbody tr th, table tbody tr td{
+    padding-bottom:0px;
+  }
+  table tbody td:last-child{
+    padding-bottom:0.625rem;
+  }
+  table.logo-specs tbody tr td:first-child{
+  width:100%;
+  border-right:none;
+  }
+  table.logo-specs tbody tr td.logo-background{
+    padding-bottom:0.625rem;
+  }
+  table.logo-specs tbody tr, table tbody tr td{
+    float:none;
+  }
+}
+
+/*** LISTS ***/
+ul.nested li.answer{
+  margin-top:5px;
+  list-style-type:none;
+  margin-left:0rem;
+}
+ul ul, ol ul, ul ol, ol ol{
+  margin-left:0rem;
+}
