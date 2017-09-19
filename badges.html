@@ -1,0 +1,1455 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>U.S. News Design System</title>
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/styleguide.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+    <link rel='shortcut icon' href='favicon.ico' type='image/x-icon'/>
+    <script src="https://use.fontawesome.com/676aa66d08.js"></script>
+    <script src="js/prism.js"></script>
+    <script src="plugins/line-numbers/prism-line-numbers.js"></script>
+  </head>
+  <body>
+  <div class="off-canvas-wrapper">
+<!--Start Off Canvas -->
+    <div class="off-canvas position-right" id="offCanvasRight" data-off-canvas data-content-scroll="false">
+      <button class="close-button" aria-label="Close panel" type="button" data-close>
+        <span aria-hidden="true">
+          <svg class="icon white small" alt="close off-canvas menu">
+            <use xlink:href="img/sprite.svg#x"></use>
+          </svg>
+        </span>
+      </button>
+      <h3 class="heading-smallest">Design System 2.0</h3>
+      <input type="text" placeholder="Search">
+      <div data-magellan>
+        <ul class="vertical menu" data-accordion-menu>
+          <li class="text-small lineheight-loosest"><a href="#about">About</a></li>
+          <li class="text-small lineheight-loosest"><a href="#global">Global</a></li>
+          <li class="text-small lineheight-loosest"><a href="">Education</a>
+            <ul class="menu vertical nested">
+              <li class="lineheight-looser"><a href="#colleges">Colleges</a></li>
+              <li class="lineheight-looser"><a href="#grad-schools">Graduate Schools</a></li>
+              <li class="lineheight-looser"><a href="#online-programs">Online Programs</a></li>
+              <li class="lineheight-looser"><a href="#global-universities">Global Universities</a></li>
+              <li class="lineheight-looser"><a href="#high-schools">High Schools</a></li>
+            </ul>
+          </li>
+          <li class="text-small lineheight-loosest"><a href="">Health</a>
+            <ul class="menu vertical nested">
+              <li class="lineheight-looser"><a href="#hospitals">Hospitals</a></li>
+              <li class="lineheight-looser"><a href="#common-care">Common Care Hospitals</a></li>
+              <li class="lineheight-looser"><a href="#childrens-hospitals">Children's Hospitals</a></li>
+              <li class="lineheight-looser"><a href="#health-insurance">Health Insurance</a></li>
+              <li class="lineheight-looser"><a href="#health-products">Health Products</a></li>
+              <li class="lineheight-looser"><a href="#nursing-homes">Nursing Homes</a></li>
+              <li class="lineheight-looser"><a href="#diets">Diets</a></li>
+            </ul>
+          </li>
+          <li class="text-small lineheight-loosest"><a href="">Money</a>
+            <ul class="menu vertical nested">
+              <li class="lineheight-looser"><a href="#investing">Investing</a></li>
+              <li class="lineheight-looser"><a href="#credit-cards">Credit Cards</a></li>
+              <li class="lineheight-looser"><a href="#jobs">Jobs</a></li>
+            </ul>
+          </li>
+          <li class="text-small lineheight-loosest"><a href="">Travel</a>
+            <ul class="menu vertical nested">
+              <li class="lineheight-looser"><a href="#vacations">Vacations</a></li>
+              <li class="lineheight-looser"><a href="#cruise-lines">Cruise Lines</a></li>
+              <li class="lineheight-looser"><a href="#travel-rewards">Travel Rewards</a></li>
+            </ul>
+          </li>
+          <li class="text-small lineheight-loosest"><a href="#cars">Cars</a></li>
+          <li class="text-small lineheight-loosest"><a href="#law-firms">Law Firms</a></li>
+          <li class="text-small lineheight-loosest"><a href="#real-estate">Real Estate</a></li>
+          <li class="text-small lineheight-loosest"><a href="#faq">FAQs</a></li>
+          <li class="text-small lineheight-loosest"><a href="#first">Back to top</a></li>
+        </ul>
+      </div>
+      <hr>
+      <h3 class="heading-smallest lineheight-loosest more">More from U.S. News</h3>
+      <ul>
+        <li class="menu-text text-small lineheight-loosest"><a href="index.html">Design &amp; UX</a></li>
+        <li class="menu-text text-small lineheight-loosest"><a href="#">Development</a></li>
+        <li class="menu-text text-small lineheight-loosest"><a href="#">Templates</a></li>
+        <li class="menu-text text-small lineheight-loosest"><a href="logos.html">Logos</a></li>
+        <li class="menu-text text-small lineheight-loosest"><a href="badges.html">Badges</a></li>
+      </ul>
+      <ul>
+        <li class="menu-text text-smallest lineheight-loose type-bold"><a href="">Contact</a></li>
+        <li class="menu-text text-smallest lineheight-loose type-bold"><a href="">Employment</a></li>
+        <li class="menu-text text-smallest lineheight-loose type-bold"><a href="">Advertising</a></li>
+        <li class="menu-text text-smallest lineheight-loose type-bold"><a href="">Terms &amp; Conditions / Privacy Policy</a></li>
+      </ul>
+      <ul class="menu icons">
+        <li>
+          <svg class="icon iron large" alt="facebook">
+            <use xlink:href="img/sprite.svg#facebook"></use>
+          </svg>
+        </li>
+        <li>
+          <svg class="icon iron large twitter" alt="twitter">
+            <use xlink:href="img/sprite.svg#twitter"></use>
+          </svg>
+        </li>
+        <li>
+          <svg class="icon iron large" alt="google plus">
+            <use xlink:href="img/sprite.svg#google-plus"></use>
+          </svg>
+        </li>
+      </ul>
+    </div>
+<!--End Off Canvas -->
+    <div class="off-canvas-content" data-off-canvas-content>
+<!--Start Header -->
+    <header class="top-bar">
+      <div class="top-bar-left">
+      <nav>
+        <ul class="menu">
+          <li><img src="img/usn-logo-large.svg" class="show-for-medium" alt="U.S. News & World Report Logo"></li>
+          <li><img src="img/usn-logo-small.svg" class="small-logo show-for-small-only" alt="U.S. News & World Report Logo"></li>
+          <li class="menu-text text-small portal-name"><a href="#">Design System 2.0</a></li>
+          <li class="menu-text text-smaller lineheight-tight show-for-large"><a href="index.html">Design &amp; UX</a></li>
+          <li class="menu-text text-smaller lineheight-tight show-for-large"><a href="#">Development</a></li>
+          <li class="menu-text text-smaller lineheight-tight show-for-large"><a href="#">Templates</a></li>
+          <li class="menu-text text-smaller lineheight-tight show-for-large"><a href="logos.html">Logos</a></li>
+          <li class="menu-text text-smaller lineheight-tight show-for-large active"><a href="badges.html">Badges</a></li>
+        </ul>
+      </nav>
+      </div> 
+      <div class="top-bar-right">
+        <ul class="menu icons">
+          <li>
+            <svg class="icon white large main-nav__icons-search hide-for-small-only" alt="search">
+              <use xlink:href="img/sprite.svg#search"></use>
+            </svg>
+          </li>
+          <li class="login-dropdown">
+            <svg class="icon white large main-nav__icons-login hide-for-small-only" alt="user login">
+              <use xlink:href="img/sprite.svg#login"></use>
+            </svg>
+          </li>
+          <li>
+            <svg class="icon white large main-nav__icons-hamburger" alt="menu" data-toggle="offCanvasRight">
+              <use xlink:href="img/sprite.svg#hamburger"></use>
+            </svg>
+          </li>
+        </ul>
+      </div>
+    </header>
+<!-- End Header -->  
+
+<!--Start Page Content-->
+    <div class="row" id="content">
+<!--Start Left-Rail Nav-->
+      <div class="small-12 medium-3 large-2 columns text-center medium-text-left sticky-nav hide-for-small-only" data-sticky-container>
+        <nav class="sticky" data-sticky data-anchor="content">
+          <div data-magellan>
+            <ul class="sticky-nav vertical menu" data-accordion-menu>
+              <li class="text-small type-display-caps">Badges</li>
+              <li class="text-smaller lineheight-tight"><a href="#about">About</a></li>
+              <li class="text-smaller lineheight-tight"><a href="#global">Global</a></li>
+              <li class="text-smaller lineheight-tight"><a href="">Education</a>
+                <ul class="menu vertical nested">
+                  <li><a href="#colleges">Colleges</a></li>
+                  <li><a href="#grad-schools">Graduate Schools</a></li>
+                  <li><a href="#online-programs">Online Programs</a></li>
+                  <li><a href="#global-universities">Global Universities</a></li>
+                  <li><a href="#high-schools">High Schools</a></li>
+                </ul>
+              </li>
+              <li class="text-smaller lineheight-tight"><a href="">Health</a>
+                <ul class="menu vertical nested">
+                  <li><a href="#hospitals">Hospitals</a></li>
+                  <li><a href="#common-care">Common Care Hospitals</a></li>
+                  <li><a href="#childrens-hospitals">Children's Hospitals</a></li>
+                  <li><a href="#health-insurance">Health Insurance</a></li>
+                  <li><a href="#health-products">Health Products</a></li>
+                  <li><a href="#nursing-homes">Nursing Homes</a></li>
+                  <li><a href="#diets">Diets</a></li>
+                </ul>
+              </li>
+              <li class="text-smaller lineheight-tight"><a href="">Money</a>
+                <ul class="menu vertical nested">
+                  <li><a href="#investing">Investing</a></li>
+                  <li><a href="#credit-cards">Credit Cards</a></li>
+                  <li><a href="#jobs">Jobs</a></li>
+                </ul>
+              </li>
+              <li class="text-smaller lineheight-tight"><a href="">Travel</a>
+                <ul class="menu vertical nested">
+                  <li><a href="#vacations">Vacations</a></li>
+                  <li><a href="#cruise-lines">Cruise Lines</a></li>
+                  <li><a href="#travel-rewards">Travel Rewards</a></li>
+                </ul>
+              </li>
+              <li class="text-smaller lineheight-tight"><a href="#cars">Cars</a></li>
+              <li class="text-smaller lineheight-tight"><a href="#law-firms">Law Firms</a></li>
+              <li class="text-smaller lineheight-tight"><a href="#real-estate">Real Estate</a></li>
+              <li class="text-smaller lineheight-tight"><a href="#faq">FAQs</a></li>
+              <li class="text-smaller lineheight-tight"><a href="#first">Back to top</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+<!--End Left-Rail Nav-->
+<!--Start Main Content-->
+      <div class="small-12 medium-9 large-10 columns main-well">
+        <section id="first"  data-magellan-target="first">
+          <article>
+            <h2 id="about" data-magellan-target="about" class="heading-larger">U.S. News Badges</h2>
+            <p class="text-normal"><em>Badges on this site are for internal use only.</em></p>
+            <p class="text-normal"><strong>Do not send</strong> badges to advertisers, licensees or partners. Please contact <a href="mailto:MWhite@usnews.com">Mark White</a> if you have any questions about licensing badges. <strong>Do not edit</strong> these badges in any way. Please refer to the Badge Guidelines for all design restrictions.</p>
+            <h5><a class="heading-smallest link-black" href="http://webdesign.usnews.com/Brand/_Guidelines/Badge-Guidelines/_Public/USNews-Badge-Guidelines.pdf"><svg class="icon medium centered"><use xlink:href="img/sprite.svg#document-text"></use></svg>Download Badge Guidelines</a></h5>
+            <h5><a class="heading-smallest link-black" href="#faq"><svg class="icon medium centered"><use xlink:href="img/sprite.svg#help"></use></svg>FAQs</a></h5>
+          </article>
+        </section>
+        <section>
+          <article>
+            <h3 id="global" data-magellan-target="global" class="heading-large">Global</h3>
+            <table>
+              <tbody>
+                <tr>
+                  <td><span data-tooltip aria-haspopup="true" class="has-tip right" data-allow-html="true" data-tooltip-class="no-caret" title="<img src=&quot;img/badges/gold-badge.svg&quot; style=&quot;width:10rem&quot;>">Generic Gold Badge</span></td>
+                  <td class="type-muted">No Year</td>
+                  <td><a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a><span class="type-muted"> | </span><a href="#">SVG</a></td>
+                </tr>
+                <tr>
+                  <td><span data-tooltip aria-haspopup="true" class="has-tip right" data-allow-html="true" data-tooltip-class="no-caret" title="<img src=&quot;img/badges/silver-badge.svg&quot; style=&quot;width:10rem&quot;>">Generic Silver Badge</span></td>
+                  <td class="type-muted">No Year</td>
+                  <td><a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a><span class="type-muted"> | </span><a href="#">SVG</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </article>
+        </section>
+        <section>
+          <article>
+            <h3 data-magellan-target="education" class="heading-large">Education</h3>
+            <h4 id="colleges" data-magellan-target="colleges" class="heading-normal">Colleges</h4>
+            <table>
+              <tbody>
+                <tr>
+                  <td><span data-tooltip aria-haspopup="true" class="has-tip right" data-allow-html="true" data-tooltip-class="no-caret" title="<img src=&quot;img/badges/colleges.svg&quot; style=&quot;width:10rem&quot;>">Best Colleges</span></td>
+                  <td class="type-muted">No Year</td>
+                  <td><a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a><span class="type-muted"> | </span><a href="#">SVG</a></td>
+                </tr>
+                <tr>
+                  <td><span data-tooltip aria-haspopup="true" class="has-tip right" data-allow-html="true" data-tooltip-class="no-caret" title="<img src=&quot;img/badges/colleges-national-universities.svg&quot; style=&quot;width:10rem&quot;>">Best Colleges National Universities</span></td>
+                  <td class="type-muted">No Year</td>
+                  <td><a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a><span class="type-muted"> | </span><a href="#">SVG</a></td>
+                </tr>
+                <tr>
+                  <td><span data-tooltip aria-haspopup="true" class="has-tip right" data-allow-html="true" data-tooltip-class="no-caret" title="<img src=&quot;http://webdesign.usnews.com/Brand/Badges/Education/Higher-Education/Colleges/National-Universities/Badge-Colleges-NationalUniversities-Year.png&quot; style=&quot;width:10rem;&quot;>">Best Colleges National Universities</span></td>
+                  <td>2018</td>
+                  <td><a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a></td>
+                </tr>
+                <tr>
+                  <td><span data-tooltip aria-haspopup="true" class="has-tip right" data-allow-html="true" data-tooltip-class="no-caret" title="<img src=&quot;http://webdesign.usnews.com/Brand/Badges/Education/Higher-Education/Colleges/National-Universities-HS-Counselors/Badge-Colleges-NationalUniversities-HSCounselors-Year.png&quot; style=&quot;width:10rem;&quot;>">Best Colleges National Universities High School Counselors Picks</span></td>
+                  <td>2017</td>
+                  <td><a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a></td>
+                </tr>
+                <tr>
+                  <td><span data-tooltip aria-haspopup="true" class="has-tip right" data-allow-html="true" data-tooltip-class="no-caret" title="<img src=&quot;img/badges/colleges-liberal-arts-colleges.svg&quot; style=&quot;width:10rem;&quot;>">Best Colleges Liberal Arts Colleges</span></td>
+                  <td class="type-muted">No Year</td>
+                  <td><a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a><span class="type-muted"> | </span><a href="#">SVG</a></td>
+                </tr>
+                <tr>
+                  <td><span data-tooltip aria-haspopup="true" class="has-tip right" data-allow-html="true" data-tooltip-class="no-caret" title="<img src=&quot;http://webdesign.usnews.com/Brand/Badges/Education/Higher-Education/Colleges/Liberal-Arts/Badge-Colleges-LiberalArts-Year.png&quot; style=&quot;width:10rem;&quot;>">Best Colleges Liberal Arts Colleges</span></td>
+                  <td>2017</td>
+                  <td><a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a></td>
+                </tr>
+                <tr>
+                  <td><span data-tooltip aria-haspopup="true" class="has-tip right" data-allow-html="true" data-tooltip-class="no-caret" title="<img src=&quot;http://webdesign.usnews.com/Brand/Badges/Education/Higher-Education/Colleges/Liberal-Arts-Undergrad-Teaching/Badge-Colleges-LiberalArts-UndergradTeaching-Year.png&quot; style=&quot;width:10rem;&quot;>">Best Colleges Liberal Arts Colleges Undergrad Teaching</span></td>
+                  <td>2017</td>
+                  <td><a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a></td>
+                </tr>
+                <tr>
+                  <td><span data-tooltip aria-haspopup="true" class="has-tip right" data-allow-html="true" data-tooltip-class="no-caret" title="<img src=&quot;img/badges/colleges-regional-universities.svg&quot; style=&quot;width:10rem;&quot;>">Best Colleges Regional Universities</span></td>
+                  <td class="type-muted">No Year</td>
+                  <td><a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a><span class="type-muted"> | </span><a href="#">SVG</a></td>
+                </tr>
+                <tr>
+                  <td><span data-tooltip aria-haspopup="true" class="has-tip right" data-allow-html="true" data-tooltip-class="no-caret" title="<img src=&quot;http://webdesign.usnews.com/Brand/Badges/Education/Higher-Education/Colleges/Regional-Universities/Badge-Colleges-RegionalUniversities-Year.png&quot; style=&quot;width:10rem;&quot;>">Best Colleges Regional Universities</span></td>
+                  <td>2017</td>
+                  <td><a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a></td>
+                </tr>
+                <tr>
+                  <td><span data-tooltip aria-haspopup="true" class="has-tip right" data-allow-html="true" data-tooltip-class="no-caret" title="<img src=&quot;http://webdesign.usnews.com/Brand/Badges/Education/Higher-Education/Colleges/Regional-Universities-North/Badge-Colleges-RegionalUniversities-North-Year.png&quot; style=&quot;width:10rem;&quot;>">Best Colleges Regional Universities North</span></td>
+                  <td>2017</td>
+                  <td><a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a></td>
+                </tr>
+                <tr>
+                  <td><span data-tooltip aria-haspopup="true" class="has-tip right" data-allow-html="true" data-tooltip-class="no-caret" title="<img src=&quot;img/badges/colleges-business-programs.svg&quot; style=&quot;width:10rem;&quot;>">Best Colleges Business Programs</span></td>
+                  <td class="type-muted">No Year</td>
+                  <td><a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a><span class="type-muted"> | </span><a href="#">SVG</a></td>
+                </tr>
+                <tr>
+                  <td><span data-tooltip aria-haspopup="true" class="has-tip right" data-allow-html="true" data-tooltip-class="no-caret" title="<img src=&quot;http://webdesign.usnews.com/Brand/Badges/Education/Higher-Education/Colleges/Business/Badge-Colleges-Business-Year.png&quot; style=&quot;width:10rem;&quot;>">Best Colleges Business Programs</span></td>
+                  <td>2017</td>
+                  <td><a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a></td>
+                </tr>
+                <tr>
+                  <td><span data-tooltip aria-haspopup="true" class="has-tip right" data-allow-html="true" data-tooltip-class="no-caret" title="<img src=&quot;http://webdesign.usnews.com/Brand/Badges/Education/Higher-Education/Colleges/Most-Innovative/Badge-Colleges-MostInnovative-Generic.png&quot; style=&quot;width:10rem;&quot;>">Best Colleges Most Innovative</span></td>
+                  <td class="type-muted">No Year</td>
+                  <td><a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a></td>
+                </tr>
+                <tr>
+                  <td><span data-tooltip aria-haspopup="true" class="has-tip right" data-allow-html="true" data-tooltip-class="no-caret" title="<img src=&quot;http://webdesign.usnews.com/Brand/Badges/Education/Higher-Education/Colleges/Most-Innovative/Badge-Colleges-MostInnovative-Year.png&quot; style=&quot;width:10rem;&quot;>">Best Colleges Most Innovative</span></td>
+                  <td>2017</td>
+                  <td><a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a></td>
+                </tr>
+                <tr>
+                  <td><span data-tooltip aria-haspopup="true" class="has-tip right" data-allow-html="true" data-tooltip-class="no-caret" title="<img src=&quot;img/badges/colleges-veterans.svg&quot; style=&quot;width:10rem;&quot;>">Best Colleges Veterans</span></td>
+                  <td class="type-muted">No Year</td>
+                  <td><a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a><span class="type-muted"> | </span><a href="#">SVG</a></td>
+                </tr>
+                <tr>
+                  <td><span data-tooltip aria-haspopup="true" class="has-tip right" data-allow-html="true" data-tooltip-class="no-caret" title="<img src=&quot;http://webdesign.usnews.com/Brand/Badges/Education/Higher-Education/Colleges/Veterans/Badge-Colleges-Veterans-Year.png&quot; style=&quot;width:10rem;&quot;>">Best Colleges Veterans</span></td>
+                  <td>2017</td>
+                  <td><a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a></td>
+                </tr>
+                <tr>
+                  <td><span data-tooltip aria-haspopup="true" class="has-tip right" data-allow-html="true" data-tooltip-class="no-caret" title="<img src=&quot;img/badges/colleges-regional-colleges.svg&quot; style=&quot;width:10rem;&quot;>">Best Colleges Regional Colleges</span></td>
+                  <td class="type-muted">No Year</td>
+                  <td><a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a><span class="type-muted"> | </span><a href="#">SVG</a></td>
+                </tr>
+                <tr>
+                  <td><span data-tooltip aria-haspopup="true" class="has-tip right" data-allow-html="true" data-tooltip-class="no-caret" title="<img src=&quot;http://webdesign.usnews.com/Brand/Badges/Education/Higher-Education/Colleges/Regional-Colleges-Up-and-Coming/Badge-Colleges-RegionalColleges-UpandComing-Generic.png&quot; style=&quot;width:10rem;&quot;>">Best Colleges Regional Colleges Up-and-Coming</span></td>
+                  <td>2017</td>
+                  <td><a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </article>
+          <article>
+            <h4 id="grad-schools" data-magellan-target="grad-schools" class="heading-normal">Graduate Schools</h4>
+            <table>
+              <tbody>
+                <tr>
+                  <td>Best Grad Schools</td>
+                  <td class="type-muted">No Year</td>
+                  <td><a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a><span class="type-muted"> | </span><a href="#">SVG</a></td>
+                </tr>
+                <tr>
+                  <td>Best Grad Schools</td>
+                  <td>2018</td>
+                  <td><a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a></td>
+                </tr>
+                <tr>
+                  <td>Best Grad Schools Business</td>
+                  <td class="type-muted">No Year</td>
+                  <td><a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a><span class="type-muted"> | </span><a href="#">SVG</a></td>
+                </tr>
+                <tr>
+                  <td>Best Grad Schools Business</td>
+                  <td>2018</td>
+                  <td><a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a></td>
+                </tr>
+                <tr>
+                  <td>Best Grad Schools Education</td>
+                  <td class="type-muted">No Year</td>
+                  <td><a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a><span class="type-muted"> | </span><a href="#">SVG</a></td>
+                </tr>
+                <tr>
+                  <td>Best Grad Schools Education</td>
+                  <td>2018</td>
+                  <td><a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a></td>
+                </tr>
+                <tr>
+                  <td>Best Grad Schools Engineering</td>
+                  <td class="type-muted">No Year</td>
+                  <td><a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a><span class="type-muted"> | </span><a href="#">SVG</a></td>
+                </tr>
+                <tr>
+                  <td>Best Grad Schools Engineering</td>
+                  <td>2018</td>
+                  <td><a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a></td>
+                </tr>
+                <tr>
+                  <td>Best Grad Schools Law</td>
+                  <td class="type-muted">No Year</td>
+                  <td><a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a><span class="type-muted"> | </span><a href="#">SVG</a></td>
+                </tr>
+                <tr>
+                  <td>Best Grad Schools Law</td>
+                  <td>2018</td>
+                  <td><a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a></td>
+                </tr>
+                <tr>
+                  <td>Best Grad Schools Medical</td>
+                  <td class="type-muted">No Year</td>
+                  <td><a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a><span class="type-muted"> | </span><a href="#">SVG</a></td>
+                </tr>
+                <tr>
+                  <td>Best Grad Schools Medical</td>
+                  <td>2018</td>
+                  <td><a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a></td>
+                </tr>
+                <tr>
+                  <td>Best Grad Schools Nursing</td>
+                  <td class="type-muted">No Year</td>
+                  <td><a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a><span class="type-muted"> | </span><a href="#">SVG</a></td>
+                </tr>
+                <tr>
+                  <td>Best Grad Schools Nursing</td>
+                  <td>2018</td>
+                  <td><a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a></td>
+                </tr>
+                <tr>
+                  <td>Best Grad Schools Science</td>
+                  <td class="type-muted">No Year</td>
+                  <td><a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a><span class="type-muted"> | </span><a href="#">SVG</a></td>
+                </tr>
+                <tr>
+                  <td>Best Grad Schools Science</td>
+                  <td>2018</td>
+                  <td><a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </article>
+          <article>
+            <h4 id="online-programs" data-magellan-target="online-programs" class="heading-normal">Online Programs</h4>
+            <table>
+              <tbody>
+                <tr>
+                  <td>Best Online Programs</td>
+                  <td class="type-muted">No Year</td>
+                  <td><a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a><span class="type-muted"> | </span><a href="#">SVG</a></td>
+                </tr>
+                <tr>
+                  <td>Best Online Programs</td>
+                  <td>2017</td>
+                  <td><a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a></td>
+                </tr>
+                <tr>
+                  <td>Best Online Programs Bachelor's</td>
+                  <td class="type-muted">No Year</td>
+                  <td><a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a><span class="type-muted"> | </span><a href="#">SVG</a></td>
+                </tr>
+                <tr>
+                  <td>Best Online Programs Bachelor's</td>
+                  <td>2017</td>
+                  <td><a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a></td>
+                </tr>
+                <tr>
+                  <td>Best Online Programs Criminal Justice</td>
+                  <td class="type-muted">No Year</td>
+                  <td><a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a><span class="type-muted"> | </span><a href="#">SVG</a></td>
+                </tr>
+                <tr>
+                  <td>Best Online Programs Criminal Justice</td>
+                  <td>2017</td>
+                  <td><a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a></td>
+                </tr>
+                <tr>
+                  <td>Best Online Programs Grad Business</td>
+                  <td class="type-muted">No Year</td>
+                  <td><a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a><span class="type-muted"> | </span><a href="#">SVG</a></td>
+                </tr>
+                <tr>
+                  <td>Best Online Programs Grad Business</td>
+                  <td>2017</td>
+                  <td><a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a></td>
+                </tr>
+                <tr>
+                  <td>Best Online Programs Grad Computer Information Technology</td>
+                  <td class="type-muted">No Year</td>
+                  <td><a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a><span class="type-muted"> | </span><a href="#">SVG</a></td>
+                </tr>
+                <tr>
+                  <td>Best Online Programs Grad Computer Information Technology</td>
+                  <td>2017</td>
+                  <td><a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a></td>
+                </tr>
+                <tr>
+                  <td>Best Online Programs Grad Education</td>
+                  <td class="type-muted">No Year</td>
+                  <td><a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a><span class="type-muted"> | </span><a href="#">SVG</a></td>
+                </tr>
+                <tr>
+                  <td>Best Online Programs Grad Education</td>
+                  <td>2017</td>
+                  <td><a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a></td>
+                </tr>
+                <tr>
+                  <td>Best Online Programs Grad Engineering</td>
+                  <td class="type-muted">No Year</td>
+                  <td><a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a><span class="type-muted"> | </span><a href="#">SVG</a></td>
+                </tr>
+                <tr>
+                  <td>Best Online Programs Grad Engineering</td>
+                  <td>2017</td>
+                  <td><a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a></td>
+                </tr>
+                <tr>
+                  <td>Best Online Programs Grad Nursing</td>
+                  <td class="type-muted">No Year</td>
+                  <td><a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a><span class="type-muted"> | </span><a href="#">SVG</a></td>
+                </tr>
+                <tr>
+                  <td>Best Online Programs Grad Nursing</td>
+                  <td>2017</td>
+                  <td><a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a></td>
+                </tr>
+                <tr>
+                  <td>Best Online Programs MBA Programs</td>
+                  <td class="type-muted">No Year</td>
+                  <td><a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a><span class="type-muted"> | </span><a href="#">SVG</a></td>
+                </tr>
+                <tr>
+                  <td>Best Online Programs MBA Programs</td>
+                  <td>2017</td>
+                  <td><a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a></td>
+                </tr>
+                <tr>
+                  <td>Best Online Programs Veterans</td>
+                  <td class="type-muted">No Year</td>
+                  <td><a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a><span class="type-muted"> | </span><a href="#">SVG</a></td>
+                </tr>
+                <tr>
+                  <td>Best Online Programs Veterans</td>
+                  <td>2017</td>
+                  <td><a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a></td>
+                </tr>
+                <tr>
+                  <td>Best Online Programs Veterans Bachelor's</td>
+                  <td>2017</td>
+                  <td><a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a></td>
+                </tr>
+                <tr>
+                  <td>Best Online Programs Veterans Criminal Justice</td>
+                  <td>2017</td>
+                  <td><a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a></td>
+                </tr>
+                <tr>
+                  <td>Best Online Programs Veterans Computer Information Technology</td>
+                  <td>2017</td>
+                  <td><a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a></td>
+                </tr>
+                <tr>
+                  <td>Best Online Programs Veterans Grad Education</td>
+                  <td>2017</td>
+                  <td><a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a></td>
+                </tr>
+                <tr>
+                  <td>Best Online Programs Veterans Grad Engineering</td>
+                  <td>2017</td>
+                  <td><a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a></td>
+                </tr>
+                <tr>
+                  <td>Best Online Programs Veterans Grad Nursing</td>
+                  <td>2017</td>
+                  <td><a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a></td>
+                </tr>
+                <tr>
+                  <td>Best Online Programs Veterans MBA Programs</td>
+                  <td>2017</td>
+                  <td><a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a></td>
+                </tr>
+                <tr>
+                  <td>Best Online Programs Reputation</td>
+                  <td class="type-muted">No Year</td>
+                  <td><a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a></td>
+                </tr>
+                <tr>
+                  <td>Best Online Programs Reputation</td>
+                  <td>2017</td>
+                  <td><a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </article>
+          <article>
+            <h4 id="global-universities" data-magellan-target="global-universities" class="heading-normal">Global Universities</h4>
+            <table>
+              <tbody>
+                <tr>
+                  <td>Best Global Universities</td>
+                  <td>2017</td>
+                  <td><a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a><span class="type-muted"> | </span><a href="#">SVG</a></td>
+                </tr>
+                <tr>
+                  <td>Best Global Universities Academic Research &amp; Reputation</td>
+                  <td>2017</td>
+                  <td><a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </article>
+          <article>
+            <h4 id="high-schools" data-magellan-target="high-schools" class="heading-normal">High Schools</h4>
+            <table>
+              <tbody>
+                <tr>
+                  <td>Best High Schools</td>
+                  <td class="text-muted">No Year</td>
+                  <td><a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a><span class="type-muted"> | </span><a href="#">SVG</a></td>
+                </tr>
+                <tr>
+                  <td>Best High Schools Gold Medal Award</td>
+                  <td class="text-muted">No Year</td>
+                  <td><a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a><span class="type-muted"> | </span><a href="#">SVG</a></td>
+                </tr>
+                <tr>
+                  <td>Best High Schools Silver Medal Award</td>
+                  <td class="text-muted">No Year</td>
+                  <td><a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a><span class="type-muted"> | </span><a href="#">SVG</a></td>
+                </tr>
+                <tr>
+                  <td>Best High Schools Bronze Medal Award</td>
+                  <td class="text-muted">No Year</td>
+                  <td><a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a><span class="type-muted"> | </span><a href="#">SVG</a></td>
+                </tr>
+                <tr>
+                  <td>Best High Schools Gold Medal Award</td>
+                  <td>2017</td>
+                  <td><a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a></td>
+                </tr>
+                <tr>
+                  <td>Best High Schools Silver Medal Award</td>
+                  <td>2017</td>
+                  <td><a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a></td>
+                </tr>
+                <tr>
+                  <td>Best High Schools Bronze Medal Award</td>
+                  <td>2017</td>
+                  <td><a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a></td>
+                </tr>
+                <tr>
+                  <td>Best High Schools STEM</td>
+                  <td>2017</td>
+                  <td><a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a></td>
+                </tr>
+                <tr>
+                  <td>Best High Schools Magnet</td>
+                  <td>2017</td>
+                  <td><a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a></td>
+                </tr>
+                <tr>
+                  <td>Best High Schools Charter</td>
+                  <td>2017</td>
+                  <td><a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </article>
+        </section>
+        <section>
+          <article>
+            <h3 data-magellan-target="health" class="heading-large">Health</h3>
+            <h4 id="hospitals" data-magellan-target="hospitals" class="heading-normal">Hospitals</h4>
+            <table>
+              <tbody>
+                <tr>
+                  <td>Best Hospitals</td>
+                  <td class="type-muted">No Year</td>
+                  <td><a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a><span class="type-muted"> | </span><a href="#">SVG</a></td>
+                </tr>
+                <tr>
+                  <td>Best Hospitals</td>
+                  <td>2016-17</td>
+                  <td><a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a></td>
+                </tr>
+                <tr>
+                  <td>Best Hospitals Honor Roll</td>
+                  <td class="type-muted">No Year</td>
+                  <td><a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a></td>
+                </tr>
+                <tr>
+                  <td>Best Hospitals Honor Roll</td>
+                  <td>2016-17</td>
+                  <td><a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a></td>
+                </tr>
+                <tr>
+                  <td>Best Hospitals Cancer</td>
+                  <td>2016-17</td>
+                  <td><a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a></td>
+                </tr>
+                <tr>
+                  <td>Best Hospitals Cardiology &amp; Heart Surgery</td>
+                  <td>2016-17</td>
+                  <td><a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a></td>
+                </tr>
+                <tr>
+                  <td>Best Hospitals Diabetes &amp; Endocrinology</td>
+                  <td>2016-17</td>
+                  <td><a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a></td>
+                </tr>
+                <tr>
+                  <td>Best Hospitals Ear, Nose &amp; Throat</td>
+                  <td>2016-17</td>
+                  <td><a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a></td>
+                </tr>
+                <tr>
+                  <td>Best Hospitals Gastroenterology &amp; GI Surgery</td>
+                  <td>2016-17</td>
+                  <td><a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a></td>
+                </tr>
+                <tr>
+                  <td>Best Hospitals Geriatrics</td>
+                  <td>2016-17</td>
+                  <td><a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a></td>
+                </tr>
+                <tr>
+                  <td>Best Hospitals Gynecology</td>
+                  <td>2016-17</td>
+                  <td><a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a></td>
+                </tr>
+                <tr>
+                  <td>Best Hospitals Nephrology</td>
+                  <td>2016-17</td>
+                  <td><a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a></td>
+                </tr>
+                <tr>
+                  <td>Best Hospitals Neurology &amp; Neurosurgery</td>
+                  <td>2016-17</td>
+                  <td><a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a></td>
+                </tr>
+                <tr>
+                  <td>Best Hospitals Opthalmology</td>
+                  <td>2016-17</td>
+                  <td><a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a></td>
+                </tr>
+                <tr>
+                  <td>Best Hospitals Orthopedics</td>
+                  <td>2016-17</td>
+                  <td><a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a></td>
+                </tr>
+                <tr>
+                  <td>Best Hospitals Psychiatry</td>
+                  <td>2016-17</td>
+                  <td><a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a></td>
+                </tr>
+                <tr>
+                  <td>Best Hospitals Pulmonology</td>
+                  <td>2016-17</td>
+                  <td><a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a></td>
+                </tr>
+                <tr>
+                  <td>Best Hospitals Rehabilitation</td>
+                  <td>2016-17</td>
+                  <td><a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a></td>
+                </tr>
+                <tr>
+                  <td>Best Hospitals Rheumatology</td>
+                  <td>2016-17</td>
+                  <td><a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a></td>
+                </tr>
+                <tr>
+                  <td>Best Hospitals Urology</td>
+                  <td>2016-17</td>
+                  <td><a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a></td>
+                </tr>
+                <tr>
+                  <td>Best Regional Hospitals</td>
+                  <td class="type-muted">No Year</td>
+                  <td><a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a><span class="type-muted"> | </span><a href="#">SVG</a></td>
+                </tr>
+                <tr>
+                  <td>Best Regional Hospitals</td>
+                  <td>2016-17</td>
+                  <td><a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </article>
+          <article>
+            <h4 id="common-care" data-magellan-target="common-care" class="heading-normal">Common Care Hospitals</h4>
+            <table>
+              <tbody>
+                <tr>
+                  <td>Best Hospitals for Common Care</td>
+                  <td>2016-17</td>
+                  <td><a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a></td>
+                </tr>
+                <tr>
+                  <td>Best Hospitals for Common Care COPD</td>
+                  <td>2016-17</td>
+                  <td><a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a></td>
+                </tr>
+                <tr>
+                  <td>Best Hospitals for Common Care Heart Bypass Surgery</td>
+                  <td>2016-17</td>
+                  <td><a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a></td>
+                </tr>
+                <tr>
+                  <td>Best Hospitals for Common Care Heart Failure</td>
+                  <td>2016-17</td>
+                  <td><a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a></td>
+                </tr>
+                <tr>
+                  <td>Best Hospitals for Common Care Hip Replacement</td>
+                  <td>2016-17</td>
+                  <td><a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a></td>
+                </tr>
+                <tr>
+                  <td>Best Hospitals for Common Care Knee Replacement</td>
+                  <td>2016-17</td>
+                  <td><a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </article>
+          <article>
+            <h4 id="childrens-hospitals" data-magellan-target="childrens-hospitals" class="heading-normal">Children's Hospitals</h4>
+            <table>
+              <tbody>
+                <tr>
+                  <td>Best Children's Hospitals</td>
+                  <td class="type-muted">No Year</td>
+                  <td><a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a><span class="type-muted"> | </span><a href="#">SVG</a></td>
+                </tr>
+                <tr>
+                  <td>Best Children's Hospitals</td>
+                  <td>2016-17</td>
+                  <td><a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a></td>
+                </tr>
+                <tr>
+                  <td>Best Children's Hospitals Honor Roll</td>
+                  <td>2016-17</td>
+                  <td><a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a></td>
+                </tr>
+                <tr>
+                  <td>Best Children's Hospitals Cancer</td>
+                  <td>2016-17</td>
+                  <td><a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a></td>
+                </tr>
+                <tr>
+                  <td>Best Children's Hospitals Cardiology &amp; Heart Surgery</td>
+                  <td>2016-17</td>
+                  <td><a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a></td>
+                </tr>
+                <tr>
+                  <td>Best Children's Hospitals Diabetes &amp; Endocrinology</td>
+                  <td>2016-17</td>
+                  <td><a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a></td>
+                </tr>
+                <tr>
+                  <td>Best Children's Hospitals Gastroenterology</td>
+                  <td>2016-17</td>
+                  <td><a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a></td>
+                </tr>
+                <tr>
+                  <td>Best Children's Hospitals Neonatology</td>
+                  <td>2016-17</td>
+                  <td><a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a></td>
+                </tr>
+                <tr>
+                  <td>Best Children's Hospitals Nephrology</td>
+                  <td>2016-17</td>
+                  <td><a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a></td>
+                </tr>
+                <tr>
+                  <td>Best Children's Hospitals Neurology</td>
+                  <td>2016-17</td>
+                  <td><a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a></td>
+                </tr>
+                <tr>
+                  <td>Best Children's Hospitals Orthopedics</td>
+                  <td>2016-17</td>
+                  <td><a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a></td>
+                </tr>
+                <tr>
+                  <td>Best Children's Hospitals Pulmonology</td>
+                  <td>2016-17</td>
+                  <td><a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a></td>
+                </tr>
+                <tr>
+                  <td>Best Children's Hospitals Urology</td>
+                  <td>2016</td>
+                  <td><a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </article>
+          <article>
+            <h4 id="health-insurance" data-magellan-target="health-insurance" class="heading-normal">Health Insurance</h4>
+            <table>
+              <tbody>
+                <tr>
+                  <td>Best Medicare Plans</td>
+                  <td class="type-muted">No Year</td>
+                  <td><a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a><span class="type-muted"> | </span><a href="#">SVG</a></td>
+                </tr>
+                <tr>
+                  <td>Best Medicare Plans Medicare Advantage - Massachusetts</td>
+                  <td>2017</td>
+                  <td><a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a></td>
+                </tr>
+                <tr>
+                  <td>Best Medicare Plans Part D - Massachusetts</td>
+                  <td>2017</td>
+                  <td><a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </article>
+          <article>
+            <h4 id="health-products" data-magellan-target="health-products" class="heading-normal">Health Products</h4>
+            <table>
+              <tbody>
+                <tr>
+                  <td>#1 Pharmacist Recommended - Small</td>
+                  <td class="text-muted">No Year</td>
+                  <td><a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a></td>
+                </tr>
+                <tr>
+                  <td>#1 Pharmacist Recommended Brand</td>
+                  <td>2017-18</td>
+                  <td><a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a><span class="type-muted"> | </span><a href="#">SVG</a></td>
+                </tr>
+                <tr>
+                  <td>#1 Pharmacist Recommended Brand Tie</td>
+                  <td>2017-18</td>
+                  <td><a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a></td>
+                </tr>
+                <tr>
+                  <td>#1 Pharmacist Recommended Brand Children's Cough/Cold Combinations</td>
+                  <td>2017-18</td>
+                  <td><a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a></td>
+                </tr>
+                <tr>
+                  <td>#1 Pharmacist Recommended Brand Children's Cough/Cold Combinations Tie</td>
+                  <td>2017-18</td>
+                  <td><a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </article>
+          <article>
+            <h4 id="nursing-homes" data-magellan-target="nursing-homes" class="heading-normal">Nursing Homes</h4>
+            <table>
+              <tbody>
+                <tr>
+                  <td>Best Nursing Homes</td>
+                  <td class="text-muted">No Year</td>
+                  <td><a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a><span class="type-muted"> | </span><a href="#">SVG</a></td>
+                </tr>
+                <tr>
+                  <td>Best Nursing Homes</td>
+                  <td>2015</td>
+                  <td><a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a></td>
+                </tr>
+                <tr>
+                  <td>Best Nursing Homes Honor Roll</td>
+                  <td>2014</td>
+                  <td><a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </article>
+          <article>
+            <h4 id="diets" data-magellan-target="diets" class="heading-normal">Diets</h4>
+            <table>
+              <tbody>
+                <tr>
+                  <td>Best Diets</td>
+                  <td class="text-muted">No Year</td>
+                  <td><a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a><span class="type-muted"> | </span><a href="#">SVG</a></td>
+                </tr>
+                <tr>
+                  <td>Best Diets</td>
+                  <td>2017</td>
+                  <td><a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a></td>
+                </tr>
+                <tr>
+                  <td>Best Diets</td>
+                  <td>2016</td>
+                  <td><a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </article>
+        </section>
+        <section>
+          <article>
+            <h3 data-magellan-target="money" class="heading-large">Money</h3>
+            <h4 id="investing" data-magellan-target="investing" class="heading-normal">Investing</h4>
+            <table>
+              <tbody>
+                <tr>
+                  <td>Best Mutual Funds</td>
+                  <td class="type-muted">No Year</td>
+                  <td><a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a><span class="type-muted"> | </span><a href="#">SVG</a></td>
+                </tr>
+                <tr>
+                  <td>Best ETFs</td>
+                  <td class="type-muted">No Year</td>
+                  <td><a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">SVG</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </article>
+          <article>
+            <h4 id="credit-cards" data-magellan-target="credit-cards" class="heading-normal">Credit Cards</h4>
+            <table>
+              <tbody>
+                <tr>
+                  <td>Best Credit Cards</td>
+                  <td class="type-muted">No Year</td>
+                  <td><a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a><span class="type-muted"> | </span><a href="#">SVG</a></td>
+                </tr>
+                <tr>
+                  <td>Best Credit Cards</td>
+                  <td>2015</td>
+                  <td><a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </article>
+          <article>
+            <h4 id="jobs" data-magellan-target="jobs" class="heading-normal">Jobs</h4>
+            <table>
+              <tbody>
+                <tr>
+                  <td>Best Jobs</td>
+                  <td class="type-muted">No Year</td>
+                  <td><a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a><span class="type-muted"> | </span><a href="#">SVG</a></td>
+                </tr>
+                <tr>
+                  <td>Best Jobs</td>
+                  <td>2017</td>
+                  <td><a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a></td>
+                </tr>
+                <tr>
+                  <td>Best Jobs Business</td>
+                  <td>2017</td>
+                  <td><a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a></td>
+                </tr>
+                <tr>
+                  <td>Best Jobs Technology</td>
+                  <td>2017</td>
+                  <td><a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a></td>
+                </tr>
+                <tr>
+                  <td>Best Jobs Social Services</td>
+                  <td>2017</td>
+                  <td><a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a></td>
+                </tr>
+                <tr>
+                  <td>Best Jobs Health Care</td>
+                  <td>2017</td>
+                  <td><a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a></td>
+                </tr>
+                <tr>
+                  <td>Best Jobs Creative Services</td>
+                  <td>2017</td>
+                  <td><a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a></td>
+                </tr>
+                <tr>
+                  <td>Best Jobs Construction</td>
+                  <td>2017</td>
+                  <td><a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a></td>
+                </tr>
+                <tr>
+                  <td>Best Jobs STEM</td>
+                  <td>2017</td>
+                  <td><a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </article>
+        <section>
+          <article>
+            <h3 data-magellan-target="travel" class="heading-large">Travel</h3>
+            <h4 id="vacations" data-magellan-target="vacations" class="heading-normal">Vacations</h4>
+            <table>
+              <tbody>
+                <tr>
+                  <td>Best Vacations</td>
+                  <td class="type-muted">No Year</td>
+                  <td><a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a><span class="type-muted"> | </span><a href="#">SVG</a></td>
+                </tr>
+                <tr>
+                  <td>Best Vacations</td>
+                  <td>2016-17</td>
+                  <td><a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </article>
+          <article>
+            <h4 id="hotels" data-magellan-target="hotels" class="heading-normal">Hotels</h4>
+            <table>
+              <tbody>
+                <tr>
+                  <td>Best Hotels (Gold)</td>
+                  <td class="type-muted">No Year</td>
+                  <td><a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a><span class="type-muted"> | </span><a href="#">SVG</a></td>
+                </tr>
+                <tr>
+                  <td>Best Hotels (Silver)</td>
+                  <td class="type-muted">No Year</td>
+                  <td><a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a><span class="type-muted"> | </span><a href="#">SVG</a></td>
+                </tr>
+                <tr>
+                  <td>Best Hotels</td>
+                  <td>2017</td>
+                  <td><a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a></td>
+                </tr>
+                <tr>
+                  <td>Best Hotels</td>
+                  <td>2016-17</td>
+                  <td><a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a></td>
+                </tr>
+                <tr>
+                  <td>Best Hotels USA</td>
+                  <td>2017</td>
+                  <td><a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a></td>
+                </tr>
+                <tr>
+                  <td>Best Hotels Caribbean</td>
+                  <td>2016-17</td>
+                  <td><a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a></td>
+                </tr>
+                <tr>
+                  <td>Best Hotels Mexico</td>
+                  <td>2017</td>
+                  <td><a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a></td>
+                </tr>
+                <tr>
+                  <td>Best Hotels Canada</td>
+                  <td>2017</td>
+                  <td><a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a></td>
+                </tr>
+                <tr>
+                  <td>Best Hotels Europe</td>
+                  <td>2016-17</td>
+                  <td><a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a></td>
+                </tr>
+                <tr>
+                  <td>Best Resorts (Gold)</td>
+                  <td class="type-muted">No Year</td>
+                  <td><a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a><span class="type-muted"> | </span><a href="#">SVG</a></td>
+                </tr>
+                <tr>
+                  <td>Best Resorts (Gold)</td>
+                  <td>2017</td>
+                  <td><a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a></td>
+                </tr>
+                <tr>
+                  <td>Best Resorts (Silver)</td>
+                  <td class="type-muted">No Year</td>
+                  <td><a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a><span class="type-muted"> | </span><a href="#">SVG</a></td>
+                </tr>
+                <tr>
+                  <td>Best Resorts (Silver)</td>
+                  <td>2017</td>
+                  <td><a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </article>
+          <article>
+            <h4 id="cruise-lines" data-magellan-target="cruise-lines" class="heading-normal">Cruise Lines</h4>
+            <table>
+              <tbody>
+                <tr>
+                  <td>Best Cruise Lines (Gold)</td>
+                  <td class="type-muted">No Year</td>
+                  <td><a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a><span class="type-muted"> | </span><a href="#">SVG</a></td>
+                </tr>
+                <tr>
+                  <td>Best Cruise Lines (Gold)</td>
+                  <td>2017</td>
+                  <td><a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a></td>
+                </tr>
+                <tr>
+                  <td>Best Cruise Lines (Silver)</td>
+                  <td>2017</td>
+                  <td><a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a><span class="type-muted"> | </span><a href="#">SVG</a></td>
+                </tr>
+                <tr>
+                  <td>Best Cruise Lines for Families (Gold)</td>
+                  <td>2017</td>
+                  <td><a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a></td>
+                </tr>
+                <tr>
+                  <td>Best Cruise Lines for Families (Silver)</td>
+                  <td>2017</td>
+                  <td><a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a></td>
+                </tr>
+                <tr>
+                  <td>Best Cruise Lines for Money (Gold)</td>
+                  <td>2017</td>
+                  <td><a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a></td>
+                </tr>
+                <tr>
+                  <td>Best Cruise Lines for Money (Silver)</td>
+                  <td>2017</td>
+                  <td><a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a></td>
+                </tr>
+                <tr>
+                  <td>Best Cruise Lines for Couples (Gold)</td>
+                  <td>2017</td>
+                  <td><a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a></td>
+                </tr>
+                <tr>
+                  <td>Best Cruise Lines for Couples (Silver)</td>
+                  <td>2017</td>
+                  <td><a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a></td>
+                </tr>
+                <tr>
+                  <td>Best Cruise Lines for Luxury (Gold)</td>
+                  <td>2017</td>
+                  <td><a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a></td>
+                </tr>
+                <tr>
+                  <td>Best Cruise Lines for Luxury (Silver)</td>
+                  <td>2017</td>
+                  <td><a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a></td>
+                </tr>
+                <tr>
+                  <td>Best Cruise Lines for Caribbean (Gold)</td>
+                  <td>2017</td>
+                  <td><a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a></td>
+                </tr>
+                <tr>
+                  <td>Best Cruise Lines for Caribbean (Silver)</td>
+                  <td>2017</td>
+                  <td><a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a></td>
+                </tr>
+                <tr>
+                  <td>Best Cruise Lines for Mediterranean (Gold)</td>
+                  <td>2017</td>
+                  <td><a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a></td>
+                </tr>
+                <tr>
+                  <td>Best Cruise Lines for Mediterranean (Silver)</td>
+                  <td>2017</td>
+                  <td><a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </article>
+          <article>
+            <h4 id="travel-rewards" data-magellan-target="travel-rewards" class="heading-normal">Travel Rewards</h4>
+            <table>
+              <tbody>
+                <tr>
+                  <td>Best Travel Rewards Airlines</td>
+                  <td class="type-muted">No Year</td>
+                  <td><a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a><span class="type-muted"> | </span><a href="#">SVG</a></td>
+                </tr>
+                <tr>
+                  <td>Best Travel Rewards Airlines</td>
+                  <td>2016-17</td>
+                  <td><a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a></td>
+                </tr>
+                <tr>
+                  <td>Best Travel Rewards Hotels</td>
+                  <td class="type-muted">No Year</td>
+                  <td><a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a><span class="type-muted"> | </span><a href="#">SVG</a></td>
+                </tr>
+                <tr>
+                  <td>Best Travel Rewards Hotels</td>
+                  <td>2016-17</td>
+                  <td><a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </article>
+        </section>
+        <section>
+          <article>
+            <h3 id="cars" data-magellan-target="cars" class="heading-large">Cars</h3>
+            <table>
+              <tbody>
+                <tr>
+                  <td>Best Cars</td>
+                  <td class="type-muted">No Year</td>
+                  <td><a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a><span class="type-muted"> | </span><a href="#">SVG</a></td>
+                </tr>
+                <tr>
+                  <td>Best Cars for Families</td>
+                  <td class="type-muted">No Year</td>
+                  <td><a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a><span class="type-muted"> | </span><a href="#">SVG</a></td>
+                </tr>
+                <tr>
+                  <td>Best Cars for Families</td>
+                  <td>2017</td>
+                  <td><a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a></td>
+                </tr>
+                <tr>
+                  <td>Best Cars for Families Finalist</td>
+                  <td class="type-muted">No Year</td>
+                  <td><a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a><span class="type-muted"> | </span><a href="#">SVG</a></td>
+                </tr>
+                <tr>
+                  <td>Best Cars for Families Finalist</td>
+                  <td>2016</td>
+                  <td><a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a></td>
+                </tr>
+                <tr>
+                  <td>Best Cars for the Money</td>
+                  <td class="type-muted">No Year</td>
+                  <td><a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a><span class="type-muted"> | </span><a href="#">SVG</a></td>
+                </tr>
+                <tr>
+                  <td>Best Cars for the Money</td>
+                  <td>2017</td>
+                  <td><a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a></td>
+                </tr>
+                <tr>
+                  <td>Best Cars for the Money Finalist</td>
+                  <td class="type-muted">No Year</td>
+                  <td><a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a><span class="type-muted"> | </span><a href="#">SVG</a></td>
+                </tr>
+                <tr>
+                  <td>Best Cars for the Money Finalist</td>
+                  <td>2017</td>
+                  <td><a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a></td>
+                </tr>
+                <tr>
+                  <td>Best Cars CPO Program</td>
+                  <td>2017</td>
+                  <td><a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a></td>
+                </tr>
+                <tr>
+                  <td>Best Cars CPO Program</td>
+                  <td>2018</td>
+                  <td><a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a></td>
+                </tr>
+                <tr>
+                  <td>Best Brands</td>
+                  <td class="type-muted">No Year</td>
+                  <td><a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a><span class="type-muted"> | </span><a href="#">SVG</a></td>
+                </tr>
+                <tr>
+                  <td>Best Vehicle Brands</td>
+                  <td>2017</td>
+                  <td><a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a></td>
+                </tr>
+                <tr>
+                  <td>Best Car Brands</td>
+                  <td>2017</td>
+                  <td><a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a></td>
+                </tr>
+                <tr>
+                  <td>Best Luxury Brands</td>
+                  <td>2017</td>
+                  <td><a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a></td>
+                </tr>
+                <tr>
+                  <td>Best SUV Brands</td>
+                  <td>2017</td>
+                  <td><a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a></td>
+                </tr>
+                <tr>
+                  <td>Best Truck Brands</td>
+                  <td>2017</td>
+                  <td><a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </article>
+        </section>
+        <section>
+          <article>
+            <h3 id="law-firms" data-magellan-target="law-firms" class="heading-large">Law Firms</h3>
+            <table>
+              <tbody>
+                <tr>
+                  <td>Best Law Firms</td>
+                  <td class="type-muted">No Year</td>
+                  <td><a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a><span class="type-muted"> | </span><a href="#">SVG</a></td>
+                </tr>
+                <tr>
+                  <td>Law Firm of the Year</td>
+                  <td class="type-muted">No Year</td>
+                  <td><a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a><span class="type-muted"> | </span><a href="#">SVG</a></td>
+                </tr>
+                <tr>
+                  <td>Law Firm of the Year</td>
+                  <td>2016</td>
+                  <td><a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </article>
+        </section>
+        <section>
+          <article>
+            <h3 id="real-estate" data-magellan-target="real-estate" class="heading-large">Real Estate</h3>
+            <table>
+              <tbody>
+                <tr>
+                  <td>Best Places to Live</td>
+                  <td class="type-muted">No Year</td>
+                  <td><a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a><span class="type-muted"> | </span><a href="#">SVG</a></td>
+                </tr>
+                <tr>
+                  <td>Best Places to Live</td>
+                  <td>2017</td>
+                  <td><a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </article>
+        </section>
+        <section id="faq"  data-magellan-target="faq">
+          <article>
+            <h2 class="heading-larger">Badge FAQs</h2>
+            <ol>
+              <li class="text-large type-bold">Which file should I use?
+                <ul class="nested">
+                  <li class="text-normal type-normal answer"><strong>JPG</strong> files can be used for display on the web or presentations. It comes with a <strong>white background</strong>, so it should not be placed on top of colored backgrounds or imagery. These particular jpgs are not prepared for print. If you need a JPG for print, please contact the design team.</li>
+                  <li class="text-normal type-normal answer"><strong>PNG</strong> files are saved with <strong>transparent backgrounds</strong> and are the ideal file type for placing logos on top of photographs or other colored backgrounds. PNG files are low resolution and should not be used for print.</li>
+                  <li class="text-normal type-normal answer"><strong>EPS</strong> files are vector images and can be scaled to any size without quality loss. It is the ideal file type for <strong>print materials</strong>, but can not be used for display on the web. EPS files also benefit from a transparent background.</li>
+                  <li class="text-normal type-normal answer"><strong>SVG</strong> files are vector images that are supported by web browsers. When possible, this should be the <strong>primary file type</strong> for logos displayed on <strong>our website</strong>. SVG files allow us to provide a high quality image on all screen sizes, including retina devices.</li>
+                </ul>
+              </li>
+              <li class="text-large type-bold">How do I get updated badges for my product launch?
+                <ul class="nested">
+                  <li class="text-normal type-normal answer">If you are aware of the design lead assigned to your product team, you may contact them directly to have your product badges updated. Please allow 5-7 business days for your request to be completed. If you are unsure about which designer you should contact, you can email the team at <a href="mailto:webdesign@usnews.com">webdesign@usnews.com</a>.</li>
+                </ul>
+              </li>
+              <li class="text-large type-bold">I found an error. How do I get a correction made to this site?
+                <ul class="nested">
+                  <li class="text-normal type-normal answer">Please email <a href="mailto:webdesign@usnews.com">webdesign@usnews.com</a> with a description of the error.</li>
+                </ul>
+              </li>
+              <li class="text-large type-bold">I'm working on a new ranking product. How do I get badges made?
+                <ul class="nested">
+                  <li class="text-normal type-normal answer">All new badges will follow the badge guidelines. If you need a badge created, speak with the design lead assigned to your product team and they will be able to help create a badge which adheres to company standards. If you are unsure about which designer you should contact, please email <a href="mailto:webdesign@usnews.com">webdesign@usnews.com</a> with your badge request.</li>
+                </ul>
+              </li>
+              <li class="text-large type-bold">I opened an EPS file and the fonts aren't displaying properly. What should I do?
+                <ul class="nested">
+                  <li class="text-normal type-normal answer">Often the badge text won't display properly if you don't have our fonts loaded on your computer. You can install the fonts listed below, or we can provide you with a new version of the EPS with "outlined fonts." Simply let the design lead assigned to your product team know that you are experiencing this issue, and they will update the files for you. If you are unsure about which designer to contact, please email <a href="mailto:webdesign@usnews.com">webdesign@usnews.com</a>.</li>
+                </ul>
+              </li>
+              <li class="text-large type-bold">Which file should I send to the Tech team?
+                <ul class="nested">
+                  <li class="text-normal type-normal answer">SVGs are the best file type to use on the public website. However, as we move away from badges with dates on the site, you shouldn't need to send the Tech team new badges every launch. If a developer is requesting a new badge file, please alert the design lead assigned to your product team and they can provide the proper assets.</li>
+                </ul>
+              </li>
+              <li class="text-large type-bold">Which fonts are used in the U.S. News Badges?
+                <ul class="nested">
+                  <li class="text-normal type-normal answer">Both Titling Gothic and Rockwell are used in the badge design. For more guidelines and specifics about typefaces used, please view the <a href="http://webdesign.usnews.com/Brand/_Guidelines/Badge-Guidelines/_Public/USNews-Badge-Guidelines.pdf">Badge Guidelines</a>.</li>
+                </ul>
+              </li>
+            </ol>
+          </article>
+        </section>
+      </div>
+<!-- End Main Well-->
+    </div>
+<!--End Page Content-->
+  </div>
+  </div>
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="js/vendor/foundation.min.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,1456 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>U.S. News Design System</title>
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/styleguide.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+    <link rel='shortcut icon' href='favicon.ico' type='image/x-icon'/>
+    <script src="https://use.fontawesome.com/676aa66d08.js"></script>
+    <script src="js/prism.js"></script>
+    <script src="plugins/line-numbers/prism-line-numbers.js"></script>
+  </head>
+  <body>
+  <div class="off-canvas-wrapper">
+<!--Start Off Canvas -->
+    <div class="off-canvas position-right" id="offCanvasRight" data-off-canvas data-content-scroll="false">
+      <button class="close-button" aria-label="Close panel" type="button" data-close>
+        <span aria-hidden="true">
+          <svg class="icon white small" alt="close off-canvas menu">
+            <use xlink:href="img/sprite.svg#x"></use>
+          </svg>
+        </span>
+      </button>
+      <h3 class="heading-smallest">Design System 2.0</h3>
+      <input type="text" placeholder="Search">
+      <div data-magellan>
+        <ul class="vertical menu" data-accordion-menu>
+          <li class="text-small lineheight-loosest"><a href="">Usage &amp; Guidelines</a>
+            <ul class="menu vertical nested">
+              <li class="lineheight-looser"><a href="#colors">Colors</a></li>
+              <li class="lineheight-looser"><a href="#sizes">Minimum Size</a></li>
+              <li class="lineheight-looser"><a href="#clear-space">Clear Space</a></li>
+            </ul>
+          </li>
+          <li class="text-small lineheight-loosest"><a href="#file-types">File Types</a></li>
+          <li class="text-small lineheight-loosest"><a href="">All Logos</a>
+            <ul class="menu vertical nested">
+              <li class="lineheight-looser"><a href="#usnews">U.S. News</a></li> 
+              <li class="lineheight-looser"><a href="#products">Products</a></li>
+              <li class="lineheight-looser"><a href="#web-apps">Web Apps</a></li>
+              <li class="lineheight-looser"><a href="#conferences">Conferences</a></li>
+              <li class="lineheight-looser"><a href="#anniversary-logos">Anniversary Logos</a></li>
+            </ul>
+          </li>
+          <li class="text-small lineheight-loosest"><a href="#first">Back to top</a></li>
+        </ul>
+      </div>
+      <hr>
+      <h3 class="heading-smallest lineheight-loosest more">More from U.S. News</h3>
+      <ul>
+        <li class="menu-text text-small lineheight-loosest"><a href="index.html">Design &amp; UX</a></li>
+        <li class="menu-text text-small lineheight-loosest"><a href="#">Development</a></li>
+        <li class="menu-text text-small lineheight-loosest"><a href="#">Templates</a></li>
+        <li class="menu-text text-small lineheight-loosest"><a href="logos.html">Logos</a></li>
+        <li class="menu-text text-small lineheight-loosest"><a href="badges.html">Badges</a></li>
+      </ul>
+      <ul>
+        <li class="menu-text text-smallest lineheight-loose type-bold"><a href="">Contact</a></li>
+        <li class="menu-text text-smallest lineheight-loose type-bold"><a href="">Employment</a></li>
+        <li class="menu-text text-smallest lineheight-loose type-bold"><a href="">Advertising</a></li>
+        <li class="menu-text text-smallest lineheight-loose type-bold"><a href="">Terms &amp; Conditions / Privacy Policy</a></li>
+      </ul>
+      <ul class="menu icons">
+        <li>
+          <svg class="icon iron large" alt="facebook">
+            <use xlink:href="img/sprite.svg#facebook"></use>
+          </svg>
+        </li>
+        <li>
+          <svg class="icon iron large twitter" alt="twitter">
+            <use xlink:href="img/sprite.svg#twitter"></use>
+          </svg>
+        </li>
+        <li>
+          <svg class="icon iron large" alt="google plus">
+            <use xlink:href="img/sprite.svg#google-plus"></use>
+          </svg>
+        </li>
+      </ul>
+    </div>
+<!--End Off Canvas -->
+    <div class="off-canvas-content" data-off-canvas-content>
+<!--Start Header -->
+    <header class="top-bar">
+      <div class="top-bar-left">
+      <nav>
+        <ul class="menu">
+          <li><img src="img/usn-logo-large.svg" class="show-for-medium" alt="U.S. News & World Report Logo"></li>
+          <li><img src="img/usn-logo-small.svg" class="small-logo show-for-small-only" alt="U.S. News & World Report Logo"></li>
+          <li class="menu-text text-small portal-name"><a href="#">Design System 2.0</a></li>
+          <li class="menu-text text-smaller lineheight-tight show-for-large"><a href="index.html">Design &amp; UX</a></li>
+          <li class="menu-text text-smaller lineheight-tight show-for-large"><a href="#">Development</a></li>
+          <li class="menu-text text-smaller lineheight-tight show-for-large"><a href="#">Templates</a></li>
+          <li class="menu-text text-smaller lineheight-tight show-for-large active"><a href="logos.html">Logos</a></li>
+          <li class="menu-text text-smaller lineheight-tight show-for-large"><a href="badges.html">Badges</a></li>
+        </ul>
+      </nav>
+      </div> 
+      <div class="top-bar-right">
+        <ul class="menu icons">
+          <li>
+            <svg class="icon white large main-nav__icons-search hide-for-small-only" alt="search">
+              <use xlink:href="img/sprite.svg#search"></use>
+            </svg>
+          </li>
+          <li class="login-dropdown">
+            <svg class="icon white large main-nav__icons-login hide-for-small-only" alt="user login">
+              <use xlink:href="img/sprite.svg#login"></use>
+            </svg>
+          </li>
+          <li>
+            <svg class="icon white large main-nav__icons-hamburger" alt="menu" data-toggle="offCanvasRight">
+              <use xlink:href="img/sprite.svg#hamburger"></use>
+            </svg>
+          </li>
+        </ul>
+      </div>
+    </header>
+<!-- End Header -->  
+
+<!--Start Page Content-->
+    <div class="row" id="content">
+<!--Start Left-Rail Nav-->
+      <div class="small-12 medium-3 large-2 columns text-center medium-text-left sticky-nav hide-for-small-only" data-sticky-container>
+        <nav class="sticky" data-sticky data-anchor="content">
+          <div data-magellan>
+          <ul class="sticky-nav vertical menu" data-accordion-menu>
+            <li class="text-small type-display-caps">Logos</li>
+            <li class="text-smaller lineheight-tight"><a href="">Usage &amp; Guidelines</a>
+              <ul class="menu vertical nested">
+                <li><a href="#colors">Colors</a></li>
+                <li><a href="#size">Minimum Size</a></li>
+                <li><a href="#clear-space">Clear Space</a></li>
+              </ul>
+            </li>
+            <li class="text-smaller lineheight-tight"><a href="#file-types">File Types</a></li>
+            <li class="text-smaller lineheight-tight"><a href="">All Logos</a>
+              <ul class="menu vertical nested">
+                <li><a href="#usnews">U.S. News</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#web-apps">Web Apps</a></li>
+                <li><a href="#conferences">Conferences</a></li>
+                <li><a href="#anniversary-logos">Anniversary Logos</a></li>
+              </ul>
+            </li>
+            <li class="text-smaller lineheight-tight"><a href="#first">Back to top</a></li>
+          </ul>
+          </div>
+        </nav>
+      </div>
+<!--End Left-Rail Nav-->
+<!--Start Main Content-->
+      <div class="small-12 medium-9 large-10 columns main-well">
+        <section id="first"  data-magellan-target="first">
+          <article>
+            <h2 class="heading-larger">U.S. News Logos</h2>
+            <h3 id="usage" data-magellan-target="usage" class="heading-large">Logo Usage &amp; Guidelines</h3>
+            <p class="text-normal">The U.S. News &amp; World Report logo is the corporate identity symbol for the U.S. News Media Group, including U.S. News &amp; World Report print publications and usnews.com. It is a copyright protected trademark and can only be used with permission of authorized representativves of the U.S. News Media Group.</p>
+            <p><a class="text-normal" href="http://webdesign.usnews.com/brand/_Guidelines/Logo-Guidelines/_Public/USNews-Logo-Guidelines.pdf">See full logo guidelines &raquo;</a></p>
+          </article>
+          <article>
+            <h4 id="colors" data-magellan-target="colors" class="heading-normal">Colors</h4>
+            <p class="text-normal">Logo colors are listed below in multiple formats. No other colors may be substituted. Use of the grayscale logo should be limited when color reproduction is not available.</p>
+            <div class="row small-up-1 large-up-3">
+              <div class="column">
+                <div class="card color-stack logo">
+                    <div class="color-bar red-50 main" data-clipboard-text="c4212a">
+                    <p class="type text-small type-bold">HEX</p>
+                    <p class="computed text-small type-bold">#c4212a</p>
+                    <hr>
+                    <p class="type text-small type-bold">CMYK</p>
+                    <p class="computed text-small type-bold">16 / 100 / 96 / 6</p>
+                    <hr>
+                    <p class="type text-small type-bold">RGB</p>
+                    <p class="computed text-small type-bold">196 / 33 / 42</p>
+                    <hr>
+                    <p class="type text-small type-bold">PMS</p>
+                    <p class="computed text-small type-bold">186 C</p>
+                    <div class="hover-icon">
+                      <svg class="icon white medium">
+                        <use xlink:href="img/sprite.svg#document-text"></use>
+                      </svg>
+                      <p class="text-smallest type-caps type-bold lineheight-tight notification">Copy HEX</p>
+                    </div>  
+                  </div>
+                </div>
+              </div>
+
+              <div class="column">
+                <div class="card color-stack logo">
+                  <div class="color-bar blue-50 main" data-clipboard-text="005ea6">
+                    <p class="type text-small type-bold">HEX</p>
+                    <p class="computed text-small type-bold">#005ea6</p>
+                    <hr>
+                    <p class="type text-small type-bold">CMYK</p>
+                    <p class="computed text-small type-bold">95 / 67 / 4 / 0</p>
+                    <hr>
+                    <p class="type text-small type-bold">RGB</p>
+                    <p class="computed text-small type-bold">0 / 94 / 166</p>
+                    <hr>
+                    <p class="type text-small type-bold">PMS</p>
+                    <p class="computed text-small type-bold">2945</p>
+                    <div class="hover-icon">
+                      <svg class="icon white medium">
+                        <use xlink:href="img/sprite.svg#document-text"></use>
+                      </svg>
+                      <p class="text-smallest type-caps type-bold lineheight-tight notification">Copy HEX</p>
+                    </div>   
+                  </div>
+                </div>
+              </div>
+
+              <div class="column">
+                <div class="card color-stack logo">
+                  <div class="color-bar black-90 main" data-clipboard-text="000000">
+                    <p class="type text-small type-bold">CMYK</p>
+                    <p class="computed text-small type-bold">0 / 0 / 0 / 100</p>
+                    <hr>
+                    <p class="type text-small type-bold">PMS</p>
+                    <p class="computed text-small type-bold">Process Black</p>
+                    <div class="hover-icon">
+                      <svg class="icon white medium">
+                        <use xlink:href="img/sprite.svg#document-text"></use>
+                      </svg>
+                      <p class="text-smallest type-caps type-bold lineheight-tight notification">Copy HEX</p>
+                    </div>   
+                  </div>                                    
+                </div>
+              </div>
+
+            </div>
+          </article>
+          <article>
+            <h4 id="size" data-magellan-target="size" class="heading-normal">Minimum Size</h4>
+            <p class="text-normal">The U.S. News &amp; World Report logo has a standard minimum size for both print and digital use, ensuring that the integrity and legibility of the logo is maintained.</p>
+            <div class="row small-up-1 large-up-2">
+              <div class="column">
+                <p class="text-normal type-bold">Print</p>
+                <img src="img/print-specs.png" alt="print specs">
+              </div>
+              <div class="column">
+                <p class="text-normal type-bold">Digital</p>
+                <img src="img/digital-specs.png" alt="digital specs">
+              </div>
+            </div>
+          </article>
+          <article>
+            <h4 id="clear-space" data-magellan-target="clear-space" class="heading-normal">Clear Space</h4>
+            <p class="text-normal">Clear space is the area around the outside of the logo that should be kept free of text or graphic elements. The minimum required space is defined by the measurement of “x,” shown below. This measurement is always equal to 1/3 the height of the logo.</p>
+            <img src="img/clear-space.png" alt="clear space specs" class="centered">
+          </article>
+        </section>
+        <section>
+          <h3 id="file-types" data-magellan-target="file-types" class="heading-large">Which file should I use?</h3>
+          <ul>
+            <li class="text-normal type-normal answer"><strong>JPG</strong> files can be used for display on the web or presentations. It comes with a <strong>white background</strong>, so it should not be placed on top of colored backgrounds or imagery. These particular jpgs are not prepared for print. If you need a JPG for print, please contact the design team.</li>
+            <li class="text-normal type-normal answer"><strong>PNG</strong> files are saved with <strong>transparent backgrounds</strong> and are the ideal file type for placing logos on top of photographs or other colored backgrounds. PNG files are low resolution and should not be used for print.</li>
+            <li class="text-normal type-normal answer"><strong>EPS</strong> files are vector images and can be scaled to any size without quality loss. It is the ideal file type for <strong>print materials</strong>, but can not be used for display on the web. EPS files also benefit from a transparent background.</li>
+            <li class="text-normal type-normal answer"><strong>SVG</strong> files are vector images that are supported by web browsers. When possible, this should be the <strong>primary file type</strong> for logos displayed on <strong>our website</strong>. SVG files allow us to provide a high quality image on all screen sizes, including retina devices.</li>
+          </ul>
+        </section>
+        <section>
+          <article>
+            <h3 class="heading-large">All Logos</h3>
+            <h4 id="usnews" data-magellan-target="usnews" class="heading-normal">U.S. News</h4>
+            <table class="logo-specs">
+              <tbody>
+                <tr>
+                  <td rowspan="3" class="logo-background text-center">
+                    <img src="img/logos/USNews-Large.svg" alt="U.S. News large logo">
+                  </td>
+                  <td colspan="2">
+                    <h5 class="heading-small">U.S. News <span class="small">(Standard, Large)</span></h5>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p class="text-normal type-bold">Print<span class="text-small type-muted">(full color - CMYK)</span></p>
+                  </td>
+                  <td>
+                    <a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p class="text-normal type-bold">Web<span class="text-small type-muted">(full color - RBG)</span></p>
+                  </td>
+                  <td>
+                    <a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a><span class="type-muted"> | </span><a href="#">SVG</a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <table class="logo-specs">
+              <tbody>
+                <tr>
+                  <td rowspan="3" class="logo-background text-center">
+                    <img src="img/logos/USNews-Small.svg" alt="U.S. News small logo">
+                  </td>
+                  <td colspan="2">
+                    <h5 class="heading-small">U.S. News <span class="small">(Standard, Small)</span></h5>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p class="text-normal type-bold">Print<span class="text-small type-muted">(full color - CMYK)</span></p>
+                  </td>
+                  <td>
+                    <a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p class="text-normal type-bold">Web<span class="text-small type-muted">(full color - RBG)</span></p>
+                  </td>
+                  <td>
+                    <a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a><span class="type-muted"> | </span><a href="#">SVG</a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <table class="logo-specs">
+              <tbody>
+                <tr>
+                  <td rowspan="3" class="logo-background text-center">
+                    <img src="img/logos/USNews-Large-Border.svg" alt="U.S. News large bordered logo">
+                  </td>
+                  <td colspan="2">
+                    <h5 class="heading-small">U.S. News <span class="small">(Standard, Large w/ Black Border)</span></h5>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p class="text-normal type-bold">Print<span class="text-small type-muted">(full color - CMYK)</span></p>
+                  </td>
+                  <td>
+                    <a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p class="text-normal type-bold">Web<span class="text-small type-muted">(full color - RBG)</span></p>
+                  </td>
+                  <td>
+                    <a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a><span class="type-muted"> | </span><a href="#">SVG</a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <table class="logo-specs">
+              <tbody>
+                <tr>
+                  <td rowspan="3" class="logo-background text-center">
+                    <img src="img/logos/USNews-Small-Border.svg" alt="U.S. News small bordered logo">
+                  </td>
+                  <td colspan="2">
+                    <h5 class="heading-small">U.S. News <span class="small">(Standard, Small w/ Black Border)</span></h5>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p class="text-normal type-bold">Print<span class="text-small type-muted">(full color - CMYK)</span></p>
+                  </td>
+                  <td>
+                    <a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p class="text-normal type-bold">Web<span class="text-small type-muted">(full color - RBG)</span></p>
+                  </td>
+                  <td>
+                    <a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a><span class="type-muted"> | </span><a href="#">SVG</a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <table class="logo-specs">
+              <tbody>
+                <tr>
+                  <td rowspan="5" class="logo-background text-center">
+                    <img src="img/logos/USNews-Large-BW.svg" alt="U.S. News large black and white logo">
+                  </td>
+                  <td colspan="2">
+                    <h5 class="heading-small">U.S. News <span class="small">(Black and White)</span></h5>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p class="text-normal type-bold">Standard, Large</p>
+                  </td>
+                  <td>
+                    <a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a><span class="type-muted"> | </span><a href="#">SVG</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p class="text-normal type-bold">Large w/ Black Border</p>
+                  </td>
+                  <td>
+                    <a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p class="text-normal type-bold">Standard, Small</p>
+                  </td>
+                  <td>
+                    <a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p class="text-normal type-bold">Small w/ Black Border</p>
+                  </td>
+                  <td>
+                    <a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <table class="logo-specs">
+              <tbody>
+                <tr>
+                  <td rowspan="3" class="logo-background text-center">
+                    <img src="img/logos/USNews-Large-White.svg" alt="U.S. News large white logo">
+                  </td>
+                  <td colspan="2">
+                    <h5 class="heading-small">U.S. News <span class="small">(All White)</span></h5>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p class="text-normal type-bold">Standard, Large</p>
+                  </td>
+                  <td>
+                    <a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a><span class="type-muted"> | </span><a href="#">SVG</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p class="text-normal type-bold">Standard, Small</p>
+                  </td>
+                  <td>
+                    <a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <table class="logo-specs">
+              <tbody>
+                <tr>
+                  <td rowspan="2" class="logo-background text-center">
+                    <img src="img/logos/USNews-Large-White-Text.svg" alt="U.S. News small text-only bordered logo">
+                  </td>
+                  <td colspan="2">
+                    <h5 class="heading-small">U.S. News <span class="small">(Standard, Small w/ Black Border)</span></h5>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p class="text-normal type-bold">Standard, Large</p>
+                  </td>
+                  <td>
+                    <a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a><span class="type-muted"> | </span><a href="#">SVG</a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <table class="logo-specs">
+              <tbody>
+                <tr>
+                  <td rowspan="4" class="logo-background text-center">
+                    <img src="img/logos/USNews-LifeDecisionsMadeHere.svg" alt="U.S. News Life's Decisions Made Here logo">
+                  </td>
+                  <td colspan="2">
+                    <h5 class="heading-small">Life's Decisions Made Here</h5>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p class="text-normal type-bold">Print<span class="text-small type-muted">(full color - CMYK)</span></p>
+                  </td>
+                  <td>
+                    <a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p class="text-normal type-bold">Web<span class="text-small type-muted">(full color - RGB)</span></p>
+                  </td>
+                  <td>
+                    <a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a><span class="type-muted"> | </span><a href="#">SVG</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p class="text-normal type-bold">Grayscale</p>
+                  </td>
+                  <td>
+                    <a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <table class="logo-specs">
+              <tbody>
+                <tr>
+                  <td rowspan="4" class="logo-background text-center">
+                    <img src="img/logos/USNews-LeadershipForum.svg" alt="A Leadership Forum By U.S. News logo">
+                  </td>
+                  <td colspan="2">
+                    <h5 class="heading-small">A Leadership Forum By</h5>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p class="text-normal type-bold">Print<span class="text-small type-muted">(full color - CMYK)</span></p>
+                  </td>
+                  <td>
+                    <a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p class="text-normal type-bold">Web<span class="text-small type-muted">(full color - RGB)</span></p>
+                  </td>
+                  <td>
+                    <a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a><span class="type-muted"> | </span><a href="#">SVG</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p class="text-normal type-bold">Grayscale</p>
+                  </td>
+                  <td>
+                    <a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <table class="logo-specs">
+              <tbody>
+                <tr>
+                  <td rowspan="4" class="logo-background text-center">
+                    <img src="img/logos/Published-on-USNews.svg" alt="Published on U.S. News logo">
+                  </td>
+                  <td colspan="2">
+                    <h5 class="heading-small">Published on U.S. News</h5>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p class="text-normal type-bold">Web<span class="text-small type-muted">(full color - RGB), Medium (300x110)</span></p>
+                  </td>
+                  <td>
+                    <a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a><span class="type-muted"> | </span><a href="#">SVG</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p class="text-normal type-bold">Web<span class="text-small type-muted">(full color - RGB), Medium (170x70)</span></p>
+                  </td>
+                  <td>
+                    <a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p class="text-normal type-bold">Web<span class="text-small type-muted">(full color - RGB), Small (100x40)</span></p>
+                  </td>
+                  <td>
+                    <a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </article>
+          <article>
+          <h4 id="products" data-magellan-target="products" class="heading-normal">U.S. News Products</h4>
+            <table class="logo-specs">
+              <tbody>
+                <tr>
+                  <td rowspan="4" class="logo-background text-center">
+                    <img src="img/logos/Compass.svg" alt="U.S. News Compass logo">
+                  </td>
+                  <td colspan="2">
+                    <h5 class="heading-small">U.S. News Compass</h5>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p class="text-normal type-bold">Print<span class="text-small type-muted">(full color - CMYK)</span></p>
+                  </td>
+                  <td>
+                    <a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p class="text-normal type-bold">Web<span class="text-small type-muted">(full color - RBG)</span></p>
+                  </td>
+                  <td>
+                    <a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a><span class="type-muted"> | </span><a href="#">SVG</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p class="text-normal type-bold">Grayscale</p>
+                  </td>
+                  <td>
+                    <a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <table class="logo-specs">
+              <tbody>
+                <tr>
+                  <td rowspan="3" class="logo-background text-center">
+                    <img src="img/logos/Best-Price-Program.svg" alt="U.S. News Best Price Program logo">
+                  </td>
+                  <td colspan="2">
+                    <h5 class="heading-small">U.S. News Best Price Program</h5>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p class="text-normal type-bold">Blue</p>
+                  </td>
+                  <td>
+                    <a href="#">EPS</a><span class="type-muted"> | </span><a href="#">SVG</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p class="text-normal type-bold">White</p>
+                  </td>
+                  <td>
+                    <a href="#">EPS</a><span class="type-muted"> | </span><a href="#">SVG</a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <table class="logo-specs">
+              <tbody>
+                <tr>
+                  <td rowspan="2" class="logo-background text-center">
+                    <img src="img/logos/Best-Countries.svg" alt="Best Countries logo">
+                  </td>
+                  <td colspan="2">
+                    <h5 class="heading-small">Best Countries</h5>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p class="text-normal type-bold">Web</p>
+                  </td>
+                  <td>
+                    <<a href="#">EPS</a><span class="type-muted"> | </span><a href="#">SVG</a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <table class="logo-specs">
+              <tbody>
+                <tr>
+                  <td rowspan="2" class="logo-background text-center">
+                    <img src="img/logos/Best-States.svg" alt="Best States logo">
+                  </td>
+                  <td colspan="2">
+                    <h5 class="heading-small">Best States</h5>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p class="text-normal type-bold">Web</p>
+                  </td>
+                  <td>
+                    <a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a><span class="type-muted"> | </span><a href="#">SVG</a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <table class="logo-specs">
+              <tbody>
+                <tr>
+                  <td rowspan="2" class="logo-background text-center">
+                    <img src="img/logos/BrandFuse.svg" alt="U.S. News BrandFuse logo">
+                  </td>
+                  <td colspan="2">
+                    <h5 class="heading-small">BrandFuse</h5>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p class="text-normal type-bold">Web</p>
+                  </td>
+                  <td>
+                    <a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a><span class="type-muted"> | </span><a href="#">SVG</a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <table class="logo-specs">
+              <tbody>
+                <tr>
+                  <td rowspan="2" class="logo-background text-center">
+                    <img src="img/logos/Extra-Help.svg" alt="U.S. News Extra Help: College Admissions logo">
+                  </td>
+                  <td colspan="2">
+                    <h5 class="heading-small">Extra Help: College Admissions</h5>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p class="text-normal type-bold">Web</p>
+                  </td>
+                  <td>
+                    <a href="#">EPS</a><span class="type-muted"> | </span><a href="#">SVG</a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </article>
+          <article>
+          <h4 id="web-apps" data-magellan-target="web-apps" class="heading-normal">U.S. News Web Apps</h4>
+            <table class="logo-specs">
+              <tbody>
+                <tr>
+                  <td rowspan="4" class="logo-background text-center">
+                    <img src="img/logos/Academic-Insights-Horizontal.svg" alt="Academic Insights logo horizontal">
+                  </td>
+                  <td colspan="2">
+                    <h5 class="heading-small">Academic Insights <span class="small">(Horizontal)</span></h5>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p class="text-normal type-bold">Print<span class="text-small type-muted">(full color - CMYK)</span></p>
+                  </td>
+                  <td>
+                    <a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p class="text-normal type-bold">Web<span class="text-small type-muted">(full color - RBG)</span></p>
+                  </td>
+                  <td>
+                    <a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a><span class="type-muted"> | </span><a href="#">SVG</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p class="text-normal type-bold">Grayscale</p>
+                  </td>
+                  <td>
+                    <a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <table class="logo-specs">
+              <tbody>
+                <tr>
+                  <td rowspan="4" class="logo-background text-center">
+                    <img src="img/logos/Academic-Insights-Horizontal-Tagline.svg" alt="Academic Insights: Your School by the Numbers logo horizontal">
+                  </td>
+                  <td colspan="2">
+                    <h5 class="heading-small">Academic Insights <span class="small">(Horizontal w/ Tagline)</span></h5>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p class="text-normal type-bold">Print<span class="text-small type-muted">(full color - CMYK)</span></p>
+                  </td>
+                  <td>
+                    <a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p class="text-normal type-bold">Web<span class="text-small type-muted">(full color - RBG)</span></p>
+                  </td>
+                  <td>
+                    <a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a><span class="type-muted"> | </span><a href="#">SVG</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p class="text-normal type-bold">Grayscale</p>
+                  </td>
+                  <td>
+                    <a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <table class="logo-specs">
+              <tbody>
+                <tr>
+                  <td rowspan="4" class="logo-background text-center">
+                    <img src="img/logos/Academic-Insights-Stacked.svg" alt="Academic Insights logo stacked">
+                  </td>
+                  <td colspan="2">
+                    <h5 class="heading-small">Academic Insights <span class="small">(Vertical)</span></h5>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p class="text-normal type-bold">Print<span class="text-small type-muted">(full color - CMYK)</span></p>
+                  </td>
+                  <td>
+                    <a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p class="text-normal type-bold">Web<span class="text-small type-muted">(full color - RBG)</span></p>
+                  </td>
+                  <td>
+                    <a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a><span class="type-muted"> | </span><a href="#">SVG</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p class="text-normal type-bold">Grayscale</p>
+                  </td>
+                  <td>
+                    <a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <table class="logo-specs">
+              <tbody>
+                <tr>
+                  <td rowspan="4" class="logo-background text-center">
+                    <img src="img/logos/HDI-Horizontal.svg" alt="Hospital Data Insights logo horizontal">
+                  </td>
+                  <td colspan="2">
+                    <h5 class="heading-small">Hospital Data Insights <span class="small">(Generic Horizontal)</span></h5>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p class="text-normal type-bold">Print<span class="text-small type-muted">(full color - CMYK)</span></p>
+                  </td>
+                  <td>
+                    <a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p class="text-normal type-bold">Web<span class="text-small type-muted">(full color - RBG)</span></p>
+                  </td>
+                  <td>
+                    <a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a><span class="type-muted"> | </span><a href="#">SVG</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p class="text-normal type-bold">Grayscale</p>
+                  </td>
+                  <td>
+                    <a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <table class="logo-specs">
+              <tbody>
+                <tr>
+                  <td rowspan="4" class="logo-background text-center">
+                    <img src="img/logos/HDI-Stacked.svg" alt="Hospital Data Insights logo stacked">
+                  </td>
+                  <td colspan="2">
+                    <h5 class="heading-small">Hospital Data Insights <span class="small">(Generic Vertical)</span></h5>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p class="text-normal type-bold">Print<span class="text-small type-muted">(full color - CMYK)</span></p>
+                  </td>
+                  <td>
+                    <a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p class="text-normal type-bold">Web<span class="text-small type-muted">(full color - RBG)</span></p>
+                  </td>
+                  <td>
+                    <a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a><span class="type-muted"> | </span><a href="#">SVG</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p class="text-normal type-bold">Grayscale</p>
+                  </td>
+                  <td>
+                    <a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <table class="logo-specs">
+              <tbody>
+                <tr>
+                  <td rowspan="4" class="logo-background text-center">
+                    <img src="img/logos/HDI-Stacked-Adults.svg" alt="Hospital Data Insights Adults logo">
+                  </td>
+                  <td colspan="2">
+                    <h5 class="heading-small">Hospital Data Insights <span class="small">(Adults)</span></h5>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p class="text-normal type-bold">Print<span class="text-small type-muted">(full color - CMYK)</span></p>
+                  </td>
+                  <td>
+                    <a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p class="text-normal type-bold">Web<span class="text-small type-muted">(full color - RBG)</span></p>
+                  </td>
+                  <td>
+                    <a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a><span class="type-muted"> | </span><a href="#">SVG</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p class="text-normal type-bold">Grayscale</p>
+                  </td>
+                  <td>
+                    <a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <table class="logo-specs">
+              <tbody>
+                <tr>
+                  <td rowspan="4" class="logo-background text-center">
+                    <img src="img/logos/HDI-Stacked-Pediatrics.svg" alt="Hospital Data Insights Pediatrics logo">
+                  </td>
+                  <td colspan="2">
+                    <h5 class="heading-small">Hospital Data Insights <span class="small">(Pediatrics)</span></h5>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p class="text-normal type-bold">Print<span class="text-small type-muted">(full color - CMYK)</span></p>
+                  </td>
+                  <td>
+                    <a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p class="text-normal type-bold">Web<span class="text-small type-muted">(full color - RBG)</span></p>
+                  </td>
+                  <td>
+                    <a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a><span class="type-muted"> | </span><a href="#">SVG</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p class="text-normal type-bold">Grayscale</p>
+                  </td>
+                  <td>
+                    <a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <table class="logo-specs">
+              <tbody>
+                <tr>
+                  <td rowspan="3" class="logo-background text-center">
+                    <img src="img/logos/Best-Hospital-Dashboard-Horizontal.svg" alt="Best Hospitals Dashboard logo horizontal">
+                  </td>
+                  <td colspan="2">
+                    <h5 class="heading-small">Best Hospitals Dashboard <span class="small">(Horizontal)</span></h5>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p class="text-normal type-bold">Print<span class="text-small type-muted">(full color - CMYK)</span></p>
+                  </td>
+                  <td>
+                    <a href="#">JPG</a><span class="type-muted"> | </span><a href="#">EPS</a><span class="type-muted"> | </span><a href="#">TIF</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p class="text-normal type-bold">Web<span class="text-small type-muted">(full color - RBG)</span></p>
+                  </td>
+                  <td>
+                    <a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a><span class="type-muted"> | </span><a href="#">SVG</a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <table class="logo-specs">
+              <tbody>
+                <tr>
+                  <td rowspan="3" class="logo-background text-center">
+                    <img src="img/logos/Best-Hospital-Dashboard-Stacked.svg" alt="Best Hospitals Dashboard logo stacked">
+                  </td>
+                  <td colspan="2">
+                    <h5 class="heading-small">Best Hospitals Dashboard <span class="small">(Vertical)</span></h5>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p class="text-normal type-bold">Print<span class="text-small type-muted">(full color - CMYK)</span></p>
+                  </td>
+                  <td>
+                    <a href="#">JPG</a><span class="type-muted"> | </span><a href="#">EPS</a><span class="type-muted"> | </span><a href="#">TIF</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p class="text-normal type-bold">Web<span class="text-small type-muted">(full color - RBG)</span></p>
+                  </td>
+                  <td>
+                    <a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a><span class="type-muted"> | </span><a href="#">SVG</a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </article>
+          <article>
+          <h4 id="conferences" data-magellan-target="conferences" class="heading-normal">U.S. News Conferences</h4>
+            <table class="logo-specs">
+              <tbody>
+                <tr>
+                  <td rowspan="5" class="logo-background text-center">
+                    <img src="img/logos/HOT.svg" alt="Healthcare of Tomorrow logo">
+                  </td>
+                  <td colspan="2">
+                    <h5 class="heading-small">Healthcare of Tomorrow <span class="small">(Generic)</span></h5>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p class="text-normal type-bold">Print<span class="text-small type-muted">(full color - CMYK)</span></p>
+                  </td>
+                  <td>
+                    <a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a><span class="type-muted"> | </span><a href="#">PDF</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p class="text-normal type-bold">Web<span class="text-small type-muted">(full color - RBG)</span></p>
+                  </td>
+                  <td>
+                    <a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a><span class="type-muted"> | </span><a href="#">SVG</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p class="text-normal type-bold">Black and White</p>
+                  </td>
+                  <td>
+                    <a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a><span class="type-muted"> | </span><a href="#">PDF</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p class="text-normal type-bold">All White</p>
+                  </td>
+                  <td>
+                    <a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a><span class="type-muted"> | </span><a href="#">PDF</a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <table class="logo-specs">
+              <tbody>
+                <tr>
+                  <td rowspan="4" class="logo-background text-center">
+                    <img src="img/logos/HOT-2018.svg" alt="Healthcare of Tomorrow 2018 logo">
+                  </td>
+                  <td colspan="2">
+                    <h5 class="heading-small">Healthcare of Tomorrow <span class="small">(2018)</span></h5>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p class="text-normal type-bold">Print<span class="text-small type-muted">(full color - CMYK)</span></p>
+                  </td>
+                  <td>
+                    <a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a><span class="type-muted"> | </span><a href="#">PDF</a><span class="type-muted"> | </span><a href="#">SVG</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p class="text-normal type-bold">Black and White</p>
+                  </td>
+                  <td>
+                    <a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a><span class="type-muted"> | </span><a href="#">PDF</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p class="text-normal type-bold">All White</p>
+                  </td>
+                  <td>
+                    <a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a><span class="type-muted"> | </span><a href="#">PDF</a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <table class="logo-specs">
+              <tbody>
+                <tr>
+                  <td rowspan="4" class="logo-background text-center">
+                    <img src="img/logos/HOT-2017.svg" alt="Healthcare of Tomorrow 2017 logo">
+                  </td>
+                  <td colspan="2">
+                    <h5 class="heading-small">Healthcare of Tomorrow <span class="small">(2017)</span></h5>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p class="text-normal type-bold">Print<span class="text-small type-muted">(full color - CMYK)</span></p>
+                  </td>
+                  <td>
+                    <a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a><span class="type-muted"> | </span><a href="#">PDF</a><span class="type-muted"> | </span><a href="#">SVG</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p class="text-normal type-bold">Black and White</p>
+                  </td>
+                  <td>
+                    <a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a><span class="type-muted"> | </span><a href="#">PDF</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p class="text-normal type-bold">All White</p>
+                  </td>
+                  <td>
+                    <a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a><span class="type-muted"> | </span><a href="#">PDF</a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <table class="logo-specs">
+              <tbody>
+                <tr>
+                  <td rowspan="5" class="logo-background text-center">
+                    <img src="img/logos/HOT-2016.svg" alt="Healthcare of Tomorrow 2016 logo">
+                  </td>
+                  <td colspan="2">
+                    <h5 class="heading-small">Healthcare of Tomorrow <span class="small">(2016)</span></h5>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p class="text-normal type-bold">Print<span class="text-small type-muted">(full color - CMYK)</span></p>
+                  </td>
+                  <td>
+                    <a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a><span class="type-muted"> | </span><a href="#">PDF</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p class="text-normal type-bold">Web<span class="text-small type-muted">(full color - RGB)</span></p>
+                  </td>
+                  <td>
+                    <a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a><span class="type-muted"> | </span><a href="#">SVG</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p class="text-normal type-bold">Black and White</p>
+                  </td>
+                  <td>
+                    <a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a><span class="type-muted"> | </span><a href="#">PDF</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p class="text-normal type-bold">All White</p>
+                  </td>
+                  <td>
+                    <a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a><span class="type-muted"> | </span><a href="#">PDF</a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <table class="logo-specs">
+              <tbody>
+                <tr>
+                  <td rowspan="4" class="logo-background text-center">
+                    <img src="img/logos/STEM.svg" alt="U.S. News STEM Solutions logo">
+                  </td>
+                  <td colspan="2">
+                    <h5 class="heading-small">STEM Solutions <span class="small">(Generic)</span></h5>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p class="text-normal type-bold">Print<span class="text-small type-muted">(full color - CMYK)</span></p>
+                  </td>
+                  <td>
+                    <a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p class="text-normal type-bold">Web<span class="text-small type-muted">(full color - RGB)</span></p>
+                  </td>
+                  <td>
+                    <a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a><span class="type-muted"> | </span><a href="#">SVG</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p class="text-normal type-bold">Grayscale</p>
+                  </td>
+                  <td>
+                    <a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <table class="logo-specs">
+              <tbody>
+                <tr>
+                  <td rowspan="3" class="logo-background text-center">
+                    <img src="img/logos/STEM-2017.png" alt="U.S. News STEM Solutions 2017 logo">
+                  </td>
+                  <td colspan="2">
+                    <h5 class="heading-small">STEM Solutions <span class="small">(2017 Horizontal)</span></h5>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p class="text-normal type-bold">Print<span class="text-small type-muted">(full color - CMYK), with tag</span></p>
+                  </td>
+                  <td>
+                    <a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p class="text-normal type-bold">Print<span class="text-small type-muted">(full color - CMYK), no tag</span></p>
+                  </td>
+                  <td>
+                    <a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <table class="logo-specs">
+              <tbody>
+                <tr>
+                  <td rowspan="3" class="logo-background text-center">
+                    <img src="img/logos/STEM-2016-Horizontal.svg" alt="U.S. News STEM Solutions 2016 logo horizontal">
+                  </td>
+                  <td colspan="2">
+                    <h5 class="heading-small">STEM Solutions <span class="small">(2016 Horizontal)</span></h5>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p class="text-normal type-bold">Print<span class="text-small type-muted">(full color - CMYK)</span></p>
+                  </td>
+                  <td>
+                    <a href="#">JPG</a><span class="type-muted"> | </span><a href="#">EPS</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p class="text-normal type-bold">Web<span class="text-small type-muted">(full color - RGB)</span></p>
+                  </td>
+                  <td>
+                    <a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a><span class="type-muted"> | </span><a href="#">SVG</a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <table class="logo-specs">
+              <tbody>
+                <tr>
+                  <td rowspan="3" class="logo-background text-center">
+                    <img src="img/logos/STEM-2016-Stacked.svg" alt="U.S. News STEM Solutions 2016 logo stacked">
+                  </td>
+                  <td colspan="2">
+                    <h5 class="heading-small">STEM Solutions <span class="small">(2016 Vertical)</span></h5>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p class="text-normal type-bold">Print<span class="text-small type-muted">(full color - CMYK)</span></p>
+                  </td>
+                  <td>
+                    <a href="#">JPG</a><span class="type-muted"> | </span><a href="#">EPS</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p class="text-normal type-bold">Web<span class="text-small type-muted">(full color - RGB)</span></p>
+                  </td>
+                  <td>
+                   <a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a><span class="type-muted"> | </span><a href="#">SVG</a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </article>
+          <article>
+          <h4 id="anniversary-logos" data-magellan-target="anniversary-logos" class="heading-normal">U.S. News Anniversary Logos</h4>
+            <table class="logo-specs">
+              <tbody>
+                <tr>
+                  <td rowspan="4" class="logo-background text-center">
+                    <img src="img/logos/USNews-80.png" alt="U.S. News 80th Anniversary logo">
+                  </td>
+                  <td colspan="2">
+                    <h5 class="heading-small">80th Anniversary</h5>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p class="text-normal type-bold">Print<span class="text-small type-muted">(full color - CMYK)</span></p>
+                  </td>
+                  <td>
+                    <a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p class="text-normal type-bold">Web<span class="text-small type-muted">(full color - RBG)</span></p>
+                  </td>
+                  <td>
+                    <a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p class="text-normal type-bold">Black and White</p>
+                  </td>
+                  <td>
+                    <a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <table class="logo-specs">
+              <tbody>
+                <tr>
+                  <td rowspan="3" class="logo-background text-center">
+                    <img src="img/logos/Best-Hospitals-25.svg" alt="Best Hospitals 25th Anniversary logo">
+                  </td>
+                  <td colspan="2">
+                    <h5 class="heading-small">Best Hospitals 25th Anniversary</h5>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p class="text-normal type-bold">Print<span class="text-small type-muted">(full color - CMYK)</span></p>
+                  </td>
+                  <td>
+                    <a href="#">JPG</a><span class="type-muted"> | </span><a href="#">EPS</a><span class="type-muted"> | </span><a href="#">TIF</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p class="text-normal type-bold">Web<span class="text-small type-muted">(full color - RBG)</span></p>
+                  </td>
+                  <td>
+                    <a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a><span class="type-muted"> | </span><a href="#">SVG</a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <table class="logo-specs">
+              <tbody>
+                <tr>
+                  <td rowspan="3" class="logo-background text-center">
+                    <img src="img/logos/Best-Colleges-30.svg" alt="Best Colleges 30th Anniversary logo">
+                  </td>
+                  <td colspan="2">
+                    <h5 class="heading-small">Best Colleges 30th Anniversary</h5>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p class="text-normal type-bold">Print<span class="text-small type-muted">(full color - CMYK)</span></p>
+                  </td>
+                  <td>
+                    <a href="#">JPG</a><span class="type-muted"> | </span><a href="#">EPS</a><span class="type-muted"> | </span><a href="#">TIF</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p class="text-normal type-bold">Web<span class="text-small type-muted">(full color - RBG)</span></p>
+                  </td>
+                  <td>
+                    <a href="#">JPG</a><span class="type-muted"> | </span><a href="#">PNG</a><span class="type-muted"> | </span><a href="#">EPS</a><span class="type-muted"> | </span><a href="#">SVG</a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </article>
+        </section>
+      </div>
+<!-- End Main Well-->
+      </div>
+<!--End Page Content-->
+    </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="js/vendor/foundation.min.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
+    <script src="js/clipboard.min.js"></script>
+    <script>
+    var clipboard = new Clipboard('.color-bar');
+    clipboard.on('success', function(e) {
+        console.info('Action:', e.action);
+        console.info('Text:', e.text);
+        console.info('Trigger:', e.trigger);
+
+        $(".notification").html(" HEX Copied");
+        $(".color-bar").mouseout(function(){
+          $(".notification").html("Copy HEX");
+        });
+        e.clearSelection();
+    });
+    clipboard.on('error', function(e) {
+        console.error('Action:', e.action);
+        console.error('Trigger:', e.trigger);
+
+        $(".notification").html('Press "Ctrl + C" to copy');
+        $(".color-bar").mouseout(function(){
+          $(".notification").html("Copy HEX");
+        });
+    });
+    </script>
+  </body>
+</html>
