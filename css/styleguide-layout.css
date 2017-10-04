@@ -404,7 +404,7 @@ code.styleguide {
   background-color: #f7f7f7;
   border: #ccc 1px solid;
   color: #333;
-  padding: 0.125rem 0.3125rem 0.0625rem;
+  padding: 0.05rem 0.3125rem 0.12rem;
 } 
 .code.label {
   font-size: .75rem;
@@ -415,10 +415,11 @@ code.styleguide {
   line-height: 1; 
 }
 code.styleguide.label-top {
-  font-size: .75rem;
-  padding: .05rem .15rem .175rem .15rem;
+  font-size: .875rem;
+  padding: .05rem .15rem .25rem .15rem;
   border: none;
   background-color: inherit;
+  color:#666;
 }
 .card-section.code {
   background-color: #111;

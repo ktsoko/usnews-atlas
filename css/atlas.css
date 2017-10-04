@@ -106,12 +106,12 @@ a.link-black:focus svg.icon {
 /* 
 ** 04 -- Heading Sizes (Small Breakpoint)
 */
-.heading-largest {
+.heading-xxLarge {
   font-size: 2.0em;           /* 32 / 40px */
   line-height: 1.25;        
   margin-bottom: 0;   
 }
-.heading-larger {
+.heading-xLarge {
   font-size: 1.5em;           /* 24 / 32px */
   line-height: 1.33;        
   margin-bottom: 0;  
@@ -121,24 +121,24 @@ a.link-black:focus svg.icon {
   line-height: 1.2;        
   margin-bottom: 0;    
 }
-.heading-normal { 
+.heading-mediumLarge { 
   font-size: 1.125rem;        /* 18 / 24px */
   line-height: 1.33;        
   margin-bottom: 0;
 }
-.heading-small { 
+.heading-medium { 
   font-size: 1rem;            /* 16 / 20px */
   line-height: 1.25;        
   margin-bottom: 0;
 } 
-.heading-smaller,
-.heading-smallest,
-.heading-tiny {
+.heading-mediumSmall,
+.heading-small,
+.heading-xSmall {
   font-size: 0.875rem;        /* 14px 20px */
   line-height: 1.42;        
   margin-bottom: 0;
 }
-.heading-tiniest {
+.heading-xxSmall {
   font-size: 0.75rem;        /* 12px 16px */
   line-height: 1.333;        
   margin-bottom: 0;
@@ -148,12 +148,12 @@ a.link-black:focus svg.icon {
 ** 05 -- Heading Sizes (Large Breakpoint)
 */
 @media screen and (min-width: 40em) {
-  .heading-largest {
+  .heading-xxLarge {
     font-size: 3.125rem;        /* 50 / 56px */
     line-height: 1.12;           
     margin-bottom: 0;   
   }
-  .heading-larger {
+  .heading-xLarge {
     font-size: 2.625rem;        /* 42 / 48px */
     line-height: 1.14;         
     margin-bottom: 0;    
@@ -163,32 +163,32 @@ a.link-black:focus svg.icon {
     line-height: 1.25;        
     margin-bottom: 0;  
   }
-  .heading-normal { 
+  .heading-mediumLarge { 
     font-size: 1.5em;           /* 24 / 32px */
     line-height: 1.33;        
     margin-bottom: 0;  
   }
-  .heading-small { 
+  .heading-medium { 
     font-size: 1.25rem;         /* 20 / 24px */
     line-height: 1.2;        
     margin-bottom: 0;    
   }
-  .heading-smaller {
+  .heading-mediumSmall {
     font-size: 1.125rem;        /* 18 / 24px */
     line-height: 1.33;        
     margin-bottom: 0;
   }
-  .heading-smallest {
+  .heading-small {
     font-size: 1rem;            /* 16 / 20px */
     line-height: 1.25;        
     margin-bottom: 0;
   } 
-  .heading-tiny {
+  .heading-xSmall {
     font-size: 0.875rem;        /* 14px 20px */
     line-height: 1.42;        
     margin-bottom: 0;
   }
-  .heading-tiniest {
+  .heading-xxSmall {
     font-size: 0.75rem;        /* 12px 16px */
     line-height: 1.333;        
     margin-bottom: 0;
@@ -198,26 +198,28 @@ a.link-black:focus svg.icon {
 /*
 ** 06 -- Heading Small Segment (Small Breakpoint)
 */
-.heading-largest .small, 
-.heading-larger .small,
+.heading-xxLarge .small, 
+.heading-xLarge .small,
 .heading-large .small, 
-.heading-normal .small,
+.heading-mediumLarge .small,
+.heading-medium .small, 
+.heading-mediumSmall .small, 
 .heading-small .small, 
-.heading-smaller .small, 
-.heading-smallest .small, 
-.heading-tiny .small {
+.heading-xSmall .small, 
+.heading-xxSmall .small  {
   color: #666;  
 }
-.heading-largest .small,
-.heading-larger .small {
+.heading-xxLarge .small,
+.heading-xLarge .small {
   font-size: 75%;
 } 
 .heading-large .small,
-.heading-normal .small,
-.heading-small .small,
-.heading-smaller .small, 
-.heading-smallest .small, 
-.heading-tiny .small {
+.heading-mediumLarge .small,
+.heading-medium .small,
+.heading-mediumSmall .small, 
+.heading-small .small, 
+.heading-xSmall .small,
+.heading-xxSmall .small  {
   font-size: 90%;    
 }
 
@@ -225,18 +227,19 @@ a.link-black:focus svg.icon {
 ** 07 -- Heading Small Segment (Large Breakpoint)
 */
 @media screen and (min-width: 40em) {
-  .heading-largest .small, 
-  .heading-larger .small {
+  .heading-xxLarge .small, 
+  .heading-xLarge .small {
     font-size: 58%;
   }
   .heading-large .small, 
-  .heading-normal .small {
+  .heading-mediumLarge .small {
     font-size: 75%;
   }
+  .heading-medium .small, 
+  .heading-mediumSmall .small, 
   .heading-small .small, 
-  .heading-smaller .small, 
-  .heading-smallest .small, 
-  .heading-tiny .small {
+  .heading-xSmall .small,
+  .heading-xxSmall .small  {
     font-size: 90%;
   }
 }
@@ -244,42 +247,42 @@ a.link-black:focus svg.icon {
 /*
 ** 08 -- Text Sizes (All Breakpoints)
 */
-.text-largest {  
+.text-xLarge {  
   font-size: 2.0rem;        /* 32 / 40px */
   line-height: 1.25;       
   margin-bottom: 0;   
 }
-.text-larger {  
+.text-large {  
   font-size: 1.5rem;        /* 24 / 32px */
   line-height: 1.33;     
   margin-bottom: 0;   
 }
-.text-large {  
+.text-mediumLarge {  
   font-size: 1.25rem;       /* 20 / 28px  */
   line-height: 1.4;        
   margin-bottom: 0;   
 }
-.text-normal {
+.text-medium {
   font-size: 1.125rem;      /* 18 / 28px */
   line-height: 1.5;        
   margin-bottom: 0;   
 }
-.text-small {
+.text-mediumSmall {
   font-size: 1rem;          /*  16 / 24px */
   line-height: 1.5;       
   margin-bottom: 0;    
 }
-.text-smaller {
+.text-small {
   font-size: .875rem;       /* 14 / 20px */
   line-height: 1.4;        
   margin-bottom: 0;    
 }
-.text-smallest {
+.text-xSmall {
   font-size: .75rem;        /* 12 / 16px */
   line-height: 1.33;       
   margin-bottom: 0;    
 }
-.text-tiny { 
+.text-xxSmall { 
   font-size: 0.625em;       /* 10 / 12px */
   line-height: 1.2;        
   margin-bottom: 0;   
@@ -288,14 +291,15 @@ a.link-black:focus svg.icon {
 /*
 ** 09 -- Font Weights
 */
-.heading-largest, 
-.heading-larger, 
+.heading-xxLarge, 
+.heading-xLarge, 
 .heading-large, 
-.heading-normal, 
+.heading-mediumLarge, 
+.heading-medium, 
+.heading-mediumSmall, 
 .heading-small, 
-.heading-smaller, 
-.heading-smallest, 
-.heading-tiny {
+.heading-xSmall,
+.heading-xxSmall  {
   font-weight: 700;
 }
 .type-bold {
