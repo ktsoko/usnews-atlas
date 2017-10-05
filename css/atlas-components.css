@@ -209,6 +209,15 @@ header.top-bar .top-bar-right ul svg:hover{
 .card.rounded {
   border-radius: 5px 5px 0px 0px;
 }
+.card.rounded.design-info{
+  padding:.875rem;
+  background-color: #f7f7f7;
+  margin-bottom: 1rem;
+}
+.card.rounded.design-info p{
+  border:none;
+  background-color: #f7f7f7;
+}
 .card.rounded-top {
   border-radius: 5px 5px 0px 0px;
 }

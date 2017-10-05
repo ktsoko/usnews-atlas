@@ -41,7 +41,7 @@
           <li class="text-small"><a href="#spacing">Spacing &amp; Layout</a>
             <ul class="menu vertical nested">
               <li ><a href="#spacing-system">Spacing System</a></li>
-              <li ><a href="#grid">Grid</a></li>
+              <li ><a href="#grid">Brkpts &amp;Grid</a></li>
               <li><a href="#inset">Container Insets</a></li>
             </ul>
           </li>
@@ -144,7 +144,7 @@
               <li class="text-small"><a href="">Spacing &amp; Layout</a>
                 <ul class="menu vertical nested">
                   <li><a href="#spacing-system">Spacing System</a></li>
-                  <li ><a href="#grid">Grid</a></li>
+                  <li ><a href="#grid">Breakpts &amp; Grid</a></li>
                   <li><a href="#inset">Container Insets</a></li>
                 </ul>
               </li>
@@ -968,142 +968,245 @@
           </article>
 
           <article>
-            <h2 id="grid" data-magellan-target="spacing-system" class="heading-large">Grid</h2>
+            <h2 id="grid" data-magellan-target="spacing-system" class="heading-large">Breakpoints &amp; Grid</h2>
             <div class="details-bar">
               <p class="text-small"><span class="styleguide__label stable has-tip right" data-tooltip aria-haspopup="" data-disable-hover="true" tabindex="2" title="">Stable</span>
                <span class="styleguide__date">Last updated <span class="type-bold">10.02.17</span> <span class="styleguide__user">by <span class="type-bold">Katie Sokolosky</span></span></span></p>
             </div>
             <p class="text-medium">The grid is based on our overall spacing system, using a baseline grid of 4px. The pixel measurements below are accurate, however the diagram is for illustrative purposes only.</p></p>
-<!--             <h3 class="heading-mediumLarge">Small Grid</h3>
-            <p class="text-medium">The extra large grid is used when the browser viewport is between <span class="type-bold">0px and 640px</span>. Content behaves fluidly within this breakpoint, there is <span class="type-bold">not</span> a max width. At all widths, content maintains a <span class="type-bold">16px margin</span> on both sides.</p>
-            <div class="flex-container sm-grid">
-              <div class="flex-item gutter"></div>
-              <div class="flex-item column"></div>
+          <article>
+              <h3 class="heading-mediumLarge">Small</h3>
+              <!-- <p class="text-medium">The extra large grid is used when the browser viewport is <span class="type-bold">1212px or larger</span>. Content has a <span class="type-bold">max-width</span> of <span class="type-bold">1180px</span> with <span class="type-bold">16px margins</span> on both sides, totaling to <span class="type-bold">1212px</span>.</p> -->
+                  <div class="">
+                    <ul class="simple">
+                      <li class="text-medium horizontal"><span class="label">Breakpoint:</span> <span class="type-bold">0px</span></li>
+                      <li class="text-medium horizontal"><span class="label">Content width:</span> <span class="type-bold">Fluid</span></li>
+                      <li class="text-medium horizontal"><span class="label">Mock width:</span>  <span class="type-bold">375px</span></li>
+                      <li><span class="label">Grid Setup:</span>  <a class="text-small type-bold" href="" target="_blank">tk</a></li>
+                    </ul>
+                    <p class="text-muted" style="background-color: #eee;">Diagram tk</p>
+              </div>
+            </article>
+          <article>
+              <h3 class="heading-mediumLarge">Medium</h3>
+              <!-- <p class="text-medium">The extra large grid is used when the browser viewport is <span class="type-bold">1212px or larger</span>. Content has a <span class="type-bold">max-width</span> of <span class="type-bold">1180px</span> with <span class="type-bold">16px margins</span> on both sides, totaling to <span class="type-bold">1212px</span>.</p> -->
+                  <div class="">
+                    <ul class="simple">
+                      <li class="text-medium horizontal"><span class="label">Breakpoint:</span> <span class="type-bold">641px</span></li>
+                      <li class="text-medium horizontal"><span class="label">Content width:</span> <span class="type-bold">Fluid</span></li>
+                      <li class="text-medium horizontal"><span class="label">Mock width:</span>  <span class="type-bold">768px</span></li>
+                      <li><span class="label">Grid Setup:</span>  <a class="text-small type-bold" href="img/spacing/layout-sketch-m.png" target="_blank">Sketch settings</a></li>
+                    </ul>
+              </div>
+              <div class="flex-container m-grid">
+                <div class="flex-item gutter">16</div>
+                <div class="flex-item grid-column">Fluid</div>
 
-              <div class="flex-item gutter"></div>
-              <div class="flex-item gutter"></div>
+                <div class="flex-item gutter">16</div>
+                <div class="flex-item gutter">16</div>
 
-              <div class="flex-item column"></div>
+                <div class="flex-item grid-column">Fluid</div>
 
-              <div class="flex-item gutter"></div>
-              <div class="flex-item gutter"></div>
+                <div class="flex-item gutter">16</div>
+                <div class="flex-item gutter">16</div>
 
-              <div class="flex-item column"></div>
+                <div class="flex-item grid-column">Fluid</div>
 
-              <div class="flex-item gutter"></div>
-              <div class="flex-item gutter"></div>
+                <div class="flex-item gutter">16</div>
+                <div class="flex-item gutter">16</div>
 
-              <div class="flex-item column"></div>
+                <div class="flex-item grid-column">Fluid</div>
 
-              <div class="flex-item gutter"></div>
-              <div class="flex-item gutter"></div>
+                <div class="flex-item gutter">16</div>
+                <div class="flex-item gutter">16</div>
 
-              <div class="flex-item column"></div>
+                <div class="flex-item grid-column">Fluid</div>
 
-              <div class="flex-item gutter"></div>
-              <div class="flex-item gutter"></div>
+                <div class="flex-item gutter">16</div>
+                <div class="flex-item gutter">16</div>
 
-              <div class="flex-item column"></div>
+                <div class="flex-item grid-column">Fluid</div>
 
-              <div class="flex-item gutter"></div>
-              <div class="flex-item gutter"></div>
+                <div class="flex-item gutter">16</div>
+                <div class="flex-item gutter">16</div>
 
-              <div class="flex-item column"></div>
+                <div class="flex-item grid-column">Fluid</div>
 
-              <div class="flex-item gutter"></div>
-              <div class="flex-item gutter"></div>
+                <div class="flex-item gutter">16</div>
+                <div class="flex-item gutter">16</div>
 
-              <div class="flex-item column"></div>
+                <div class="flex-item grid-column">Fluid</div>
 
-              <div class="flex-item gutter"></div>
-              <div class="flex-item gutter"></div>
+                <div class="flex-item gutter">16</div>
+                <div class="flex-item gutter">16</div>
 
-              <div class="flex-item column"></div>
+                <div class="flex-item grid-column">Fluid</div>
 
-              <div class="flex-item gutter"></div>
-              <div class="flex-item gutter"></div>
+                <div class="flex-item gutter">16</div>
+                <div class="flex-item gutter">16</div>
 
-              <div class="flex-item column"></div>
+                <div class="flex-item grid-column">Fluid</div>
 
-              <div class="flex-item gutter"></div>
-              <div class="flex-item gutter"></div>
+                <div class="flex-item gutter">16</div>
+                <div class="flex-item gutter">16</div>
 
-              <div class="flex-item column"></div>
+                <div class="flex-item grid-column">Fluid</div>
 
-              <div class="flex-item gutter"></div>
-              <div class="flex-item gutter"></div>
+                <div class="flex-item gutter">16</div>
+                <div class="flex-item gutter">16</div>
 
-              <div class="flex-item column"></div>
+                <div class="flex-item grid-column">Fluid</div>
 
-              <div class="flex-item gutter"></div>
-            </div> -->
+                <div class="flex-item gutter">16</div>
+              </div>
+            </article>
 
+            <article>
+              <h3 class="heading-mediumLarge">Large</h3>
+              <!-- <p class="text-medium">The extra large grid is used when the browser viewport is <span class="type-bold">1212px or larger</span>. Content has a <span class="type-bold">max-width</span> of <span class="type-bold">1180px</span> with <span class="type-bold">16px margins</span> on both sides, totaling to <span class="type-bold">1212px</span>.</p> -->
+                  <div class="">
+                    <ul class="simple">
+                      <li class="text-medium horizontal"><span class="label">Breakpoint:</span> <span class="type-bold">1024px</span></li>
+                      <li class="text-medium horizontal"><span class="label">Content width:</span> <span class="type-bold">Fluid</span></li>
+                      <li class="text-medium horizontal"><span class="label">Mock width:</span>  <span class="type-bold">1032px</span></li>
+                      <li><span class="label">Grid Setup:</span>  <a class="text-small type-bold" href="img/spacing/layout-sketch-l.png" target="_blank">Sketch settings</a></li>
+                    </ul>
+              </div>
+              <div class="flex-container l-grid">
+                <div class="flex-item gutter">16</div>
+                <div class="flex-item grid-column">Fluid</div>
 
+                <div class="flex-item gutter">16</div>
+                <div class="flex-item gutter">16</div>
 
-            <h3 class="heading-mediumLarge">Extra-Large Grid</h3>
-            <p class="text-medium">The extra large grid is used when the browser viewport is <span class="type-bold">1212px or larger</span>. Content has a <span class="type-bold">max-width</span> of <span class="type-bold">1180px</span> with <span class="type-bold">16px margins</span> on both sides, totaling to <span class="type-bold">1212px</span>.</p>
-            <p class="text-medium">Use <a href="img/spacing/layout-sketch-xl.png" target="_blank">these Sketch Layout Settings</a> to mirror this grid.</p>
-            <div class="flex-container xl-grid">
-              <div class="flex-item gutter">16</div>
-              <div class="flex-item grid-column">69px</div>
+                <div class="flex-item grid-column">Fluid</div>
 
-              <div class="flex-item gutter">16</div>
-              <div class="flex-item gutter">16</div>
+                <div class="flex-item gutter">16</div>
+                <div class="flex-item gutter">16</div>
 
-              <div class="flex-item grid-column">69px</div>
+                <div class="flex-item grid-column">Fluid</div>
 
-              <div class="flex-item gutter">16</div>
-              <div class="flex-item gutter">16</div>
+                <div class="flex-item gutter">16</div>
+                <div class="flex-item gutter">16</div>
 
-              <div class="flex-item grid-column">69px</div>
+                <div class="flex-item grid-column">Fluid</div>
 
-              <div class="flex-item gutter">16</div>
-              <div class="flex-item gutter">16</div>
+                <div class="flex-item gutter">16</div>
+                <div class="flex-item gutter">16</div>
 
-              <div class="flex-item grid-column">69px</div>
+                <div class="flex-item grid-column">Fluid</div>
 
-              <div class="flex-item gutter">16</div>
-              <div class="flex-item gutter">16</div>
+                <div class="flex-item gutter">16</div>
+                <div class="flex-item gutter">16</div>
 
-              <div class="flex-item grid-column">69px</div>
+                <div class="flex-item grid-column">Fluid</div>
 
-              <div class="flex-item gutter">16</div>
-              <div class="flex-item gutter">16</div>
+                <div class="flex-item gutter">16</div>
+                <div class="flex-item gutter">16</div>
 
-              <div class="flex-item grid-column">69px</div>
+                <div class="flex-item grid-column">Fluid</div>
 
-              <div class="flex-item gutter">16</div>
-              <div class="flex-item gutter">16</div>
+                <div class="flex-item gutter">16</div>
+                <div class="flex-item gutter">16</div>
 
-              <div class="flex-item grid-column">69px</div>
+                <div class="flex-item grid-column">Fluid</div>
 
-              <div class="flex-item gutter">16</div>
-              <div class="flex-item gutter">16</div>
+                <div class="flex-item gutter">16</div>
+                <div class="flex-item gutter">16</div>
 
-              <div class="flex-item grid-column">69px</div>
+                <div class="flex-item grid-column">Fluid</div>
 
-              <div class="flex-item gutter">16</div>
-              <div class="flex-item gutter">16</div>
+                <div class="flex-item gutter">16</div>
+                <div class="flex-item gutter">16</div>
 
-              <div class="flex-item grid-column">69px</div>
+                <div class="flex-item grid-column">Fluid</div>
 
-              <div class="flex-item gutter">16</div>
-              <div class="flex-item gutter">16</div>
+                <div class="flex-item gutter">16</div>
+                <div class="flex-item gutter">16</div>
 
-              <div class="flex-item grid-column">69px</div>
+                <div class="flex-item grid-column">Fluid</div>
 
-              <div class="flex-item gutter">16</div>
-              <div class="flex-item gutter">16</div>
+                <div class="flex-item gutter">16</div>
+                <div class="flex-item gutter">16</div>
 
-              <div class="flex-item grid-column">69px</div>
+                <div class="flex-item grid-column">Fluid</div>
 
-              <div class="flex-item gutter">16</div>
-              <div class="flex-item gutter">16</div>
+                <div class="flex-item gutter">16</div>
+              </div>
+            </article>
+            <article>
+              <h3 class="heading-mediumLarge">Extra-Large</h3>
+              <!-- <p class="text-medium">The extra large grid is used when the browser viewport is <span class="type-bold">1212px or larger</span>. Content has a <span class="type-bold">max-width</span> of <span class="type-bold">1180px</span> with <span class="type-bold">16px margins</span> on both sides, totaling to <span class="type-bold">1212px</span>.</p> -->
+                  <div class="">
+                    <ul class="simple">
+                      <li class="text-medium horizontal"><span class="label">Breakpoint:</span> <span class="type-bold">1212px</span></li>
+                      <li class="text-medium horizontal"><span class="label">Content width:</span> <span class="type-bold">1180px</span></li>
+                      <li class="text-medium horizontal"><span class="label">Mock width:</span>  <span class="type-bold">1440px</span></li>
+                      <li><span class="label">Grid Setup:</span>  <a class="text-small type-bold" href="img/spacing/layout-sketch-xl.png" target="_blank">Sketch settings</a></li>
+                    </ul>
+              </div>
+              <div class="flex-container xl-grid">
+                <div class="flex-item gutter">16</div>
+                <div class="flex-item grid-column">69px</div>
 
-              <div class="flex-item grid-column">69px</div>
+                <div class="flex-item gutter">16</div>
+                <div class="flex-item gutter">16</div>
 
-              <div class="flex-item gutter">16</div>
-            </div>
+                <div class="flex-item grid-column">69px</div>
+
+                <div class="flex-item gutter">16</div>
+                <div class="flex-item gutter">16</div>
+
+                <div class="flex-item grid-column">69px</div>
+
+                <div class="flex-item gutter">16</div>
+                <div class="flex-item gutter">16</div>
+
+                <div class="flex-item grid-column">69px</div>
+
+                <div class="flex-item gutter">16</div>
+                <div class="flex-item gutter">16</div>
+
+                <div class="flex-item grid-column">69px</div>
+
+                <div class="flex-item gutter">16</div>
+                <div class="flex-item gutter">16</div>
+
+                <div class="flex-item grid-column">69px</div>
+
+                <div class="flex-item gutter">16</div>
+                <div class="flex-item gutter">16</div>
+
+                <div class="flex-item grid-column">69px</div>
+
+                <div class="flex-item gutter">16</div>
+                <div class="flex-item gutter">16</div>
+
+                <div class="flex-item grid-column">69px</div>
+
+                <div class="flex-item gutter">16</div>
+                <div class="flex-item gutter">16</div>
+
+                <div class="flex-item grid-column">69px</div>
+
+                <div class="flex-item gutter">16</div>
+                <div class="flex-item gutter">16</div>
+
+                <div class="flex-item grid-column">69px</div>
+
+                <div class="flex-item gutter">16</div>
+                <div class="flex-item gutter">16</div>
+
+                <div class="flex-item grid-column">69px</div>
+
+                <div class="flex-item gutter">16</div>
+                <div class="flex-item gutter">16</div>
+
+                <div class="flex-item grid-column">69px</div>
+
+                <div class="flex-item gutter">16</div>
+              </div>
+            </article>
 
           </article>
 

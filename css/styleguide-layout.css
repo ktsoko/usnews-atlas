@@ -644,13 +644,24 @@ div.inset-sixteen {
 div.inset-thirtytwo {
   border: 32px solid #b2dcff;
 }
+div.flex-container.l-grid {
+  width:80%;
 
-div.flex-container.xl-grid {
+}
+div.flex-container.m-grid {
+  width:65%;
+}
+
+div.flex-container.xl-grid, 
+div.flex-container.l-grid,
+div.flex-container.m-grid {
   display: flex;
   justify-content: space-between;
   margin-top:1.5rem;
 }
-div.flex-container.xl-grid .gutter {
+div.flex-container.xl-grid .gutter,
+div.flex-container.l-grid .gutter,
+div.flex-container.m-grid .gutter {
   background-color: rgba(223, 139, 30,.1);
   width:20px;
   height:100px;
@@ -659,12 +670,16 @@ div.flex-container.xl-grid .gutter {
   font-size:.65rem;
   text-align: center;
   padding-top: 45px;
-  
 }
-div.flex-container.xl-grid .gutter:last-of-type {
+
+div.flex-container.xl-grid .gutter:last-of-type,
+div.flex-container.l-grid .gutter:last-of-type,
+div.flex-container.m-grid .gutter:last-of-type {
   border-right: 1px solid #629be9;  
 }
-div.flex-container.xl-grid .grid-column {
+div.flex-container.xl-grid .grid-column,
+div.flex-container.l-grid .grid-column,
+div.flex-container.m-grid .grid-column {
   background-color: #b2dcff;
   width:50px;
   height:100px;
@@ -673,6 +688,9 @@ div.flex-container.xl-grid .grid-column {
   font-size: .75rem;
   text-align: center;
   padding-top: 15px;
+}
+div.flex-container.l-grid .grid-column {
+  width: 40px;
 }
 
 
@@ -820,4 +838,31 @@ div.flex-container.xl-grid .grid-column {
 .reveal .label {
   background-color:#115abf;
   margin-left:.125rem;
+}
+.pipe {
+  color:#666;
+  font-weight:300;
+}
+
+.label {
+  background-color:transparent;
+  padding:0;
+  font-weight:bold;
+  text-transform: uppercase;
+  color:#666;
+  margin-right:.25rem;
+}
+ul.simple {
+  list-style: none;
+  margin:1rem 0 1.5rem 0;
+
+}
+ul.simple li {
+  margin-right:3.5rem;
+  display: inline-block;
+}
+ul.simple li.horizontal {
+  margin-right:1rem;
+  display: inline-block;
+  width:200px;
 }
