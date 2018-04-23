@@ -33,6 +33,7 @@ h6 {
 body {
   font-family: Roboto;
   color: #111;
+  background:#fff;
 }
 .row {
   max-width: 75rem;
@@ -348,6 +349,11 @@ div.black-90,
 td.black-90 {
   background-color: #111;
 }
+.black-80,
+div.black-80, 
+td.black-80 {
+  background-color: #222;
+}
 .black-70,
 div.black-70,
 td.black-70 {
@@ -433,6 +439,12 @@ td.red-15 {
   background-color: #f9c1c4;
   color: #111;
 }
+.red-05,
+div.red-05,
+td.red-05 {
+  background-color: #f9ecea;
+  color: #111;
+}
 .text-blue-90 {
   color: #0c3b7d;
 }
@@ -470,6 +482,12 @@ td.blue-15 {
 div.blue-05,
 td.blue-05 {
   background-color: #daeeff;
+  color: #111;
+}
+.blue-01,
+div.blue-01,
+td.blue-01 {
+  background-color: #f8fcff;
   color: #111;
 }
 .green-90,
@@ -532,6 +550,12 @@ td.yellow-15 {
   background-color: #fee8a6;
   color: #111;
 }
+.yellow-05,
+div.yellow-05,
+td.yellow-05 {
+  background-color: #fbf4d1;
+  color: #111;
+}
 .color-brandfuse,
 div.color-brandfuse,
 td.color-brandfuse {
@@ -571,6 +595,11 @@ td.color-stumbleupon {
 div.color-instagram,
 td.color-instagram {
   background-color: #833AB4;
+}
+.color-flipboard,
+div.color-flipboard,
+td.color-flipboard {
+  background-color: #F52828;
 }
 
 /* 
