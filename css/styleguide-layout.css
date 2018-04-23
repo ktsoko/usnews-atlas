@@ -261,11 +261,11 @@ table tbody tr:nth-child(even) {
 }
 table thead tr, 
 table tbody tr {
-  border: 1px solid#ccc;
+  border: 1px solid #ccc;
 }
 table thead tr, 
 table tbody tr {
-  border: 1px solid#ccc;
+  border: 1px solid #ccc;
 }
 .color-tables-wrapper {
   margin-top: 3rem;
@@ -315,6 +315,9 @@ table.color-tables tbody tr:hover {
   padding: 1rem;
   cursor: pointer;
   position: relative;
+}
+td.color-bar {
+  cursor: pointer;
 }
 .card.color-stack .color-bar.main {
   height: 10rem;
@@ -404,7 +407,7 @@ code.styleguide {
   background-color: #f7f7f7;
   border: #ccc 1px solid;
   color: #333;
-  padding: 0.05rem 0.3125rem 0.12rem;
+  padding: 0.25rem 0.3125rem 0.12rem;
 } 
 .code.label {
   font-size: .75rem;
@@ -440,6 +443,9 @@ code.styleguide.label-top {
   padding: 1rem;
   background-color: #111;
   color: white;
+}
+.tabs{
+  background-color:#fff;
 }
 .tabs-panel .code-block {
   background-color: #111;
@@ -602,6 +608,11 @@ div.spacing-two {
   width: 2px;
   height: 2px;
 }
+div.spacing-zero {
+  width: 0px;
+  height: 0px;
+  border:0rem;
+}
 div.spacing-four {
   width: 4px;
   height: 4px;
@@ -631,9 +642,12 @@ div.spacing-onetwentyeight {
   height: 128px;
 }
 div.container-inset {
-  width: 200px;
-  height:200px;
+  width: 170px;
+  height:170px;
   margin-bottom: .5rem;
+}
+div.inset-zero {
+  border: 0px
 }
 div.inset-eight {
   border: 8px solid #b2dcff;
@@ -652,16 +666,22 @@ div.flex-container.m-grid {
   width:65%;
 }
 
+div.flex-container.sm-grid {
+  width:40%;
+}
+
 div.flex-container.xl-grid, 
 div.flex-container.l-grid,
-div.flex-container.m-grid {
+div.flex-container.m-grid,
+div.flex-container.sm-grid {
   display: flex;
   justify-content: space-between;
   margin-top:1.5rem;
 }
 div.flex-container.xl-grid .gutter,
 div.flex-container.l-grid .gutter,
-div.flex-container.m-grid .gutter {
+div.flex-container.m-grid .gutter,
+div.flex-container.sm-grid .gutter{
   background-color: rgba(223, 139, 30,.1);
   width:20px;
   height:100px;
@@ -674,12 +694,14 @@ div.flex-container.m-grid .gutter {
 
 div.flex-container.xl-grid .gutter:last-of-type,
 div.flex-container.l-grid .gutter:last-of-type,
-div.flex-container.m-grid .gutter:last-of-type {
+div.flex-container.m-grid .gutter:last-of-type,
+div.flex-container.sm-grid .gutter:last-of-type {
   border-right: 1px solid #629be9;  
 }
 div.flex-container.xl-grid .grid-column,
 div.flex-container.l-grid .grid-column,
-div.flex-container.m-grid .grid-column {
+div.flex-container.m-grid .grid-column,
+div.flex-container.sm-grid .grid-column {
   background-color: #b2dcff;
   width:50px;
   height:100px;
@@ -850,7 +872,6 @@ div.flex-container.l-grid .grid-column {
   font-weight:bold;
   text-transform: uppercase;
   color:#666;
-  margin-right:.25rem;
 }
 ul.simple {
   list-style: none;
@@ -864,5 +885,4 @@ ul.simple li {
 ul.simple li.horizontal {
   margin-right:1rem;
   display: inline-block;
-  width:200px;
-}
+  width:179px
