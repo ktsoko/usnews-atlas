@@ -5,7 +5,7 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <title>U.S. News Atlas: Design</title>
+    <title>USN Atlas: Quick Start Guide</title>
     <link rel='shortcut icon' href='favicon.ico' type='image/x-icon'/>
 
     <link rel="stylesheet" href="css/foundation.css">
@@ -34,7 +34,7 @@
           <li class="text-small"><a href="">Typography</a>
             <ul class="menu vertical nested">
               <li ><a href="#fonts">Fonts</a></li>
-              <li ><a href="#heading-sizes">Heading: Sizes</a></li>
+              <li ><a href="#heading-sizes">Heading Sizes</a></li>
               <li ><a href="#text-sizes">Text Sizes</a></li>
             </ul>
           </li>
@@ -76,12 +76,7 @@
         </ul>
       </div>
       <hr>
-      <h3 class="heading-small type-caps more">More Atlas</h3>
-      <ul>
-        <li class="menu-text text-small"><a href="index.html">Design</a></li>
-        <li class="menu-text text-small"><a href="logos.html">Logos</a></li>
-        <li class="menu-text text-small"><a href="badges.html">Badges</a></li>
-      </ul>
+
       
     </div>
 <!--End Off Canvas -->
@@ -92,10 +87,8 @@
       <nav>
         <ul class="menu">
           <li><img src="img/usn-logo-large.svg" alt="U.S. News & World Report Logo"></li>
-          <li class="menu-text text-mediumSmall portal-name"><a href="#">Atlas</a></li>
-          <li class="menu-text text-small show-for-large active"><a href="#">Design</a></li>
-          <li class="menu-text text-small show-for-large"><a href="logos.html">Logos</a></li>
-          <li class="menu-text text-small show-for-large"><a href="badges.html">Badges</a></li>
+          <li class="menu-text text-mediumSmall portal-name"><a href="#">USN Atlas: Quick Start Guide</a></li>
+          
         </ul>
       </nav>
       </div> 
@@ -132,7 +125,7 @@
               <li class="text-small"><a href="">Typography</a>
                 <ul class="menu vertical nested">
                   <li><a href="#fonts">Fonts</a></li>
-                  <li><a href="#heading-sizes">Heading: Sizes</a></li>
+                  <li><a href="#heading-sizes">HeadingSizes</a></li>
                   <li><a href="#text-sizes">Text Sizes</a></li>
                   <li><a href="#font-weights">Font Weights</a></li>
                 </ul>
@@ -231,7 +224,7 @@
           </article>
 
           <article>
-          <h2  id="heading-sizes" data-magellan-target="heading-sizes" class="heading-large">Heading: Sizes</h2>
+          <h2  id="heading-sizes" data-magellan-target="heading-sizes" class="heading-large">Heading Sizes</h2>
           <div class="details-bar">
             <p class="text-small"><span class="styleguide__label stable has-tip right" data-tooltip aria-haspopup="true" data-disable-hover="true" tabindex="2">Stable</span>
                <span class="styleguide__date">Last updated <span class="type-bold">10.04.17</span> <span class="styleguide__user">by <span class="type-bold">Katie Sokolosky</span></span></span></p>
@@ -3908,6 +3901,7 @@
               </div>
             </div>
             <br>
+            <!--
             <h3 class="heading-mediumLarge" id="icon-guidelines" data-magellan-target="icon-guidelines">Flat Icon Guidelines</h3>
             <p class="text-medium text-muted">You can import and use the Icon Macro described below: <code class="styleguide">svgIcon(iconName, color='')</code></p>
             <p class="text-medium text-muted" >The generated markup looks like<br>
@@ -5342,531 +5336,13 @@
           </article>
 
         </section>  -->
-
-<!--         <section>
-          <h2 id="atoms" data-magellan-target="elements" class="heading-xLarge">Atoms</h2>
-          
-          <article>
-            <h2  id="buttons" data-magellan-target="buttons" class="heading-large">Buttons</h2>
-            <div class="details-bar">
-              <p class="text-small"><span class="styleguide__label in-draft has-tip right" data-tooltip aria-haspopup="" data-disable-hover="true" tabindex="2" title="">In-draft</span>
-               <span class="styleguide__date">Last updated <span class="type-bold">07.26.17</span> <span class="styleguide__user">by <span class="type-bold">Leah Garber</span></span></span></p>
-            </div>
-            <div class="row">
-              <div class="small-12 medium-2 large-4 column">
-                <h3 class="heading-mediumLarge">Default</h3>
-                <button href="#" class="button">Default Button</button><br>
-                <button href="#" class="button small">Default Small</button><br>
-                <button href="#" class="button tiny">Default Tiny</button>
-              </div>
-              <div class="small-12 medium-4 column">
-              <h3 class="heading-mediumLarge">Secondary</h3>
-              <button href="#" class="button secondary">Secondary Button</button><br>
-              <button href="#" class="button secondary small">Secondary Small</button><br>
-              <button href="#" class="button secondary tiny">Secondary Tiny</button>
-            </div>
-            <div class="small-12 medium-4 column">
-              <h3 class="heading-mediumLarge">Action</h3>
-              <button href="#" class="button action">Action Button</button><br>
-              <button href="#" class="button action small">Action Small</button><br>
-              <button href="#" class="button action tiny">Action Tiny</button>
-            </div>
-          </div>
-          </article>
-          <article>
-            <h3 class="heading-mediumLarge">Block Level</h3>
-            <button href="#" class="button block">Default Block Level</button>
-            <hr class="secondary-block">
-            <button href="#" class="button secondary block">Secondary Block Level</button>
-            <button href="#" class="button action block">Action Block Level</button>
-          </article>
-          <article>
-            <h3 class="heading-mediumLarge">Disabled Buttons</h3>
-            <button href="#" class="button disabled">Default Disabled</button>
-            <button href="#" class="button secondary disabled">Secondary Disabled</button>
-            <button href="#" class="button action disabled">Action Disabled</button>
-          </article>
-          <article>
-            <h3 class="heading-mediumLarge">Divided Buttons</h3>
-            <button href="#" class="button divided"><span>(1)</span><span>Divided Default</span></button>
-            <button href="#" class="button secondary divided"><span>(1)</span><span>Divided Secondary</span></button>
-            <button href="#" class="button action divided"><span>(1)</span><span>Divided Action</span></button>
-            <ul class="accordion link-reveal" data-accordion data-allow-all-closed="true">
-                <li class="accordion-item" data-accordion-item>
-                  <a href="#" class="accordion-title text-mediumSmall type-bold"><span class="reveal-text"></span> </a>
-                  <div class="accordion-content" data-tab-content>
-                    <pre class="line-numbers code" data-start="1">
-<code class="language-markup">&lt;!--DEFAULT BUTTON--></code>
-<code class="language-markup">&lt;button href="#" class="button">Default Button&lt;/button></code>
-<code class="language-markup">&lt;button href="#" class="button small">Default Small&lt;/button></code>
-<code class="language-markup">&lt;button href="#" class="button tiny">Default Tiny&lt;/button></code>
-
-<code class="language-markup">&lt;!--SECONDARY BUTTON--></code>
-<code class="language-markup">&lt;button href="#" class="button secondary">Secondary Button&lt;/button></code>
-<code class="language-markup">&lt;button href="#" class="button secondary small">Secondary Small&lt;/button></code>
-<code class="language-markup">&lt;button href="#" class="button secondary tiny">Secondary Tiny&lt;/button></code>
-
-<code class="language-markup">&lt;!--ACTION BUTTON--></code>
-<code class="language-markup">&lt;button href="#" class="button action">Action Button&lt;/button></code>
-<code class="language-markup">&lt;button href="#" class="button action small">Action Small&lt;/button></code>
-<code class="language-markup">&lt;button href="#" class="button action tiny">Action Tiny&lt;/button></code>
-
-<code class="language-markup">&lt;!--BLOCK LEVEL BUTTONS--></code>
-<code class="language-markup">&lt;button href="#" class="button block">Default Block Level&lt;/button></code>
-<code class="language-markup">&lt;hr class="secondary-block"></code>
-<code class="language-markup">&lt;button href="#" class="button secondary block">Secondary Block Level&lt;/button></code>
-<code class="language-markup">&lt;button href="#" class="button action block">Action Block Level&lt;/button></code>
-
-<code class="language-markup">&lt;!--DISABLED BUTTONS--></code>
-<code class="language-markup">&lt;button href="#" class="button disabled">Default Disabled&lt;/button></code>
-<code class="language-markup">&lt;button href="#" class="button secondary disabled">Secondary Disabled&lt;/button></code>
-<code class="language-markup">&lt;button href="#" class="button action disabled">Action Disabled&lt;/button></code>
-
-<code class="language-markup">&lt;!--DIVIDED BUTTONS--></code>
-<code class="language-markup">&lt;button href="#" class="button divided">&lt;span>(1)&lt;/span>&lt;span>Divided Default&lt;/span>&lt;/button></code>
-<code class="language-markup">&lt;button href="#" class="button secondary divided">&lt;span>(1)&lt;/span>&lt;span>Divided Secondary&lt;/span>&lt;/button></code>
-<code class="language-markup">&lt;button href="#" class="button action divided">&lt;span>(1)&lt;/span>&lt;span>Divided Action&lt;/span>&lt;/button></code>
-                    </pre>
-                  </div>
-                </li>
-            </ul>
-          </article>
-          <article>
-            <h2  id="forms" data-magellan-target="forms" class="heading-large">Forms</h2>
-            <div class="details-bar">
-              <p class="text-small"><span class="styleguide__label in-draft has-tip right" data-tooltip aria-haspopup="" data-disable-hover="true" tabindex="2" title="">in-draft</span>
-               <span class="styleguide__date">Last updated <span class="type-bold">08.03.17</span> <span class="styleguide__user">by <span class="type-bold">Leah Garber</span></span></span></p>
-            </div>
-            <div class="row">
-              <div class="small-12 medium-6 column">
-                <legend>Text Input</legend>
-                <input type="text" placeholder="Search">
-              </div>
-              <div class="small-12 medium-6 column">
-                <legend>Dropdown Input</legend>
-                <select>
-                  <option value="options">- Dropdown Options -</option>
-                  <option value="chartreux">Chartreux</option>
-                  <option value="siamese">Siamese</option>
-                  <option value="birman">Birman</option>
-                </select>
-              </div>
-            </div>
-            <div class="row">
-              <div class="small-12 medium-6 column">
-                <fieldset>
-                  <legend>Radio Buttons</legend>
-                  <label class="radio" for="catsChartreux"><input type="radio" name="cats" value="Chartreux" id="catsChartreux" required><span></span>Chartreux</label>
-                  <label class="radio" for="catsSiamese"><input type="radio" name="cats" value="Siamese" id="catsSiamese" required><span></span>Siamese</label>
-                  <label class="radio" for="catsBirman"><input type="radio" name="cats" value="Birman" id="catsBirman" required><span></span>Birman</label>
-                </fieldset>
-              </div>
-              <div class="small-12 medium-6 column">
-                <fieldset>
-                  <legend>Checkboxes</legend>
-                  <label class="checkbox" for="chartreux"><input type="checkbox" id="chartreux"> <span></span>Chartreux</label>
-                  <label class="checkbox" for="siamese"><input type="checkbox" id="siamese"> <span></span>Siamese</label>
-                  <label class="checkbox" for="birman"><input type="checkbox" id="birman"> <span></span>Birman</label>
-                </fieldset>
-              </div>
-            </div>
-            <ul class="accordion link-reveal" data-accordion data-allow-all-closed="true">
-                <li class="accordion-item" data-accordion-item>
-                  <a href="#" class="accordion-title text-mediumSmall type-bold"><span class="reveal-text"></span> </a>
-                  <div class="accordion-content" data-tab-content>
-                    <pre class="line-numbers code" data-start="1">
-<code class="language-markup">&lt;!--TEXT INPUT--></code>
-<code class="language-markup">&lt;input type="text" placeholder="Search"></code>
-
-<code class="language-markup">&lt;!--DROPDOWN INPUT--></code>
-<code class="language-markup">&lt;select></code>
-<code class="language-markup">  &lt;option value="options">- Dropdown Options -&lt;/option></code>
-<code class="language-markup">  &lt;option value="chartreux">Chartreux&lt;/option></code>
-<code class="language-markup">  &lt;option value="siamese">Siamese&lt;/option></code>
-<code class="language-markup">  &lt;option value="birman">Birman&lt;/option></code>
-<code class="language-markup">&lt;/select></code>
-
-<code class="language-markup">&lt;!--RADIO BUTTONS--></code>
-<code class="language-markup">&lt;label class="radio" for="catsChartreux">&lt;input type="radio" name="cats" value="Chartreux" id="catsChartreux" required>&lt;span>&lt;/span>Chartreux&lt;/label></code>
-<code class="language-markup">&lt;label class="radio" for="catsSiamese">&lt;input type="radio" name="cats" value="Siamese" id="catsSiamese">&lt;span>&lt;/span>Siamese&lt;/label></code>
-<code class="language-markup">&lt;label class="radio" for="catsBirman">&lt;input type="radio" name="cats" value="Birman" id="catsBirman">&lt;span>&lt;/span>Birman&lt;/label></code>
-
-<code class="language-markup">&lt;!--CHECKBOXES--></code>
-<code class="language-markup">&lt;label class="checkbox" for="chartreux">&lt;input type="checkbox" id="chartreux" required>&lt;span>&lt;/span>Chartreux&lt;/label></code>
-<code class="language-markup">&lt;label class="checkbox" for="siamese">&lt;input type="checkbox" id="siamese">&lt;span>&lt;/span>Siamese&lt;/label></code>
-<code class="language-markup">&lt;label class="checkbox" for="birman">&lt;input type="checkbox" id="birman">&lt;span>&lt;/span>Birman&lt;/label></code>
-                    </pre>
-                  </div>
-                </li>
-            </ul>
-          </article>
-
-
-        </section> -->
-<!--         <section>
-          <h2 class="heading-xLarge">Components</h2>
-          
-          <article>
-            <h2  id="inventory" data-magellan-target="inventory" class="heading-large">Inventory</h2>
-            <div class="details-bar">
-              <p class="text-small"><span class="styleguide__label in-draft has-tip right" data-tooltip aria-haspopup="" data-disable-hover="true" tabindex="2" title="">In-draft</span>
-               <span class="styleguide__date">Last updated <span class="type-bold">09.18.17</span> <span class="styleguide__user">by <span class="type-bold">Katie Sokolosky</span></span></span></p>
-            </div>
-            <div class="row">
-              <div class="small-12 column end"> -->
-
-              <!-- <h3 class="heading-mediumLarge inventory-section">Content</h3>
-              <ul class="accordion inventory" data-accordion data-multi-expand="true" data-allow-all-closed="true">
-                <li class="accordion-item" data-accordion-item>                
-                  <a href="#" class="accordion-title">ContentBox</a>
-                  <div class="accordion-content" data-tab-content>
-                    <ul>
-                      <li class="master">ContentBox <span class="small">Master</span></li>
-                      <li><a data-open="ContentBox_Master">Preview</a></li>
-                      <li><a href="">Sketch Component</a></li>
-                      <li><a href="https://jira.usnews.com/browse/GI-112">Dev Ticket</a></li>
-                      <li><a href="">Style Guide</a></li>
-                    </ul>
-                    <ul>
-                      <li>&#8627; ContentBox_Centered</li>
-                      <li><a data-open="ContentBox_Centered">Preview</a></li>
-                      <li><a href="">Sketch Component</a></li>
-                    </ul>
-                  </div>
-                </li>
-
-              </ul>
-
-              <h3 class="heading-mediumLarge inventory-section">Feature</h3>
-              <ul class="accordion inventory" data-accordion data-multi-expand="true" data-allow-all-closed="true">
-                <li class="accordion-item" data-accordion-item>                
-                  <a href="#" class="accordion-title">FeatureBox</a>
-                  <div class="accordion-content" data-tab-content>
-                    <ul>
-                      <li class="master">FeatureBox <span class="small">Master</span></li>
-                      <li><a data-open="FeatureBox_Master">Preview</a></li>
-                      <li><a href="">Sketch Component</a></li>
-                      <li><a href="https://jira.usnews.com/browse/GI-120">Dev Ticket</a></li>
-                      <li><a href="">Style Guide</a></li>
-                    </ul>
-                  </div>
-                </li>
-              </ul>
-
-              <h3 class="heading-mediumLarge inventory-section">Media</h3>
-              <ul class="accordion inventory" data-accordion data-multi-expand="true" data-allow-all-closed="true">
-                <li class="accordion-item" data-accordion-item>                
-                  <a href="#" class="accordion-title">MediaLink</a>
-                  <div class="accordion-content" data-tab-content>
-                    <ul>
-                      <li class="master">MediaLink</li>
-                      <li><a></a></li>
-                      <li><a href=""></a></li>
-                      <li><a href="https://jira.usnews.com/browse/GI-110">Dev Ticket</a></li>
-                      <li><a href="">Style Guide</a></li>
-                    </ul>
-                    <ul> 
-                      <li>&#9675; MediaLink_BigThumbnail</li>
-                      <li><a data-open="MediaLink_BigThumbnail">Preview</a></li>
-                      <li><a href="">Sketch Component</a></li>
-                    </ul>
-                    <ul> 
-                      <li>&#9675; MediaLink_SmallThumbnail</li>
-                      <li><a data-open="MediaLink_SmallThumbnail">Preview</a></li>
-                      <li><a href="">Sketch Component</a></li>
-                    </ul>
-                    <ul>
-                      <li>&#9675; MediaLink_Stack_BigThumbnail</li>
-                      <li><a data-open="MediaLink_Stack_BigThumbnail">Preview</a></li>
-                      <li><a href="">Sketch Component</a></li>
-                    </ul>
-                    <ul>
-                      <li>&#9675; MediaLink_Stack_SmallThumbnail</li>
-                      <li><a data-open="MediaLink_Stack_SmallThumbnail">Preview</a></li>
-                      <li><a href="">Sketch Component</a></li>
-                    </ul>
-                  </div>
-                </li>
-                <li class="accordion-item" data-accordion-item>                
-                  <a href="#" class="accordion-title">MediaObject</a>
-                  <div class="accordion-content" data-tab-content>
-                    <ul>
-                      <li class="master">MediaObject <span class="small">Master</span></li>
-                      <li><a data-open="MediaObject_Master">Preview</a></li>
-                      <li><a href="">Sketch Component</a></li>
-                      <li><a href="https://jira.usnews.com/browse/GI-114">Dev Ticket</a></li>
-                      <li><a href="">Style Guide</a></li>
-                    </ul>
-                    <ul>
-                      <li>&#8627; MediaObject_BrandFuse</li>
-                      <li><a data-open="MediaObject_BrandFuse">Preview</a></li>
-                      <li><a href="">Sketch Component</a></li>
-                    </ul>
-                    <ul>
-                      <li>&#8627; MediaObject_GrayTag</li>
-                      <li><a data-open="MediaObject_GrayTag">Preview</a></li>
-                      <li><a href="">Sketch Component</a></li>
-                    </ul>
-
-                    <ul>
-                      <li>&#8627; MediaObject_NoTag</li>
-                      <li><a data-open="MediaObject_NoTag">Preview</a></li>
-                      <li><a href="">Sketch Component</a></li>
-                    </ul>
-                    <ul>
-                      <li>&#8627; MediaObject_RelatedHeadline</li>
-                      <li><a data-open="MediaObject_RelatedHeadline">Preview</a></li>
-                      <li><a href="">Sketch Component</a></li>
-                    </ul>
-                  </div>
-                </li>
-              </ul>
-
-              <h3 class="heading-mediumLarge inventory-section">Typography</h3>
-              <ul class="accordion inventory" data-accordion data-multi-expand="true" data-allow-all-closed="true">
-                <li class="accordion-item" data-accordion-item>                
-                  <a href="#" class="accordion-title">SuperHeading</a>
-                  <div class="accordion-content" data-tab-content>
-                    <ul>
-                      <li class="master">SuperHeading</li>
-                    </ul>
-                    <ul>
-                      <li>SuperHeading_Normal</li>
-                      <li><a data-open="SuperHeading_Normal">Preview</a></li>
-                      <li><a href="">Sketch Component</a></li>
-                      <li><a href=""></a></li>
-                      <li><a href="">Style Guide</a></li>
-                    </ul>
-                    <ul>
-                      <li>SuperHeading_Smaller</li>
-                      <li><a data-open="SuperHeading_Smaller">Preview</a></li>
-                      <li><a href="">Sketch Component</a></li>
-                      <li><a href=""></a></li>
-                      <li><a href="">Style Guide</a></li>
-                    </ul>
-                  </div>
-                </li>
-            </ul> -->
-<!-- Inventory Orbit Slider + Reveal -->        
-
-<!--             <div  class="reveal" data-reveal data id="ContentBox_Master">
-              <div class="orbit-controls">
-                <button class="orbit-previous" data-open="SuperHeading_Smaller">&#9664;&#xFE0E;</button>
-                <button class="orbit-next" data-open="ContentBox_Centered">&#9654;&#xFE0E;</button>
-              </div>
-              <h4 class="heading-mediumSmall">ContentBox<span class="type-normal">_Master</span></h4>
-              <img src="http://via.placeholder.com/500x300">
-              <p class="code">sketch/path/<span class="label">ContentBox_Master</span></p>
-              <p class="text-small text-muted"><span class="type-bold">Notes</span> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                  tempor incididunt ut labore et dolore magna aliqua.</p>
-              <button class="close-button" data-close aria-label="Close modal" type="button">
-                <span aria-hidden="true">&times;</span>
-              </button>              
-            </div>
-
-            <div  class="reveal" data-reveal data id="ContentBox_Centered">
-              <div class="orbit-controls">
-                <button class="orbit-previous" data-open="ContentBox_Master">&#9664;&#xFE0E;</button>
-                <button class="orbit-next" data-open="FeatureBox_Master">&#9654;&#xFE0E;</button>
-              </div>
-              <h4 class="heading-mediumSmall">ContentBox<span class="type-normal">_Centered</span></h4>
-              <img src="http://via.placeholder.com/500x300">
-              <p class="code">sketch/path/<span class="label">ContentBox_Centered</span></p>
-              <p class="text-small text-muted"><span class="type-bold">Notes</span> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                  tempor incididunt ut labore et dolore magna aliqua.</p>
-              <button class="close-button" data-close aria-label="Close modal" type="button">
-                <span aria-hidden="true">&times;</span>
-              </button>              
-            </div>
-
-            <div  class="reveal" data-reveal data id="FeatureBox_Master">
-              <div class="orbit-controls">
-                <button class="orbit-previous" data-open="ContentBox_Centered">&#9664;&#xFE0E;</button>
-                <button class="orbit-next" data-open="MediaLink_BigThumbnail">&#9654;&#xFE0E;</button>
-              </div>
-              <h4 class="heading-mediumSmall">FeatureBox<span class="type-normal">_Master</span></h4>
-              <img src="http://via.placeholder.com/500x300">
-              <p class="code">sketch/path/<span class="label">FeatureBox_Master</span></p>
-              <p class="text-small text-muted"><span class="type-bold">Notes</span> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                  tempor incididunt ut labore et dolore magna aliqua.</p>
-              <button class="close-button" data-close aria-label="Close modal" type="button">
-                <span aria-hidden="true">&times;</span>
-              </button>              
-            </div>
-
-            <div  class="reveal" data-reveal data id="MediaLink_BigThumbnail">
-              <div class="orbit-controls">
-                <button class="orbit-previous" data-open="FeatureBox_Master">&#9664;&#xFE0E;</button>
-                <button class="orbit-next" data-open="MediaLink_SmallThumbnail">&#9654;&#xFE0E;</button>
-              </div>
-              <h4 class="heading-mediumSmall">MediaLink<span class="type-normal">_BigThumbnail</span></h4>
-              <img src="http://via.placeholder.com/500x300">
-              <p class="code">media/media-link/<span class="label">MediaLink_BigThumbnail</span></p>
-              <p class="text-small text-muted"><span class="type-bold">Notes</span> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                  tempor incididunt ut labore et dolore magna aliqua.</p>
-              <button class="close-button" data-close aria-label="Close modal" type="button">
-                <span aria-hidden="true">&times;</span>
-              </button>              
-            </div>
-
-            <div  class="reveal" data-reveal data id="MediaLink_SmallThumbnail">
-              <div class="orbit-controls">
-                <button class="orbit-previous" data-open="MediaLink_BigThumbnail">&#9664;&#xFE0E;</button>
-                <button class="orbit-next" data-open="MediaLink_Stack_BigThumbnail">&#9654;&#xFE0E;</button>
-              </div>
-              <h4 class="heading-mediumSmall">MediaLink<span class="type-normal">_SmallThumbnail</span></h4>
-              <img src="img/inventory/MediaLink_SmallThumbnail.png">
-              <p class="code">media/media-link/<span class="label">MediaLink_SmallThumbnail</span></p>
-              <p class="text-small text-muted"><span class="type-bold">Notes</span>  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                  tempor incididunt ut labore et dolore magna aliqua.</p>
-              <button class="close-button" data-close aria-label="Close modal" type="button">
-                <span aria-hidden="true">&times;</span>
-              </button>              
-            </div>
-
-            <div  class="reveal" data-reveal data id="MediaLink_Stack_BigThumbnail">
-              <div class="orbit-controls">
-                <button class="orbit-previous" data-open="MediaLink_SmallThumbnail">&#9664;&#xFE0E;</button>
-                <button class="orbit-next" data-open="MediaLink_Stack_SmallThumbnail">&#9654;&#xFE0E;</button>
-              </div>
-              <h4 class="heading-mediumSmall">MediaLink<span class="type-normal">_Stack_BigThumbnail</span></h4>
-              <img src="http://via.placeholder.com/500x300">
-              <p class="code">sketch/path/<span class="label">MediaLink_Stack_BigThumbnail</span></p>
-              <p class="text-small text-muted"><span class="type-bold">Notes</span> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                  tempor incididunt ut labore et dolore magna aliqua.</p>
-              <button class="close-button" data-close aria-label="Close modal" type="button">
-                <span aria-hidden="true">&times;</span>
-              </button>              
-            </div>
-
-            <div  class="reveal" data-reveal data id="MediaLink_Stack_SmallThumbnail">
-              <div class="orbit-controls">
-                <button class="orbit-previous" data-open="MediaLink_Stack_BigThumbnail">&#9664;&#xFE0E;</button>
-                <button class="orbit-next" data-open="MediaObject_Master">&#9654;&#xFE0E;</button>
-              </div>
-              <h4 class="heading-mediumSmall">MediaLink<span class="type-normal">_Stack_SmallThumbnail</span></h4>
-              <img src="http://via.placeholder.com/500x300">
-              <p class="code">sketch/path/<span class="label">MediaLink_Stack_SmallThumbnail</span></p>
-              <p class="text-small text-muted"><span class="type-bold">Notes</span> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                  tempor incididunt ut labore et dolore magna aliqua.</p>
-              <button class="close-button" data-close aria-label="Close modal" type="button">
-                <span aria-hidden="true">&times;</span>
-              </button>              
-            </div>
-
-            <div  class="reveal" data-reveal data id="MediaObject_Master">
-              <div class="orbit-controls">
-                <button class="orbit-previous" data-open="MediaLink_Stack_SmallThumbnail">&#9664;&#xFE0E;</button>
-                <button class="orbit-next" data-open="MediaObject_BrandFuse">&#9654;&#xFE0E;</button>
-              </div>
-              <h4 class="heading-mediumSmall">MediaObject<span class="type-normal">_Master</span></h4>
-              <img src="http://via.placeholder.com/500x300">
-              <p class="code">sketch/path/<span class="label">MediaObject_Master</span></p>
-              <p class="text-small text-muted"><span class="type-bold">Notes</span> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                  tempor incididunt ut labore et dolore magna aliqua.</p>
-              <button class="close-button" data-close aria-label="Close modal" type="button">
-                <span aria-hidden="true">&times;</span>
-              </button>              
-            </div>
-
-            <div  class="reveal" data-reveal data id="MediaObject_BrandFuse">
-              <div class="orbit-controls">
-                <button class="orbit-previous" data-open="MediaObject_Master">&#9664;&#xFE0E;</button>
-                <button class="orbit-next" data-open="MediaObject_GrayTag">&#9654;&#xFE0E;</button>
-              </div>
-              <h4 class="heading-mediumSmall">MediaObject<span class="type-normal">_BrandFuse</span></h4>
-              <img src="http://via.placeholder.com/500x300">
-              <p class="code">sketch/path/<span class="label">MediaObject_BrandFuse</span></p>
-              <p class="text-small text-muted"><span class="type-bold">Notes</span> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                  tempor incididunt ut labore et dolore magna aliqua.</p>
-              <button class="close-button" data-close aria-label="Close modal" type="button">
-                <span aria-hidden="true">&times;</span>
-              </button>              
-            </div>
-
-            <div  class="reveal" data-reveal data id="MediaObject_GrayTag">
-              <div class="orbit-controls">
-                <button class="orbit-previous" data-open="MediaObject_BrandFuse">&#9664;&#xFE0E;</button>
-                <button class="orbit-next" data-open="MediaObject_NoTag">&#9654;&#xFE0E;</button>
-              </div>
-              <h4 class="heading-mediumSmall">MediaObject<span class="type-normal">_GrayTag</span></h4>
-              <img src="http://via.placeholder.com/500x300">
-              <p class="code">sketch/path/<span class="label">MediaObject_GrayTag</span></p>
-              <p class="text-small text-muted"><span class="type-bold">Notes</span> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                  tempor incididunt ut labore et dolore magna aliqua.</p>
-              <button class="close-button" data-close aria-label="Close modal" type="button">
-                <span aria-hidden="true">&times;</span>
-              </button>              
-            </div>
-
-            <div  class="reveal" data-reveal data id="MediaObject_NoTag">
-              <div class="orbit-controls">
-                <button class="orbit-previous" data-open="MediaObject_GrayTag">&#9664;&#xFE0E;</button>
-                <button class="orbit-next" data-open="MediaObject_RelatedHeadline">&#9654;&#xFE0E;</button>
-              </div>
-              <h4 class="heading-mediumSmall">MediaObject<span class="type-normal">_NoTag</span></h4>
-              <img src="http://via.placeholder.com/500x300">
-              <p class="code">sketch/path/<span class="label">MediaObject_NoTag</span></p>
-              <p class="text-small text-muted"><span class="type-bold">Notes</span> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                  tempor incididunt ut labore et dolore magna aliqua.</p>
-              <button class="close-button" data-close aria-label="Close modal" type="button">
-                <span aria-hidden="true">&times;</span>
-              </button>              
-            </div>   
-
-            <div  class="reveal" data-reveal data id="MediaObject_RelatedHeadline">
-              <div class="orbit-controls">
-                <button class="orbit-previous" data-open="MediaObject_NoTag">&#9664;&#xFE0E;</button>
-                <button class="orbit-next" data-open="SuperHeading_Normal">&#9654;&#xFE0E;</button>
-              </div>
-              <h4 class="heading-mediumSmall">MediaObject<span class="type-normal">_RelatedHeadline</span></h4>
-              <img src="http://via.placeholder.com/500x300">
-              <p class="code">sketch/path/<span class="label">MediaObject_RelatedHeadline</span></p>
-              <p class="text-small text-muted"><span class="type-bold">Notes</span> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                  tempor incididunt ut labore et dolore magna aliqua.</p>
-              <button class="close-button" data-close aria-label="Close modal" type="button">
-                <span aria-hidden="true">&times;</span>
-              </button>              
-            </div>   
-
-            <div  class="reveal" data-reveal data id="SuperHeading_Normal">
-              <div class="orbit-controls">
-                <button class="orbit-previous" data-open="MediaObject_RelatedHeadline">&#9664;&#xFE0E;</button>
-                <button class="orbit-next" data-open="SuperHeading_Smaller">&#9654;&#xFE0E;</button>
-              </div>
-              <h4 class="heading-mediumSmall">SuperHeading<span class="type-normal">_Normal</span></h4>
-              <img src="http://via.placeholder.com/500x300">
-              <p class="code">sketch/path/<span class="label">SuperHeading_Normal</span></p>
-              <p class="text-small text-muted"><span class="type-bold">Notes</span> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                  tempor incididunt ut labore et dolore magna aliqua.</p>
-              <button class="close-button" data-close aria-label="Close modal" type="button">
-                <span aria-hidden="true">&times;</span>
-              </button>              
-            </div>  
-
-            <div  class="reveal" data-reveal data id="SuperHeading_Smaller">
-              <div class="orbit-controls">
-                <button class="orbit-previous" data-open="SuperHeading_Normal">&#9664;&#xFE0E;</button>
-                <button class="orbit-next" data-open="ContentBox_Master">&#9654;&#xFE0E;</button>
-              </div>
-              <h4 class="heading-mediumSmall">SuperHeading<span class="type-normal">_Smaller</span></h4>
-              <img src="http://via.placeholder.com/500x300">
-              <p class="code">sketch/path/<span class="label">SuperHeading_Smaller</span></p>
-              <p class="text-small text-muted"><span class="type-bold">Notes</span> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                  tempor incididunt ut labore et dolore magna aliqua.</p>
-              <button class="close-button" data-close aria-label="Close modal" type="button">
-                <span aria-hidden="true">&times;</span>
-              </button>              
-            </div> -->                
-
-<!-- http://via.placeholder.com/500x300 -->
    
               </div>
             </div>
           </article>
         </section> 
 
-        <p class="text-xSmall">version 3.0 09.11.17</p>
+        <p class="text-xSmall">version 3.1 05.17.18</p>
       </div>
       <!-- End Main Well-->
 </div>
